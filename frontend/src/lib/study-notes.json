@@ -1,0 +1,200 @@
+[
+  {
+    "slug": "stock-valuation",
+    "title": "Stock Valuation",
+    "weight": "Paper 1 · Q1",
+    "icon": "📦",
+    "sections": [
+      {
+        "id": "methods",
+        "title": "Valuation Methods",
+        "content": "Grade 12 Accounting values stock using specific identification, FIFO (first-in-first-out) or the weighted-average method.\n\n- **FIFO**: the oldest units are deemed sold first, so closing stock is valued at the most recent purchase prices.\n- **Weighted average**: total cost of available stock divided by total units, giving one average cost per unit for both cost of sales and closing stock.\n- Damaged/obsolete stock is valued at the lower of cost and net realisable value (what it can actually be sold for), not at full cost.",
+        "examTip": "Weighted average cost per unit = (opening stock value + purchases) ÷ (opening units + units purchased). Apply it consistently to both cost of sales and closing stock."
+      },
+      {
+        "id": "stock-calculations",
+        "title": "Working with Damaged and Closing Stock",
+        "content": "A typical P1 question gives units available, units sold and units on hand, then asks for the damaged units: damaged = available − sold − closing.\n\nThe value of damaged stock uses the method cost per unit (e.g. weighted average), and the write-down (cost − NRV) is carried to the income statement.\n\nNote the stock figures the question supplies — the papers often mix rand values with unit counts.",
+        "examTip": "Always reconcile units first (available = sold + closing + damaged) before valuing anything in rands."
+      }
+    ]
+  },
+  {
+    "slug": "fixed-assets",
+    "title": "Fixed Assets & Depreciation",
+    "weight": "Paper 1 · Q1",
+    "icon": "🚚",
+    "sections": [
+      {
+        "id": "asset-disposal",
+        "title": "Asset Disposal",
+        "content": "When a fixed asset is sold:\n\n1. Update depreciation to the date of sale (a part-year / final depreciation amount).\n2. Carrying amount at date of sale = original cost − accumulated depreciation (including that final instalment).\n3. Profit or loss on disposal = selling price − carrying amount.\n\nA selling price above carrying amount gives a profit on disposal (other income); below gives a loss (an expense).",
+        "examTip": "Never compute profit on the old carrying amount — add the final depreciation first. This is the single most common error in disposal questions."
+      },
+      {
+        "id": "depreciation-adjustments",
+        "title": "Depreciation Adjustments",
+        "content": "Total depreciation in the income statement = depreciation already recorded for the year + additional depreciation on assets bought (part-year) or sold (up to sale date) + depreciation on additions such as accessories (e.g. an alarm system fitted to a vehicle).\n\nRecord the asset at cost including such additions, then depreciate the higher amount.",
+        "examTip": "Additions like tow-bars or alarm systems increase the cost price of the vehicle and therefore the depreciation base."
+      }
+    ]
+  },
+  {
+    "slug": "income-statement",
+    "title": "Income Statement",
+    "weight": "Paper 1 · Q1",
+    "icon": "📈",
+    "sections": [
+      {
+        "id": "gross-net-profit",
+        "title": "Gross and Net Profit",
+        "content": "- Gross profit = net sales − cost of sales.\n- Operating profit = gross profit + other income − operating expenses.\n- Net profit before tax = operating profit − finance costs (e.g. interest expense).\n- Net profit after tax = net profit before tax − income tax.\n\nIncome tax is commonly 28% of net profit before tax; if only net profit after tax is given, work backwards: tax = NPAT × 28/72.",
+        "examTip": "The 28/72 trick: NPAT is 72% of profit before tax, so income tax = NPAT ÷ 72 × 28."
+      },
+      {
+        "id": "year-end-adjustments",
+        "title": "Year-end Adjustments",
+        "content": "Adjustments move prepayments, accruals and provisions into the correct period:\n\n- **Rent received including next year's portion**: recognise only this year's portion (subtract the deferred amount).\n- **Provision for bad debts decreasing**: the decrease is other income; increasing is an operating expense.\n- **Directors' fees owing**: add the accrual to the recorded amount for the final expense.\n- **Depreciation and stock write-downs** are added to their respective expense lines.",
+        "examTip": "Ask yourself for each adjustment: does it increase income, decrease income, or reclassify a balance?"
+      }
+    ]
+  },
+  {
+    "slug": "financial-position",
+    "title": "Statement of Financial Position",
+    "weight": "Paper 1 · Q1",
+    "icon": "⚖️",
+    "sections": [
+      {
+        "id": "current-vs-noncurrent",
+        "title": "Current vs Non-current Classification",
+        "content": "Split each item due/collectable within 12 months:\n\n- A fixed deposit with a current portion → show the current portion under current investments.\n- A loan → the portion repayable within a year under current liabilities.\n- Receivables are shown net of provision for bad debts and after adjusting for credit losses.",
+        "examTip": "Non-current loan = loan balance − portion due within one year. This exact calculation appears almost every year."
+      },
+      {
+        "id": "equity-section",
+        "title": "Equity and Retained Income",
+        "content": "Shareholders' equity = ordinary share capital + share premium + retained income (+ reserves).\n\nRetained income in the statement of financial position is the closing balance after the retained-income note reconciliation: opening balance + net profit after tax − dividends ± share repurchase adjustments.",
+        "examTip": "Retained income = equity − share capital − share premium when working backwards from totals."
+      }
+    ]
+  },
+  {
+    "slug": "cash-flow",
+    "title": "Cash Flow Statement",
+    "weight": "Paper 1 · Q2",
+    "icon": "💧",
+    "sections": [
+      {
+        "id": "net-cash-movement",
+        "title": "Net Cash Movement",
+        "content": "Net increase/decrease in cash and cash equivalents = closing cash − opening cash-and-equivalents (an opening overdraft counts as negative).\n\nInclude petty cash and the bank balance; exclude fixed deposits that are investments, not cash equivalents, unless immediately available.",
+        "examTip": "Signs matter: an opening overdraft enters the calculation as a negative number."
+      },
+      {
+        "id": "operations-investing-financing",
+        "title": "The Three Activities",
+        "content": "- **Cash from operations**: net profit before tax adjusted for non-cash items (depreciation, profit/loss on disposal), interest paid, and working-capital movements in inventory, receivables and payables.\n- **Investing activities**: purchase/sale of fixed assets and fixed deposits (including the current-portion reclassification).\n- **Financing activities**: share issues/repurchases, dividends paid, loans raised or repaid.\n\nTaxation paid is its own line in the Grade 12 format (company tax paid).",
+        "examTip": "Dividends paid (interim + final paid this year) is a financing outflow; the final dividend merely declared (not paid) does not affect cash."
+      },
+      {
+        "id": "cash-management",
+        "title": "Cash Management",
+        "content": "Papers ask why cash declined despite profit: growth in inventories/receivables, repayment of loans, dividends and taxation timing, or heavy asset replacement.\n\nGood cash management means matching inflow timing to commitments — extending payables, tightening collections, and staggering capital spending.",
+        "examTip": "Link every cash-flow explanation to a specific line item in your answer."
+      }
+    ]
+  },
+  {
+    "slug": "financial-indicators",
+    "title": "Financial Indicators",
+    "weight": "Paper 1 · Q2",
+    "icon": "🧮",
+    "sections": [
+      {
+        "id": "core-ratios",
+        "title": "Core Ratios",
+        "content": "- **Liquidity**: current ratio = current assets ÷ current liabilities; acid test = (current assets − stock) ÷ current liabilities.\n- **Solvency**: debt/equity ratio; solvency means total assets exceed total liabilities.\n- **Profitability**: gross profit on sales, operating profit on sales, net profit on sales (margins as % of sales); return on capital employed (ROTCE) = (net profit before tax + interest) ÷ average capital employed.\n- **Gearing**: compares fixed-return capital (loans) to equity; lower gearing = lower risk.\n- **Shareholder ratios**: earnings per share (EPS), dividends per share (DPS), net asset value (NAV) per share, dividend pay-out rate, and stock turnover rate (cost of sales ÷ average stock).",
+        "examTip": "ROTCE uses PROFIT BEFORE tax plus interest, and AVERAGE capital employed. DPS in cents = total dividends ÷ shares × 100."
+      },
+      {
+        "id": "dividend-per-share",
+        "title": "Dividends per Share and Pay-out",
+        "content": "Interim DPS and final DPS add to the year's total DPS. The pay-out rate = DPS ÷ EPS.\n\nA low pay-out retains funds for growth (good when the company has good investment opportunities); a high pay-out rewards shareholders directly (expected of mature, cash-rich companies).",
+        "examTip": "Convert to cents when the question asks in cents: 1 360 000 shares × 12c = R163 200 total final dividend."
+      }
+    ]
+  },
+  {
+    "slug": "interpretation",
+    "title": "Interpretation of Results",
+    "weight": "Paper 1 · Q3",
+    "icon": "🔍",
+    "sections": [
+      {
+        "id": "trends",
+        "title": "Reading Trends Between Years",
+        "content": "Compare like with like: operating expenses as % of sales falling means better cost control; net profit margin rising means overall profitability improving.\n\nShare price movement reflects investor confidence and demand for the shares; EPS and NAV movements explain most of it.",
+        "examTip": "Quote both figures (then → now) and the direction in every interpretation answer, exactly as the memo does."
+      },
+      {
+        "id": "risk-return",
+        "title": "Risk and Return Judgements",
+        "content": "Risk stayed low when gearing is low/positive (return exceeds the loan rate) — borrowing is worthwhile when ROTCE exceeds the interest rate paid.\n\nMajority shareholders may use control for personal benefit; minority holders' interests can be compromised — the memos accept concerns about motive, control and governance.",
+        "examTip": "A judgement without a supporting ratio earns no marks: always ratio → direction → conclusion."
+      }
+    ]
+  },
+  {
+    "slug": "shareholding",
+    "title": "Shares, Dividends & Company Capital",
+    "weight": "Paper 1 · Q2–Q3",
+    "icon": "🏛️",
+    "sections": [
+      {
+        "id": "share-capital",
+        "title": "Share Capital and the Share Register",
+        "content": "Ordinary share capital = shares issued × issue price (par plus any premium).\n\nThe shareholders' register records each holder's name, class and number of shares; directors use it to declare dividends per share and to communicate with owners. Repurchased shares reduce issued capital and equity.",
+        "examTip": "Share premium is part of equity but never part of ordinary share capital."
+      },
+      {
+        "id": "retained-income-note",
+        "title": "Retained Income Note",
+        "content": "Closing retained income = opening retained income + net profit after tax − total dividends declared −/± share repurchase effects (often the repurchase reserve transfer).\n\nWhen the memo allows two routes (e.g. computing retained income directly or via equity), the quiz supplies the figure needed for the specified method.",
+        "examTip": "Final dividends are declared (owed to shareholders) even when paid only in the next financial year — they still reduce retained income now."
+      },
+      {
+        "id": "listings",
+        "title": "JSE Listing and Share Price",
+        "content": "Companies list on the JSE to reach potential investors and raise capital; reliable (audited) information protects investors and the exchange's credibility, which supports the share price.\n\nMarket price per share is driven by demand, earnings expectations and confidence — compare it to NAV per share to judge the premium investors pay.",
+        "examTip": "Price above NAV = investors expect growth; the memo links rising prices to demand and confidence."
+      }
+    ]
+  },
+  {
+    "slug": "governance",
+    "title": "Corporate Governance & Audit",
+    "weight": "Paper 1 · Q3–Q4",
+    "icon": "🛡️",
+    "sections": [
+      {
+        "id": "king-code",
+        "title": "King Code and Boards",
+        "content": "The King Code recommends, among others: a majority of non-executive directors, an independent chair (separate from CEO), and independent audit/ remuneration committees.\n\nOne person combining CEO and board chair concentrates power — competence and independent oversight may be compromised. Non-executives protect minority shareholders and add independent judgement.",
+        "examTip": "Frame answers as principle → risk if ignored → who is protected."
+      },
+      {
+        "id": "audit-reports",
+        "title": "Audit Reports",
+        "content": "- **Unqualified (clean) opinion**: statements fairly present the financial position.\n- **Qualified opinion**: specific concern/limitation (except-for) — the statements are fairly presented except for the matter raised.\n- **Disclaimer**: the auditor could not obtain enough evidence to express ANY opinion.\n- **Adverse opinion**: statements do not fairly present the position (material and pervasive).\n\nAuditors are appointed by and report to shareholders; internal auditors check controls daily and report to the audit committee.",
+        "examTip": "Qualified = specific concern WITH an opinion; disclaimer = NO opinion at all. This distinction is examined frequently."
+      },
+      {
+        "id": "roles-duties",
+        "title": "Directors, Auditors and Internal Control",
+        "content": "Directors manage the company for the shareholders, must avoid conflicts of interest, and remain accountable even when delegating. External auditors express an independent opinion; internal audit evaluates and improves internal controls.\n\nInternal controls over cash, purchasing and wages (segregation of duties, authorisation, physical controls, reconciliation) prevent fraud and error. Whistle-blower protection and regular audits help prevent misconduct; discouraging reporting enables it.",
+        "examTip": "For 'why is this a concern' questions: name the principle broken, the risk created, and the stakeholder harmed."
+      }
+    ]
+  }
+]

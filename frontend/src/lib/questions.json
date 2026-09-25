@@ -1,0 +1,2382 @@
+[
+  {
+    "id": 1,
+    "question": "Laysano had 9 000 shirts available; 7 750 sold and 1 185 remain. How many shirts were damaged?",
+    "options": [
+      "1 185 shirts",
+      "1 250 shirts",
+      "75 shirts",
+      "65 shirts"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2022 P1, Q1.1 — 9 000 - 7 750 - 1 185 = 65.",
+    "topic": "stock-valuation",
+    "section": "nov-2022"
+  },
+  {
+    "id": 2,
+    "question": "Available shirts cost R6 579 000 for 9 000 units. What is the weighted average cost per shirt?",
+    "options": [
+      "R731",
+      "R660",
+      "R750",
+      "R65"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2022 P1, Q1.1 — R6 579 000 / 9 000 = R731.",
+    "topic": "stock-valuation",
+    "section": "nov-2022"
+  },
+  {
+    "id": 3,
+    "question": "65 damaged shirts have weighted average cost R731 each. What is their value?",
+    "options": [
+      "R7 315",
+      "R47 515",
+      "R48 750",
+      "R65 000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2022 P1, Q1.1 — 65 x R731 = R47 515.",
+    "topic": "stock-valuation",
+    "section": "nov-2022"
+  },
+  {
+    "id": 4,
+    "question": "A delivery vehicle had a carrying amount of R170 000 before R25 500 final depreciation and was sold for R140 000. What was the result?",
+    "options": [
+      "R30 000 loss",
+      "R25 500 loss",
+      "R4 500 loss",
+      "R4 500 profit"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2022 P1, Q1.2.1 — R170 000 - R25 500 = R144 500 carrying amount; sale at R140 000 creates a R4 500 loss.",
+    "topic": "fixed-assets",
+    "section": "nov-2022"
+  },
+  {
+    "id": 5,
+    "question": "Initial depreciation was R328 200; add R25 500 for the sold vehicle and R4 200 for an alarm system. What is total depreciation?",
+    "options": [
+      "R353 700",
+      "R332 400",
+      "R328 200",
+      "R357 900"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2022 P1, Q1.2.2 — R328 200 + R25 500 + R4 200.",
+    "topic": "fixed-assets",
+    "section": "nov-2022"
+  },
+  {
+    "id": 6,
+    "question": "Sales were R9 355 250 and cost of sales R5 665 250. What is gross profit?",
+    "options": [
+      "R3 690 000",
+      "R3 890 000",
+      "R3 315 000",
+      "R575 000"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2022 P1, Q1.3.1 — Sales less cost of sales = R3 690 000.",
+    "topic": "income-statement",
+    "section": "nov-2022"
+  },
+  {
+    "id": 7,
+    "question": "Rent received was R183 600, including R24 300 for the next period. What rent is recognised this year?",
+    "options": [
+      "R24 300",
+      "R159 300",
+      "R207 900",
+      "R183 600"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2022 P1, Q1.3.1 — R183 600 - R24 300.",
+    "topic": "income-statement",
+    "section": "nov-2022"
+  },
+  {
+    "id": 8,
+    "question": "Provision for bad debts fell from R85 840 to R83 400. How is the R2 440 adjustment treated?",
+    "options": [
+      "Current liability",
+      "Share capital",
+      "Other income",
+      "Operating expense"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2022 P1, Q1.3.1 — The marking guide shows the decrease in provision as income.",
+    "topic": "income-statement",
+    "section": "nov-2022"
+  },
+  {
+    "id": 9,
+    "question": "Security expenses were R72 500 before a R13 500 adjustment. What expense appears in the statement?",
+    "options": [
+      "R86 000",
+      "R72 500",
+      "R13 500",
+      "R59 000"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2022 P1, Q1.3.1 — R72 500 - R13 500 = R59 000.",
+    "topic": "income-statement",
+    "section": "nov-2022"
+  },
+  {
+    "id": 10,
+    "question": "Gross operating income was R3 890 000 and operating expenses were R3 315 000. What is operating profit?",
+    "options": [
+      "R575 000",
+      "R509 000",
+      "R651 250",
+      "R356 300"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2022 P1, Q1.3.1 — R3 890 000 - R3 315 000.",
+    "topic": "income-statement",
+    "section": "nov-2022"
+  },
+  {
+    "id": 11,
+    "question": "Net profit before tax was R509 000 and income tax R152 700. What was net profit after tax?",
+    "options": [
+      "R152 700",
+      "R356 300",
+      "R661 700",
+      "R509 000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2022 P1, Q1.3.1 — R509 000 - R152 700.",
+    "topic": "income-statement",
+    "section": "nov-2022"
+  },
+  {
+    "id": 12,
+    "question": "Shareholders' equity was R7 762 500 and ordinary share capital R6 670 000. What was retained income?",
+    "options": [
+      "R746 925",
+      "R14 432 500",
+      "R1 092 500",
+      "R1 025 075"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2022 P1, Q1.3.2 — Subtract ordinary share capital from equity.",
+    "topic": "financial-position",
+    "section": "nov-2022"
+  },
+  {
+    "id": 13,
+    "question": "The loan balance is R1 159 000 and R133 925 is due within one year. What is non-current loan?",
+    "options": [
+      "R1 292 925",
+      "R1 159 000",
+      "R133 925",
+      "R1 025 075"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2022 P1, Q1.3.2 — R1 159 000 - R133 925.",
+    "topic": "financial-position",
+    "section": "nov-2022"
+  },
+  {
+    "id": 14,
+    "question": "Income tax is R152 700 and provisional payments R130 000. What remains payable to SARS?",
+    "options": [
+      "R22 700",
+      "R282 700",
+      "R152 700",
+      "R130 000"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2022 P1, Q1.3.2 — R152 700 - R130 000.",
+    "topic": "financial-position",
+    "section": "nov-2022"
+  },
+  {
+    "id": 15,
+    "question": "Which term describes the ability to settle all debts using existing assets?",
+    "options": [
+      "Gearing",
+      "Solvency",
+      "Liquidity",
+      "Profitability"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2022 P1, Q2.1.1 — The original paper and memo identify solvency.",
+    "topic": "governance",
+    "section": "nov-2022"
+  },
+  {
+    "id": 16,
+    "question": "Effective control of income and expenses is reflected in which concept?",
+    "options": [
+      "Solvency",
+      "Shareholding",
+      "Profitability",
+      "Gearing"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2022 P1, Q2.1.2 — The memo selects profitability.",
+    "topic": "governance",
+    "section": "nov-2022"
+  },
+  {
+    "id": 17,
+    "question": "What is using loans to finance a company called?",
+    "options": [
+      "Liquidity",
+      "Depreciation",
+      "Retained income",
+      "Gearing"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2022 P1, Q2.1.3 — The memo selects gearing.",
+    "topic": "governance",
+    "section": "nov-2022"
+  },
+  {
+    "id": 18,
+    "question": "Eagle Ltd repurchased 120 000 shares at R1.40 above average issue price. What is the retained-income deduction?",
+    "options": [
+      "R168 000",
+      "R1 056 000",
+      "R1 224 000",
+      "R120 000"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2022 P1, Q2.2.1 — 120 000 x R1.40 = R168 000.",
+    "topic": "shareholding",
+    "section": "nov-2022"
+  },
+  {
+    "id": 19,
+    "question": "A 12c final dividend is payable on 1 360 000 shares. What is the total final dividend?",
+    "options": [
+      "R136 000",
+      "R163 200",
+      "R710 400",
+      "R873 600"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2022 P1, Q2.2.1 — 1 360 000 x R0.12 = R163 200.",
+    "topic": "shareholding",
+    "section": "nov-2022"
+  },
+  {
+    "id": 20,
+    "question": "Opening retained income R516 000, profit R908 400, repurchase adjustment R168 000, dividends R873 600. Closing balance?",
+    "options": [
+      "R1 424 400",
+      "R908 400",
+      "R382 800",
+      "R550 800"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2022 P1, Q2.2.1 — R516 000 + R908 400 - R168 000 - R873 600.",
+    "topic": "shareholding",
+    "section": "nov-2022"
+  },
+  {
+    "id": 21,
+    "question": "Tax paid is R389 300 less R21 300 and R14 400. What is the cash outflow?",
+    "options": [
+      "R389 300",
+      "R425 000",
+      "R374 900",
+      "R353 600"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2022 P1, Q2.2.2 — R389 300 - R21 300 - R14 400.",
+    "topic": "cash-flow",
+    "section": "nov-2022"
+  },
+  {
+    "id": 22,
+    "question": "120 000 shares were repurchased at R10.20 each. What was paid?",
+    "options": [
+      "R1 224 000",
+      "R1 056 000",
+      "R168 000",
+      "R1 200 000"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2022 P1, Q2.2.2 — 120 000 x R10.20 = R1 224 000.",
+    "topic": "cash-flow",
+    "section": "nov-2022"
+  },
+  {
+    "id": 23,
+    "question": "Closing cash R44 700, opening overdraft R133 000 and opening petty cash R8 000. What is the net cash increase?",
+    "options": [
+      "R36 700",
+      "R169 700",
+      "R177 700",
+      "R88 300"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2022 P1, Q2.2.2 — R44 700 + R133 000 - R8 000.",
+    "topic": "cash-flow",
+    "section": "nov-2022"
+  },
+  {
+    "id": 24,
+    "question": "Non-current loan R2 886 000 and shareholders' equity R12 350 800. Approximate debt/equity ratio?",
+    "options": [
+      "0.8:1",
+      "1.2:1",
+      "0.2:1",
+      "2.3:1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2022 P1, Q2.2.3 — R2 886 000 / R12 350 800 is approximately 0.2:1.",
+    "topic": "financial-indicators",
+    "section": "nov-2022"
+  },
+  {
+    "id": 25,
+    "question": "Profit before tax R1 297 700 plus interest R382 000 is compared with average capital employed R14 843 400. What is ROTCE?",
+    "options": [
+      "16.9%",
+      "7.5%",
+      "20.7%",
+      "11.3%"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2022 P1, Q2.2.3 — R1 679 700 / R14 843 400 x 100 is 11.3%.",
+    "topic": "financial-indicators",
+    "section": "nov-2022"
+  },
+  {
+    "id": 26,
+    "question": "Eagle Ltd interim dividend was 48c per share and final dividend 12c. What is annual DPS?",
+    "options": [
+      "60 cents",
+      "48 cents",
+      "12 cents",
+      "R60"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2022 P1, Q2.2.3 — 48c + 12c = 60c.",
+    "topic": "financial-indicators",
+    "section": "nov-2022"
+  },
+  {
+    "id": 27,
+    "question": "Which report shows operating, investing and financing cash flows?",
+    "options": [
+      "Statement of Financial Position",
+      "Cash Flow Statement",
+      "Directors' Report",
+      "Income Statement"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2022 P1, Q3.1.1 — The original matching item is C.",
+    "topic": "governance",
+    "section": "nov-2022"
+  },
+  {
+    "id": 28,
+    "question": "Which annual report component explains a company's financial performance in writing?",
+    "options": [
+      "Income Statement",
+      "Statement of Financial Position",
+      "Directors' Report",
+      "Cash Flow Statement"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2022 P1, Q3.1.2 — The original matching item is D.",
+    "topic": "governance",
+    "section": "nov-2022"
+  },
+  {
+    "id": 29,
+    "question": "Which statement shows gross, operating and net profit?",
+    "options": [
+      "Cash Flow Statement",
+      "Directors' Report",
+      "Statement of Financial Position",
+      "Statement of Comprehensive Income"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2022 P1, Q3.1.3 — The original matching item is A.",
+    "topic": "governance",
+    "section": "nov-2022"
+  },
+  {
+    "id": 30,
+    "question": "Which trends show Jessie Ltd reduced wasteful expenses?",
+    "options": [
+      "Operating expense ratio fell 27.8% to 14.8%; net profit margin rose 10.3% to 24.7%.",
+      "Both ratios fell.",
+      "Operating expense ratio rose to 27.8%.",
+      "Only mark-up changed."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2022 P1, Q3.2.1 — Both trends are accepted by the memo.",
+    "topic": "interpretation",
+    "section": "nov-2022"
+  },
+  {
+    "id": 31,
+    "question": "Dividend pay-out fell from 97.6% to 46.6%. Why may that benefit Jessie Ltd?",
+    "options": [
+      "It proves the company made a loss.",
+      "It retains more profits for future needs.",
+      "It requires larger dividend payments than profit.",
+      "It prevents any investment."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2022 P1, Q3.2.2 — A lower payout retains funds.",
+    "topic": "shareholding",
+    "section": "nov-2022"
+  },
+  {
+    "id": 32,
+    "question": "Sue holds 5 000 shares. DPS rose from 120c to 190c. How much more dividend does she receive?",
+    "options": [
+      "R6 000",
+      "R9 500",
+      "R3 500",
+      "R350"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2022 P1, Q3.2.2 — 5 000 x R0.70 increase = R3 500.",
+    "topic": "shareholding",
+    "section": "nov-2022"
+  },
+  {
+    "id": 33,
+    "question": "Jessie's debt/equity increased 0.2:1 to 0.3:1 while ROTCE rose 7.5% to 16.9%, above loan interest 7.2%. Which assessment matches the memo?",
+    "options": [
+      "Debt/equity became 3:1.",
+      "ROTCE was below borrowing cost.",
+      "Loans always make a company insolvent.",
+      "Risk remained relatively low and gearing was positive."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2022 P1, Q3.2.3 — The return exceeded the loan rate and debt/equity remained low.",
+    "topic": "financial-indicators",
+    "section": "nov-2022"
+  },
+  {
+    "id": 34,
+    "question": "Brent owned 300 000 shares and obtained 75 000 rights shares; total shares were 1 325 000. What was his holding?",
+    "options": [
+      "28.3%",
+      "26.4%",
+      "54.7%",
+      "75%"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2022 P1, Q3.2.4 — 375 000 / 1 325 000 x 100 = 28.3%.",
+    "topic": "shareholding",
+    "section": "nov-2022"
+  },
+  {
+    "id": 35,
+    "question": "Brent's 28.3% and Kerina's 26.4% voting stakes are combined. What voting percentage results?",
+    "options": [
+      "26.4%",
+      "54.7%",
+      "45.3%",
+      "28.3%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2022 P1, Q3.2.4 — 28.3% + 26.4% = 54.7%, a majority.",
+    "topic": "shareholding",
+    "section": "nov-2022"
+  },
+  {
+    "id": 36,
+    "question": "Why might other shareholders question Brent and Kerina combining votes?",
+    "options": [
+      "Combining votes automatically ends the AGM.",
+      "Their shares cease to carry votes.",
+      "They may use majority control for personal benefit.",
+      "Together they own less than 10%."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2022 P1, Q3.2.4 — The memo accepts concerns about motives, control and governance.",
+    "topic": "governance",
+    "section": "nov-2022"
+  },
+  {
+    "id": 37,
+    "question": "Which earnings trend could support rewarding CFO Mike?",
+    "options": [
+      "EPS fell from 408c to 123c.",
+      "EPS stayed at 123c.",
+      "EPS became negative.",
+      "EPS rose from 123c to 408c."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2022 P1, Q3.2.5 — The memo cites improved earnings per share.",
+    "topic": "interpretation",
+    "section": "nov-2022"
+  },
+  {
+    "id": 38,
+    "question": "Which net asset value trend supports the company's growth?",
+    "options": [
+      "NAV rose from 1 685c to 1 841c.",
+      "NAV fell to 1 685c.",
+      "NAV stayed at 1 841c.",
+      "NAV is identical to dividend per share."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2022 P1, Q3.2.5 — The memo identifies a 156c improvement.",
+    "topic": "interpretation",
+    "section": "nov-2022"
+  },
+  {
+    "id": 39,
+    "question": "Market price rose from 1 540c to 1 920c. What interpretation fits the memo?",
+    "options": [
+      "The company has no liabilities.",
+      "Higher demand and investor confidence.",
+      "Guaranteed dividends forever.",
+      "No effect on investor opinion."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2022 P1, Q3.2.5 — The memo cites demand for shares.",
+    "topic": "interpretation",
+    "section": "nov-2022"
+  },
+  {
+    "id": 40,
+    "question": "Why would a company list on the JSE?",
+    "options": [
+      "To prevent share transfers.",
+      "To hide its share price.",
+      "To reach potential investors and raise capital.",
+      "To avoid all auditing."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2022 P1, Q4.1 — The memo lists access to investors and capital.",
+    "topic": "governance",
+    "section": "nov-2022"
+  },
+  {
+    "id": 41,
+    "question": "Why should the JSE reject misleading financial results?",
+    "options": [
+      "To ensure prices never change.",
+      "To remove all listed companies.",
+      "To guarantee every investment gains value.",
+      "To protect investors and the exchange's credibility."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2022 P1, Q4.1 — Reliable information protects the market and its users.",
+    "topic": "governance",
+    "section": "nov-2022"
+  },
+  {
+    "id": 42,
+    "question": "What distinguishes a qualified report from a disclaimer of opinion?",
+    "options": [
+      "A qualified report identifies specific concerns; a disclaimer gives no opinion.",
+      "Both mean the statements are completely error-free.",
+      "A disclaimer lists only minor concerns.",
+      "A qualified report means no audit was performed."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2022 P1, Q4.2 — The 2022 memo draws this distinction.",
+    "topic": "governance",
+    "section": "nov-2022"
+  },
+  {
+    "id": 43,
+    "question": "Which question should shareholders ask when unskilled directors were appointed?",
+    "options": [
+      "Why do directors never need skills?",
+      "What criteria and screening were used to appoint them?",
+      "Why were external audits cancelled by law?",
+      "Why are profits always guaranteed?"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2022 P1, Q4.3 — The memo raises appointment criteria and background checks.",
+    "topic": "governance",
+    "section": "nov-2022"
+  },
+  {
+    "id": 44,
+    "question": "Why should shareholders question a board's delay in acting on poor audit reports?",
+    "options": [
+      "Audits have no relevance to shareholders.",
+      "Directors cannot respond to an audit.",
+      "It could damage the company and its share price.",
+      "A poor report guarantees higher profits."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2022 P1, Q4.3 — The memo identifies governance and market confidence risks.",
+    "topic": "governance",
+    "section": "nov-2022"
+  },
+  {
+    "id": 45,
+    "question": "Buhle has 1 009 bicycles; 700 of the newest cost R2 100 and 309 cost R2 020. What is closing FIFO stock value?",
+    "options": [
+      "R2 125 380",
+      "R1 470 000",
+      "R624 180",
+      "R2 094 180"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2023 P1, Q1.1 — 700 x R2 100 + 309 x R2 020 = R2 094 180.",
+    "topic": "stock-valuation",
+    "section": "nov-2023"
+  },
+  {
+    "id": 46,
+    "question": "Buhle's sales were R21 017 200 with R336 000 trade discounts already recorded and a 120% mark-up on cost. What is cost of sales?",
+    "options": [
+      "R9 706 000",
+      "R9 553 273",
+      "R21 353 200",
+      "R11 311 200"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2023 P1, Q1.2 — (R21 017 200 + R336 000) / 2.2 = R9 706 000.",
+    "topic": "income-statement",
+    "section": "nov-2023"
+  },
+  {
+    "id": 47,
+    "question": "Sales R21 017 200 less cost of sales R9 706 000 give what gross profit?",
+    "options": [
+      "R4 150 300",
+      "R11 311 200",
+      "R12 254 100",
+      "R10 975 200"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2023 P1, Q1.2 — Subtract cost of sales.",
+    "topic": "income-statement",
+    "section": "nov-2023"
+  },
+  {
+    "id": 48,
+    "question": "Recorded stock is R2 125 380 but correct FIFO stock is R2 094 180. What is the stock deficit?",
+    "options": [
+      "R2 094 180",
+      "R62 400",
+      "R31 200",
+      "R2 125 380"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2023 P1, Q1.2 — R2 125 380 - R2 094 180.",
+    "topic": "income-statement",
+    "section": "nov-2023"
+  },
+  {
+    "id": 49,
+    "question": "Commission income R277 000 plus R41 000 accrued equals what current year income?",
+    "options": [
+      "R236 000",
+      "R277 000",
+      "R41 000",
+      "R318 000"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2023 P1, Q1.2 — Add accrued commission income.",
+    "topic": "income-statement",
+    "section": "nov-2023"
+  },
+  {
+    "id": 50,
+    "question": "Fee income of R303 000 includes R24 150 belonging to the next period. What is current year fee income?",
+    "options": [
+      "R278 850",
+      "R327 150",
+      "R303 000",
+      "R24 150"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2023 P1, Q1.2 — R303 000 - R24 150.",
+    "topic": "income-statement",
+    "section": "nov-2023"
+  },
+  {
+    "id": 51,
+    "question": "Annual rent calculation R643 500 includes R115 500 prepaid. What is rent expense?",
+    "options": [
+      "R115 500",
+      "R528 000",
+      "R759 000",
+      "R643 500"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2023 P1, Q1.2 — R643 500 - R115 500.",
+    "topic": "income-statement",
+    "section": "nov-2023"
+  },
+  {
+    "id": 52,
+    "question": "Recorded directors' fees R1 610 000 require additions of R75 000 and R10 000. Final expense?",
+    "options": [
+      "R1 685 000",
+      "R1 610 000",
+      "R1 695 000",
+      "R1 525 000"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2023 P1, Q1.2 — Add the two adjustments.",
+    "topic": "income-statement",
+    "section": "nov-2023"
+  },
+  {
+    "id": 53,
+    "question": "Net profit before tax is R3 737 250 and tax R1 152 000. What is net profit after tax?",
+    "options": [
+      "R4 889 250",
+      "R3 737 250",
+      "R1 152 000",
+      "R2 585 250"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2023 P1, Q1.2 — Subtract income tax.",
+    "topic": "income-statement",
+    "section": "nov-2023"
+  },
+  {
+    "id": 54,
+    "question": "Fixed deposit R1 500 000 includes R500 000 current. What non-current investment appears?",
+    "options": [
+      "R1 000 000",
+      "R1 500 000",
+      "R500 000",
+      "R2 000 000"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2023 P1, Q1.3 — R1 500 000 - R500 000.",
+    "topic": "financial-position",
+    "section": "nov-2023"
+  },
+  {
+    "id": 55,
+    "question": "Receivables R483 110 plus R41 000 minus R2 700 plus R115 500 equal what?",
+    "options": [
+      "R524 110",
+      "R636 910",
+      "R521 410",
+      "R639 610"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2023 P1, Q1.3 — The memo's trade and other receivables calculation.",
+    "topic": "financial-position",
+    "section": "nov-2023"
+  },
+  {
+    "id": 56,
+    "question": "Cash R629 000 plus current fixed deposit R500 000 equals what current cash and cash equivalents?",
+    "options": [
+      "R500 000",
+      "R1 500 000",
+      "R1 129 000",
+      "R629 000"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2023 P1, Q1.3 — Add the bank balance and short-term deposit.",
+    "topic": "financial-position",
+    "section": "nov-2023"
+  },
+  {
+    "id": 57,
+    "question": "Equity R22 562 750 and ordinary share capital R20 000 000. Retained income?",
+    "options": [
+      "R20 000 000",
+      "R42 562 750",
+      "R3 793 340",
+      "R2 562 750"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2023 P1, Q1.3 — Equity less ordinary share capital.",
+    "topic": "financial-position",
+    "section": "nov-2023"
+  },
+  {
+    "id": 58,
+    "question": "Tax expense R1 152 000 and provisional payments R1 049 000. What remains due to SARS?",
+    "options": [
+      "R103 000",
+      "R2 201 000",
+      "R1 049 000",
+      "R203 000"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2023 P1, Q1.3 — R1 152 000 - R1 049 000.",
+    "topic": "financial-position",
+    "section": "nov-2023"
+  },
+  {
+    "id": 59,
+    "question": "1 200 000 shares were in issue, 300 000 issued and 90 000 bought back. How many remain?",
+    "options": [
+      "1 590 000",
+      "1 410 000",
+      "1 500 000",
+      "1 110 000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2023 P1, Q2.1 — 1 200 000 + 300 000 - 90 000.",
+    "topic": "shareholding",
+    "section": "nov-2023"
+  },
+  {
+    "id": 60,
+    "question": "Ordinary share capital began at R7 200 000, issue proceeds R2 700 000, capital reduction R594 000. Ending balance?",
+    "options": [
+      "R8 712 000",
+      "R10 494 000",
+      "R9 306 000",
+      "R9 900 000"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2023 P1, Q2.1 — R7 200 000 + R2 700 000 - R594 000.",
+    "topic": "shareholding",
+    "section": "nov-2023"
+  },
+  {
+    "id": 61,
+    "question": "Sherbiz paid interim dividends R450 000 and prior final dividends R288 000. What is dividends-paid outflow?",
+    "options": [
+      "R732 000",
+      "R450 000",
+      "R288 000",
+      "R738 000"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2023 P1, Q2.2 — R450 000 + R288 000.",
+    "topic": "cash-flow",
+    "section": "nov-2023"
+  },
+  {
+    "id": 62,
+    "question": "Tax amount R337 500 less R42 500 and R27 800. What is tax-paid outflow?",
+    "options": [
+      "R267 200",
+      "R407 800",
+      "R295 000",
+      "R337 500"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2023 P1, Q2.2 — R337 500 - R42 500 - R27 800.",
+    "topic": "cash-flow",
+    "section": "nov-2023"
+  },
+  {
+    "id": 63,
+    "question": "90 000 shares bought back for R6.60 capital plus R0.80 additional each. Total cash paid?",
+    "options": [
+      "R738 000",
+      "R666 000",
+      "R594 000",
+      "R72 000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2023 P1, Q2.2 — 90 000 x R7.40 = R666 000.",
+    "topic": "cash-flow",
+    "section": "nov-2023"
+  },
+  {
+    "id": 64,
+    "question": "Share issue inflow R2 700 000, repurchase outflow R666 000 and loan reduction R155 400. Net financing cash flow?",
+    "options": [
+      "R1 878 600 outflow",
+      "R2 700 000 inflow",
+      "R1 878 600 inflow",
+      "R2 189 400 inflow"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2023 P1, Q2.2 — R2 700 000 - R666 000 - R155 400.",
+    "topic": "cash-flow",
+    "section": "nov-2023"
+  },
+  {
+    "id": 65,
+    "question": "Equity R10 200 000 and 1 410 000 shares. Net asset value per share?",
+    "options": [
+      "R723.40",
+      "1 410 cents",
+      "10 200 cents",
+      "723.4 cents"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2023 P1, Q2.3 — R10 200 000 / 1 410 000 x 100 = 723.4c.",
+    "topic": "financial-indicators",
+    "section": "nov-2023"
+  },
+  {
+    "id": 66,
+    "question": "Interim DPS 30c and final DPS 20c; EPS 66.2c. Which dividend pay-out rate follows this per-share method?",
+    "options": [
+      "75.5%",
+      "80.2%",
+      "50%",
+      "66.2%"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2023 P1, Q2.3 — 50c / 66.2c x 100 = 75.5%; the memo accepts another route using totals, so this stem specifies per-share method.",
+    "topic": "financial-indicators",
+    "section": "nov-2023"
+  },
+  {
+    "id": 67,
+    "question": "Profit R912 500; average equity is half of R10 200 000 plus R7 985 500. What is ROSHE?",
+    "options": [
+      "11.3%",
+      "10.0%",
+      "20.0%",
+      "7.5%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2023 P1, Q2.3 — R912 500 / R9 092 750 x 100 = 10%.",
+    "topic": "financial-indicators",
+    "section": "nov-2023"
+  },
+  {
+    "id": 68,
+    "question": "Who manages operating, financing and investing activities of a company?",
+    "options": [
+      "External auditor",
+      "Supplier",
+      "Director",
+      "Shareholder"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2023 P1, Q3.1.1 — 2023 matching question 3.1.1 identifies a director.",
+    "topic": "governance",
+    "section": "nov-2023"
+  },
+  {
+    "id": 69,
+    "question": "Which description fits an unqualified audit report?",
+    "options": [
+      "The auditor refuses to express an opinion.",
+      "Every account contains a material error.",
+      "Shareholders have no access to statements.",
+      "Statements fairly present the company's financial position."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2023 P1, Q3.1.2 — The 2023 matching question 3.1.2 gives this meaning.",
+    "topic": "governance",
+    "section": "nov-2023"
+  },
+  {
+    "id": 70,
+    "question": "Who invests funds in a company by buying shares?",
+    "options": [
+      "Shareholder",
+      "Director only",
+      "Creditor only",
+      "External auditor"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2023 P1, Q3.1.3 — The 2023 matching question 3.1.3 identifies a shareholder.",
+    "topic": "governance",
+    "section": "nov-2023"
+  },
+  {
+    "id": 71,
+    "question": "Which company improved its working capital indicators?",
+    "options": [
+      "Neither had any creditors",
+      "Guardian Ltd",
+      "Navarra Ltd",
+      "Both unchanged"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2023 P1, Q3.2 — The memo names Guardian.",
+    "topic": "financial-indicators",
+    "section": "nov-2023"
+  },
+  {
+    "id": 72,
+    "question": "Guardian's current ratio rose from 1.5:1 to 1.7:1 and acid test from 1.0:1 to 1.2:1. What trend is supported?",
+    "options": [
+      "Both ratios declined.",
+      "No current assets existed.",
+      "Liquidity improved.",
+      "Liquidity necessarily collapsed."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2023 P1, Q3.2 — Both indicators improved in the memo.",
+    "topic": "financial-indicators",
+    "section": "nov-2023"
+  },
+  {
+    "id": 73,
+    "question": "Which changes contributed to Guardian's debt/equity shift?",
+    "options": [
+      "Loan and share capital both fell.",
+      "Share capital fell to R12m.",
+      "Loan remained R3.6m.",
+      "Loan rose R3.6m to R5m; share capital rose R12m to R20.96m."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2023 P1, Q3.3 — Both changes are cited in the memo.",
+    "topic": "financial-indicators",
+    "section": "nov-2023"
+  },
+  {
+    "id": 74,
+    "question": "Guardian's ROTCE was 16.6% against 14% borrowing interest. What does this indicate?",
+    "options": [
+      "Positive gearing.",
+      "Negative gearing.",
+      "Insolvency.",
+      "A 16.6% dividend rate."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2023 P1, Q3.3 — The company earns more on capital employed than the loan costs.",
+    "topic": "financial-indicators",
+    "section": "nov-2023"
+  },
+  {
+    "id": 75,
+    "question": "Navarra's dividend payout rose from 34.8% to 103.8%. Why is that concerning?",
+    "options": [
+      "The company cannot have shareholders.",
+      "It uses reserves rather than retaining earnings for growth.",
+      "It retains all earnings.",
+      "Dividend per share must be zero."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2023 P1, Q3.4 — The memo identifies a payout above earnings and depleted reserves.",
+    "topic": "shareholding",
+    "section": "nov-2023"
+  },
+  {
+    "id": 76,
+    "question": "Navarra's EPS fell 115c to 80c and ROSHE fell 11% to 6.4%. Which conclusion matches the memo?",
+    "options": [
+      "ROSHE now exceeds the 9% alternative return.",
+      "Profitability was unchanged.",
+      "Shareholders should be concerned.",
+      "Both returns improved."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2023 P1, Q3.4 — Returns fell, with ROSHE below a 9% alternative investment.",
+    "topic": "interpretation",
+    "section": "nov-2023"
+  },
+  {
+    "id": 77,
+    "question": "Nathan's stake fell from 55.2% to 40.2% following a buy-back. What changed?",
+    "options": [
+      "He gained a 15-point majority.",
+      "His holding remained 55.2%.",
+      "He became the only shareholder.",
+      "He lost his majority holding."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2023 P1, Q3.5 — The percentage fell by 15 points.",
+    "topic": "shareholding",
+    "section": "nov-2023"
+  },
+  {
+    "id": 78,
+    "question": "How did Navarra finance the repurchase and dividends?",
+    "options": [
+      "Loan rose R3.5m and the bank moved to a R3.2m overdraft.",
+      "Loan fell and bank cash rose.",
+      "Only retained earnings increased.",
+      "Shares issued covered all the cost."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2023 P1, Q3.5 — Both cash sources are in the memo.",
+    "topic": "cash-flow",
+    "section": "nov-2023"
+  },
+  {
+    "id": 79,
+    "question": "Why was Nathan's repurchase potentially irresponsible?",
+    "options": [
+      "The company had no borrowing.",
+      "It strained cash and favoured his personal interest.",
+      "It guaranteed improved liquidity.",
+      "The share price rose to 1 800c that year."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2023 P1, Q3.5 — The memo raises affordability, ethics and liquidity concerns.",
+    "topic": "governance",
+    "section": "nov-2023"
+  },
+  {
+    "id": 80,
+    "question": "What key duty makes a CFO important to company success?",
+    "options": [
+      "Managing only advertising posters.",
+      "Setting the market share price unilaterally.",
+      "Sound financial management and safeguarding stakeholders' investment.",
+      "Avoiding all financial reporting."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2023 P1, Q3.6 — The memo expects accounting expertise and protection of investment.",
+    "topic": "governance",
+    "section": "nov-2023"
+  },
+  {
+    "id": 81,
+    "question": "Guardian had NAV 1 230c and market price 1 350c. What does this suggest?",
+    "options": [
+      "No investor demand.",
+      "Shares traded at 400c.",
+      "The company was necessarily insolvent.",
+      "Demand for its shares and investor confidence."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2023 P1, Q3.6 — The memo links market price above NAV to confidence.",
+    "topic": "shareholding",
+    "section": "nov-2023"
+  },
+  {
+    "id": 82,
+    "question": "Navarra had NAV 992c and market price 400c. Which interpretation fits?",
+    "options": [
+      "Weak investor demand and concern about management.",
+      "Market value exceeds NAV.",
+      "Its market price is 1 350c.",
+      "A guaranteed 9% return."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2023 P1, Q3.6 — The memo notes a severe market price decline below NAV.",
+    "topic": "shareholding",
+    "section": "nov-2023"
+  },
+  {
+    "id": 83,
+    "question": "What should Guardian consider before offering Nathan its CFO role?",
+    "options": [
+      "He is guaranteed to improve Guardian.",
+      "His past decisions exposed Navarra to financial risk.",
+      "Only his shareholding matters.",
+      "The poor track record is irrelevant."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2023 P1, Q3.6 — The memo raises his record, conflict and risk.",
+    "topic": "governance",
+    "section": "nov-2023"
+  },
+  {
+    "id": 84,
+    "question": "What is one internal auditor duty?",
+    "options": [
+      "Replace all shareholders.",
+      "Set tax law.",
+      "Implement and review internal controls.",
+      "Guarantee share prices."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2023 P1, Q4.1 — The memo accepts internal control oversight.",
+    "topic": "governance",
+    "section": "nov-2023"
+  },
+  {
+    "id": 85,
+    "question": "Why does a listed company need an external audit?",
+    "options": [
+      "It ensures profits next year.",
+      "It replaces the need for records.",
+      "It lets directors conceal transactions.",
+      "Independent opinion protects shareholders and checks reporting reliability."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2023 P1, Q4.1 — The memo cites legal requirements and public investor protection.",
+    "topic": "governance",
+    "section": "nov-2023"
+  },
+  {
+    "id": 86,
+    "question": "Why should Sally's whistle-blowing be supported despite her dismissal?",
+    "options": [
+      "It exposes corruption that may otherwise continue.",
+      "It proves misconduct should be hidden.",
+      "It removes the need for internal controls.",
+      "It automatically guarantees her reinstatement."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2023 P1, Q4.2 — The memo supports reporting and protection of informants.",
+    "topic": "governance",
+    "section": "nov-2023"
+  },
+  {
+    "id": 87,
+    "question": "What is a concern when a board investigates whistle-blowers instead of alleged corruption?",
+    "options": [
+      "It eliminates conflicts of interest.",
+      "Employees may fear reporting future wrongdoing.",
+      "More employees will safely report.",
+      "It proves the payments were lawful."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2023 P1, Q4.3 — The memo identifies intimidation and a loss of accountability.",
+    "topic": "governance",
+    "section": "nov-2023"
+  },
+  {
+    "id": 88,
+    "question": "What risk arises when directors steer procurement to companies linked to them?",
+    "options": [
+      "Automatic increase in profits.",
+      "A stronger independent audit.",
+      "Conflict of interest and company financial loss.",
+      "Guaranteed competitive procurement."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2023 P1, Q4.3 — The memo flags collusion and self-enrichment.",
+    "topic": "governance",
+    "section": "nov-2023"
+  },
+  {
+    "id": 89,
+    "question": "Why is appointing friends to the board by changing policies concerning?",
+    "options": [
+      "It guarantees better governance.",
+      "It removes all legal obligations.",
+      "Shareholders no longer need directors.",
+      "Competence and independent oversight may be compromised."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2023 P1, Q4.3 — The memo flags nepotism and weak checks and balances.",
+    "topic": "governance",
+    "section": "nov-2023"
+  },
+  {
+    "id": 90,
+    "question": "Equipment cost was R852 000. Accumulated depreciation rose from R344 700 to R472 500, with no additions or disposals. What is annual depreciation?",
+    "options": [
+      "R344 700",
+      "R472 500",
+      "R379 500",
+      "R127 800"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2024 P1, Q1.1.1 — R472 500 - R344 700 = R127 800.",
+    "topic": "fixed-assets",
+    "section": "nov-2024"
+  },
+  {
+    "id": 91,
+    "question": "Vehicles cost R1 250 000 at the start; a vehicle costing R240 000 was traded in and a new vehicle costing R320 000 was acquired. What is closing cost?",
+    "options": [
+      "R1 330 000",
+      "R1 170 000",
+      "R1 490 000",
+      "R1 250 000"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2024 P1, Q1.1.2 — R1 250 000 - R240 000 + R320 000 = R1 330 000.",
+    "topic": "fixed-assets",
+    "section": "nov-2024"
+  },
+  {
+    "id": 92,
+    "question": "A R320 000 vehicle was used for six months at 20% annual depreciation. What is its depreciation?",
+    "options": [
+      "R26 667",
+      "R32 000",
+      "R64 000",
+      "R16 000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2024 P1, Q1.1.3 — R320 000 x 20% x 6/12 = R32 000.",
+    "topic": "fixed-assets",
+    "section": "nov-2024"
+  },
+  {
+    "id": 93,
+    "question": "Depreciation on the new, traded-in and remaining vehicles is R32 000, R16 640 and R132 720 respectively. What is total vehicle depreciation?",
+    "options": [
+      "R165 360",
+      "R197 360",
+      "R181 360",
+      "R148 720"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2024 P1, Q1.1.3 — Add all three amounts: R181 360.",
+    "topic": "fixed-assets",
+    "section": "nov-2024"
+  },
+  {
+    "id": 94,
+    "question": "A traded-in vehicle cost R240 000, had accumulated depreciation of R90 240 and fetched R153 660. What was the disposal result?",
+    "options": [
+      "R3 900 loss",
+      "R149 760 profit",
+      "R63 420 profit",
+      "R3 900 profit"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2024 P1, Q1.1.4 — Carrying amount R149 760; proceeds exceed it by R3 900.",
+    "topic": "fixed-assets",
+    "section": "nov-2024"
+  },
+  {
+    "id": 95,
+    "question": "What is adjusted sales when cost of sales is R4 780 900, normal mark-up is 60%, but R115 000 of that cost was sold at a 40% mark-up?",
+    "options": [
+      "R7 626 440",
+      "R7 649 440",
+      "R7 465 440",
+      "R7 787 440"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2024 P1, Q1.2 — R4 780 900 x 1.6 - R115 000 x 0.2 = R7 626 440.",
+    "topic": "income-statement",
+    "section": "nov-2024"
+  },
+  {
+    "id": 96,
+    "question": "Adjusted sales are R7 626 440 and cost of sales is R4 780 900. What is gross profit?",
+    "options": [
+      "R1 376 200",
+      "R2 845 540",
+      "R2 868 540",
+      "R4 747 540"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2024 P1, Q1.2 — Subtract cost of sales from sales.",
+    "topic": "income-statement",
+    "section": "nov-2024"
+  },
+  {
+    "id": 97,
+    "question": "Book trading stock is R654 500 and physical stock is R647 100. How should the R7 400 difference be treated?",
+    "options": [
+      "Deduct from share capital",
+      "Add to rent income",
+      "Operating expense: stock deficit",
+      "Other income: stock surplus"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2024 P1, Q1.2 — The memo records a trading stock deficit under operating expenses.",
+    "topic": "income-statement",
+    "section": "nov-2024"
+  },
+  {
+    "id": 98,
+    "question": "Packing material used during the year is R58 700. What amount is shown as an expense?",
+    "options": [
+      "R66 550",
+      "R7 850",
+      "R125 250",
+      "R58 700"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2024 P1, Q1.2 — The memo uses the amount consumed, not the unadjusted balance.",
+    "topic": "income-statement",
+    "section": "nov-2024"
+  },
+  {
+    "id": 99,
+    "question": "Insurance paid R100 800 includes three months prepaid out of 15 months covered. What is this year's expense?",
+    "options": [
+      "R80 640",
+      "R100 800",
+      "R20 160",
+      "R75 600"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2024 P1, Q1.2 — R100 800 x 12/15 = R80 640.",
+    "topic": "income-statement",
+    "section": "nov-2024"
+  },
+  {
+    "id": 100,
+    "question": "After the required adjustment, how much rent income does Ivory Park Ltd recognise in 2024?",
+    "options": [
+      "R147 405",
+      "R136 710",
+      "R158 100",
+      "R21 390"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2024 P1, Q1.2 — The memo deducts R21 390 received in advance from R158 100.",
+    "topic": "income-statement",
+    "section": "nov-2024"
+  },
+  {
+    "id": 101,
+    "question": "The income statement has gross operating income R4 747 540 and operating expenses R3 371 340. Find operating profit.",
+    "options": [
+      "R1 527 400",
+      "R1 378 000",
+      "R1 376 200",
+      "R1 902 000"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2024 P1, Q1.2 — R4 747 540 - R3 371 340 = R1 376 200.",
+    "topic": "income-statement",
+    "section": "nov-2024"
+  },
+  {
+    "id": 102,
+    "question": "Net profit after tax is R992 160, at a 28% tax rate on profit before tax. How much is income tax?",
+    "options": [
+      "R277 805",
+      "R1 378 000",
+      "R462 000",
+      "R385 840"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2024 P1, Q1.2 — R992 160 x 28/72 = R385 840.",
+    "topic": "income-statement",
+    "section": "nov-2024"
+  },
+  {
+    "id": 103,
+    "question": "Eybers Ltd paid total dividends R744 860 including interim dividends of R416 000. What were final dividends?",
+    "options": [
+      "R328 860",
+      "R416 000",
+      "R744 860",
+      "R1 160 860"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2024 P1, Q2.1 — R744 860 - R416 000 = R328 860.",
+    "topic": "shareholding",
+    "section": "nov-2024"
+  },
+  {
+    "id": 104,
+    "question": "Opening retained income R573 720; profit R1 862 150; share repurchase adjustment R64 600; dividends R744 860. What is closing retained income?",
+    "options": [
+      "R1 477 606",
+      "R1 626 410",
+      "R1 691 010",
+      "R2 371 010"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2024 P1, Q2.1 — R573 720 + R1 862 150 - R64 600 - R744 860. Memo also lists an alternative route under 2.1; this stem fixes the profit figure.",
+    "topic": "shareholding",
+    "section": "nov-2024"
+  },
+  {
+    "id": 105,
+    "question": "Taxation paid includes R44 675, R462 000 and R66 650. What cash outflow is reported?",
+    "options": [
+      "R573 325 inflow",
+      "R528 650 outflow",
+      "R573 325 outflow",
+      "R462 000 outflow"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2024 P1, Q2.2 — Add the three components; classify as an outflow.",
+    "topic": "cash-flow",
+    "section": "nov-2024"
+  },
+  {
+    "id": 106,
+    "question": "How much did Eybers Ltd pay in dividends according to the memo cash flow statement?",
+    "options": [
+      "R744 860 outflow",
+      "R620 000 inflow",
+      "R328 860 outflow",
+      "R620 000 outflow"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2024 P1, Q2.2 — R204 000 opening dividends due + R416 000 interim dividends.",
+    "topic": "cash-flow",
+    "section": "nov-2024"
+  },
+  {
+    "id": 107,
+    "question": "Shares repurchased involved R258 400 paid over stated capital and R64 600 from retained income. What was total cash paid?",
+    "options": [
+      "R323 000 outflow",
+      "R258 400 outflow",
+      "R323 000 inflow",
+      "R193 800 outflow"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2024 P1, Q2.2 — R258 400 + R64 600; cash leaves the company.",
+    "topic": "cash-flow",
+    "section": "nov-2024"
+  },
+  {
+    "id": 108,
+    "question": "Opening cash was a R106 680 overdraft; the net cash increase was R296 460. Find closing cash.",
+    "options": [
+      "R296 460 positive",
+      "R189 780 positive",
+      "R403 140 positive",
+      "R189 780 overdraft"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2024 P1, Q2.2 — -R106 680 + R296 460 = R189 780.",
+    "topic": "cash-flow",
+    "section": "nov-2024"
+  },
+  {
+    "id": 109,
+    "question": "Operating expenses were R1 360 950 and sales R8 240 600. What percentage were operating expenses on sales?",
+    "options": [
+      "60.4%",
+      "27.6%",
+      "16.5%",
+      "6.1%"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2024 P1, Q2.3 — R1 360 950 / R8 240 600 x 100; memo accepts 17% rounded.",
+    "topic": "financial-indicators",
+    "section": "nov-2024"
+  },
+  {
+    "id": 110,
+    "question": "Cost of sales was R5 060 000; opening stock R174 000 and closing stock R193 000. What is stock turnover?",
+    "options": [
+      "26.2 times",
+      "29.1 times",
+      "13.8 times",
+      "27.6 times"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2024 P1, Q2.3 — Divide cost of sales by average stock of R183 500.",
+    "topic": "financial-indicators",
+    "section": "nov-2024"
+  },
+  {
+    "id": 111,
+    "question": "Interim dividends R416 000 were paid on 1 600 000 shares. What is the interim dividend per share?",
+    "options": [
+      "26 cents",
+      "16 cents",
+      "42 cents",
+      "R26"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2024 P1, Q2.3 — R416 000 / 1 600 000 = R0.26 = 26 cents.",
+    "topic": "financial-indicators",
+    "section": "nov-2024"
+  },
+  {
+    "id": 112,
+    "question": "Which pair supports the view that Winston Ltd controlled expenses better in 2024?",
+    "options": [
+      "Operating expenses on sales rose 14% to 19%.",
+      "Operating expenses on sales fell 19% to 14%; operating profit on sales rose 12% to 18%.",
+      "Both operating expenses and profit ratios fell.",
+      "Mark-up alone proves expense control."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2024 P1, Q3.1 — Both trends appear in the memo as acceptable evidence.",
+    "topic": "interpretation",
+    "section": "nov-2024"
+  },
+  {
+    "id": 113,
+    "question": "Winston Ltd reduced its dividend pay-out rate from 86% to 60%. What is a memo-supported reason?",
+    "options": [
+      "It must issue more shares immediately.",
+      "It guarantees a higher dividend next year.",
+      "It retains funds for future expansion.",
+      "It has increased the pay-out by 26 percentage points."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2024 P1, Q3.2 — The reduction allows funds to be retained and helps cash flow.",
+    "topic": "interpretation",
+    "section": "nov-2024"
+  },
+  {
+    "id": 114,
+    "question": "EPS rose from 104c to 112c; ROSHE rose from 11% to 20%, above a 7.5% fixed deposit rate. Which assessment matches the memo?",
+    "options": [
+      "EPS fell and returns are below deposit interest.",
+      "Only EPS improved while ROSHE fell.",
+      "No comparison can be made.",
+      "Shareholders should be satisfied with both indicators."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2024 P1, Q3.3 — Both EPS and ROSHE improved; the return exceeds fixed deposit interest.",
+    "topic": "interpretation",
+    "section": "nov-2024"
+  },
+  {
+    "id": 115,
+    "question": "Which two major sources financed Winston Ltd's new fixed assets?",
+    "options": [
+      "Shares issued R2 970 000 and loan increase R3 513 000.",
+      "Loan increase R2 970 000 and shares R3 513 000.",
+      "Asset sales and cash alone.",
+      "Dividends and income tax."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2024 P1, Q3.4 — The memo identifies share issues and a larger loan.",
+    "topic": "shareholding",
+    "section": "nov-2024"
+  },
+  {
+    "id": 116,
+    "question": "Winston Ltd's debt/equity ratio fell from 0.5:1 to 0.2:1. What does this suggest?",
+    "options": [
+      "Lower share capital.",
+      "Lower financial risk.",
+      "Higher gearing and risk.",
+      "Higher dividend pay-out."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2024 P1, Q3.4 — The memo treats the lower debt/equity ratio as lower risk.",
+    "topic": "shareholding",
+    "section": "nov-2024"
+  },
+  {
+    "id": 117,
+    "question": "ROTCE rose to 24% while the loan interest rate was 12%. What does this indicate?",
+    "options": [
+      "Insolvency.",
+      "A 24% dividend yield.",
+      "Positive gearing.",
+      "Negative gearing."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2024 P1, Q3.4 — The return on capital employed exceeds borrowing cost.",
+    "topic": "shareholding",
+    "section": "nov-2024"
+  },
+  {
+    "id": 118,
+    "question": "Grant held 1 620 000 shares and subscribed for 10 new shares for every 50 held. How many did he buy?",
+    "options": [
+      "32 400 shares",
+      "600 000 shares",
+      "1 944 000 shares",
+      "324 000 shares"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2024 P1, Q3.5 — 1 620 000 / 50 x 10 = 324 000.",
+    "topic": "shareholding",
+    "section": "nov-2024"
+  },
+  {
+    "id": 119,
+    "question": "Grant then held 1 944 000 of 3 600 000 issued shares. What was his holding?",
+    "options": [
+      "54%",
+      "46%",
+      "60%",
+      "45%"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2024 P1, Q3.5 — 1 944 000 / 3 600 000 x 100 = 54%.",
+    "topic": "shareholding",
+    "section": "nov-2024"
+  },
+  {
+    "id": 120,
+    "question": "Grant acquired 324 000 new shares at R4.95 each. What did he pay?",
+    "options": [
+      "R1 944 000",
+      "R1 603 800",
+      "R1 366 200",
+      "R2 970 000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2024 P1, Q3.5 — 324 000 x R4.95 = R1 603 800.",
+    "topic": "shareholding",
+    "section": "nov-2024"
+  },
+  {
+    "id": 121,
+    "question": "Grant proposes a repurchase price of R12 per share while market value is R9.50. Why might directors object?",
+    "options": [
+      "It matches market value.",
+      "It is below the net asset value of R5.64.",
+      "It exceeds market value by R2.50 per share.",
+      "It is R2.50 below market value."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2024 P1, Q3.5 — The memo warns of overpayment and potential self-enrichment.",
+    "topic": "governance",
+    "section": "nov-2024"
+  },
+  {
+    "id": 122,
+    "question": "Which pair best describes characteristics expected of a good CEO?",
+    "options": [
+      "Concealment and favouritism.",
+      "Ignoring stakeholders and avoiding decisions.",
+      "Personal enrichment and opaque reporting.",
+      "Integrity and clear communication."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2024 P1, Q3.6 — Both characteristics are accepted by the memo.",
+    "topic": "governance",
+    "section": "nov-2024"
+  },
+  {
+    "id": 123,
+    "question": "A current ratio rises from 1.6:1 to 2.5:1. What conclusion does the memo support?",
+    "options": [
+      "The ability to pay short-term debts strengthened.",
+      "Liquidity necessarily worsened.",
+      "The company has no current liabilities.",
+      "The return on equity must fall."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2024 P1, Q3.6 — The current ratio is one memo-supported sign of stronger management.",
+    "topic": "interpretation",
+    "section": "nov-2024"
+  },
+  {
+    "id": 124,
+    "question": "What is an independent external auditor's role?",
+    "options": [
+      "Guarantee future profits.",
+      "Give an unbiased opinion on fair presentation of financial statements.",
+      "Set the company's dividend policy.",
+      "Prepare every source document for management."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2024 P1, Q4.1 — The opinion protects shareholders and other users.",
+    "topic": "governance",
+    "section": "nov-2024"
+  },
+  {
+    "id": 125,
+    "question": "An audit report says the statements present fairly in all material respects and audit evidence is sufficient. What opinion is this?",
+    "options": [
+      "Disclaimer of opinion",
+      "Adverse opinion",
+      "Unqualified opinion",
+      "Qualified opinion"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2024 P1, Q4.2 — The 2024 memo explicitly identifies an unqualified report.",
+    "topic": "governance",
+    "section": "nov-2024"
+  },
+  {
+    "id": 126,
+    "question": "Which combination provides relevant evidence for verifying fixed assets?",
+    "options": [
+      "Review advertising and dividend vouchers only.",
+      "Ask directors without checking evidence.",
+      "Compare only sales with cost of sales.",
+      "Inspect physical assets and reconcile invoices with the fixed asset register."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2024 P1, Q4.3 — Physical existence and source documents are accepted audit checks.",
+    "topic": "governance",
+    "section": "nov-2024"
+  },
+  {
+    "id": 127,
+    "question": "What is a likely implication of an unqualified report for shareholders?",
+    "options": [
+      "Greater confidence in their investment.",
+      "Proof that no business risk exists.",
+      "Automatic liquidation.",
+      "Mandatory sale of their shares."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2024 P1, Q4.4 — The memo says shareholders can feel more confident and may invest further.",
+    "topic": "governance",
+    "section": "nov-2024"
+  },
+  {
+    "id": 128,
+    "question": "What may happen if an auditor deliberately issues a false report under directors' influence?",
+    "options": [
+      "Automatic unqualified reports in future.",
+      "Loss of professional licence or disciplinary action.",
+      "Automatic promotion.",
+      "Guaranteed immunity from claims."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2024 P1, Q4.5 — The memo lists deregistration, disciplinary action, legal and reputation consequences.",
+    "topic": "governance",
+    "section": "nov-2024"
+  },
+  {
+    "id": 129,
+    "question": "The memo has goods available costing R1 660 000 for 5 000 shirts and 820 shirts remaining. What is closing value?",
+    "options": [
+      "R285 500",
+      "R1 660 000",
+      "R272 240",
+      "R332 000"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2025 P1, Q1.1 — Average unit cost R332; R332 x 820 = R272 240.",
+    "topic": "stock-valuation",
+    "section": "nov-2025"
+  },
+  {
+    "id": 130,
+    "question": "Opening shares were 2 150 000; 750 000 were issued and 150 000 repurchased. What is closing issued shares?",
+    "options": [
+      "3 050 000",
+      "2 900 000",
+      "2 150 000",
+      "2 750 000"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2025 P1, Q1.2 — 2 150 000 + 750 000 - 150 000 = 2 750 000.",
+    "topic": "shareholding",
+    "section": "nov-2025"
+  },
+  {
+    "id": 131,
+    "question": "Violet Ltd repurchased 150 000 shares at an average issue price of R6.50. What share-capital reduction appears in the note?",
+    "options": [
+      "R975 000",
+      "R1 710 000",
+      "R750 000",
+      "R6 500 000"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2025 P1, Q1.2 — 150 000 x R6.50 = R975 000; the memo rejects R1 710 000 here.",
+    "topic": "shareholding",
+    "section": "nov-2025"
+  },
+  {
+    "id": 132,
+    "question": "Ordinary share capital opened at R11 395 000, increased by R7 455 000 and fell by R975 000. What is closing balance?",
+    "options": [
+      "R11 395 000",
+      "R17 875 000",
+      "R18 850 000",
+      "R16 900 000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2025 P1, Q1.2 — Add the issue proceeds and deduct the share-capital reduction.",
+    "topic": "shareholding",
+    "section": "nov-2025"
+  },
+  {
+    "id": 133,
+    "question": "Trading stock initially R4 598 000 must be adjusted by a R13 260 deficit. What inventory value appears in the statement?",
+    "options": [
+      "R4 598 000",
+      "R4 325 760",
+      "R4 584 740",
+      "R4 611 260"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2025 P1, Q1.3 — R4 598 000 - R13 260 = R4 584 740.",
+    "topic": "financial-position",
+    "section": "nov-2025"
+  },
+  {
+    "id": 134,
+    "question": "R320 000 is 40% of a fixed deposit. What is its full value?",
+    "options": [
+      "R480 000",
+      "R128 000",
+      "R1 280 000",
+      "R800 000"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2025 P1, Q1.3 — R320 000 / 0.4 = R800 000; memo reports R480 000 separately as the longer-term portion.",
+    "topic": "financial-position",
+    "section": "nov-2025"
+  },
+  {
+    "id": 135,
+    "question": "Shareholders' equity is R23 147 500 and ordinary share capital R17 875 000. What is retained income?",
+    "options": [
+      "R5 272 500",
+      "R4 805 000",
+      "R7 140 120",
+      "R41 022 500"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2025 P1, Q1.3 — Equity less ordinary share capital = R5 272 500.",
+    "topic": "financial-position",
+    "section": "nov-2025"
+  },
+  {
+    "id": 136,
+    "question": "A R3 200 000 mortgage loan increases by R290 000 and R540 000 is transferred to current liabilities. What is non-current loan?",
+    "options": [
+      "R3 200 000",
+      "R2 950 000",
+      "R3 490 000",
+      "R2 660 000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2025 P1, Q1.3 — R3 200 000 + R290 000 - R540 000 = R2 950 000.",
+    "topic": "financial-position",
+    "section": "nov-2025"
+  },
+  {
+    "id": 137,
+    "question": "Current assets total R5 798 000 and the current ratio is 1.3:1. What are current liabilities?",
+    "options": [
+      "R1 338 000",
+      "R5 798 000",
+      "R4 460 000",
+      "R7 537 400"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2025 P1, Q1.3 — R5 798 000 / 1.3 = R4 460 000.",
+    "topic": "financial-position",
+    "section": "nov-2025"
+  },
+  {
+    "id": 138,
+    "question": "2 750 000 issued shares have a final dividend of 90 cents per share. What is payable to shareholders?",
+    "options": [
+      "R247 500",
+      "R2 750 000",
+      "R3 055 556",
+      "R2 475 000"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2025 P1, Q1.3 — 2 750 000 x R0.90 = R2 475 000.",
+    "topic": "financial-position",
+    "section": "nov-2025"
+  },
+  {
+    "id": 139,
+    "question": "Receivables rose from R1 303 500 to R3 167 000. What is the cash-flow effect?",
+    "options": [
+      "R1 863 500 outflow",
+      "R1 863 500 inflow",
+      "R4 470 500 outflow",
+      "R1 303 500 inflow"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2025 P1, Q2.1 — An increase in receivables absorbs cash.",
+    "topic": "cash-flow",
+    "section": "nov-2025"
+  },
+  {
+    "id": 140,
+    "question": "Adjusted payables rose from R1 323 500 to R1 464 600. What is the cash-flow effect?",
+    "options": [
+      "R1 323 500 outflow",
+      "R141 100 inflow",
+      "R141 100 outflow",
+      "R2 788 100 inflow"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2025 P1, Q2.1 — An increase in payables preserves cash.",
+    "topic": "cash-flow",
+    "section": "nov-2025"
+  },
+  {
+    "id": 141,
+    "question": "Taxation paid is calculated as R201 600 - R32 000 - R15 300. Which cash-flow amount is reported?",
+    "options": [
+      "R248 900 outflow",
+      "R201 600 outflow",
+      "R154 300 outflow",
+      "R154 300 inflow"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2025 P1, Q2.2 — Subtract the adjustments and classify as an outflow.",
+    "topic": "cash-flow",
+    "section": "nov-2025"
+  },
+  {
+    "id": 142,
+    "question": "Fixed assets rose in cost from R2 520 000 to R2 900 000. According to the memo, what was cash spent on purchases?",
+    "options": [
+      "R380 000 inflow",
+      "R5 420 000 outflow",
+      "R2 900 000 outflow",
+      "R380 000 outflow"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2025 P1, Q2.2 — R2 900 000 - R2 520 000 = R380 000 outflow.",
+    "topic": "cash-flow",
+    "section": "nov-2025"
+  },
+  {
+    "id": 143,
+    "question": "An asset sold for R16 000 had R2 750 depreciation adjustment. What is the cash proceeds in the memo?",
+    "options": [
+      "R13 250 inflow",
+      "R18 750 inflow",
+      "R13 250 outflow",
+      "R16 000 inflow"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2025 P1, Q2.2 — The memo calculates R16 000 - R2 750 = R13 250.",
+    "topic": "cash-flow",
+    "section": "nov-2025"
+  },
+  {
+    "id": 144,
+    "question": "50 000 shares were sold at R20 each. What cash flow arises?",
+    "options": [
+      "R400 000 inflow",
+      "R1 000 000 inflow",
+      "R1 000 000 outflow",
+      "R2 500 000 inflow"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2025 P1, Q2.2 — 50 000 x R20 = R1 000 000 inflow.",
+    "topic": "cash-flow",
+    "section": "nov-2025"
+  },
+  {
+    "id": 145,
+    "question": "2 000 shares were repurchased at R15.40 each. What is the cash-flow amount?",
+    "options": [
+      "R22 000 outflow",
+      "R8 800 outflow",
+      "R30 800 outflow",
+      "R30 800 inflow"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2025 P1, Q2.2 — 2 000 x R15.40 = R30 800 outflow.",
+    "topic": "cash-flow",
+    "section": "nov-2025"
+  },
+  {
+    "id": 146,
+    "question": "The memo shows net cash change of R1 172 000 outflow and opening cash R415 000. What is closing position?",
+    "options": [
+      "R757 000 positive",
+      "R1 587 000 positive",
+      "R415 000 overdraft",
+      "R757 000 overdraft"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2025 P1, Q2.2 — R415 000 - R1 172 000 = -R757 000.",
+    "topic": "cash-flow",
+    "section": "nov-2025"
+  },
+  {
+    "id": 147,
+    "question": "Equity was R7 140 120 and shares in issue 498 000. What is the approximate net asset value per share?",
+    "options": [
+      "1 433.8 cents",
+      "143.38 cents",
+      "498 cents",
+      "7 140.12 cents"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2025 P1, Q2.3 — R7 140 120 / 498 000 x 100 = 1 433.8 cents.",
+    "topic": "financial-indicators",
+    "section": "nov-2025"
+  },
+  {
+    "id": 148,
+    "question": "Quick assets R3 185 000 and current liabilities R2 384 380. What is the acid-test ratio?",
+    "options": [
+      "1:1.3",
+      "1.3:1",
+      "0.75:1",
+      "2.3:1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2025 P1, Q2.3 — R3 185 000 / R2 384 380 is approximately 1.34:1; memo accepts 1.3:1.",
+    "topic": "financial-indicators",
+    "section": "nov-2025"
+  },
+  {
+    "id": 149,
+    "question": "Dividends were R219 480 and earnings attributable were R518 400. What is the dividend pay-out rate?",
+    "options": [
+      "57.7%",
+      "0.42%",
+      "42.3%",
+      "23.7%"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2025 P1, Q2.3 — R219 480 / R518 400 x 100 = 42.3%.",
+    "topic": "financial-indicators",
+    "section": "nov-2025"
+  },
+  {
+    "id": 150,
+    "question": "Why should Mustang Ltd's directors worry about cash resources?",
+    "options": [
+      "Cash increased by R1 172 000.",
+      "Cash stayed at R415 000.",
+      "The closing cash balance was R757 000 positive.",
+      "Cash moved from R415 000 positive to a R757 000 overdraft."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2025 P1, Q2.4 — The memo highlights this R1 172 000 deterioration.",
+    "topic": "cash-flow",
+    "section": "nov-2025"
+  },
+  {
+    "id": 151,
+    "question": "Which standards set guidelines for consistent financial statements?",
+    "options": [
+      "International Financial Reporting Standards (IFRS)",
+      "CIPC",
+      "The internal auditor",
+      "The CEO"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2025 P1, Q3.1.1 — The memo identifies IFRS.",
+    "topic": "governance",
+    "section": "nov-2025"
+  },
+  {
+    "id": 152,
+    "question": "What is an elected board member responsible for company policy and management called?",
+    "options": [
+      "External auditor",
+      "Director",
+      "Internal auditor",
+      "Company registrar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2025 P1, Q3.1.2 — The memo identifies a director.",
+    "topic": "governance",
+    "section": "nov-2025"
+  },
+  {
+    "id": 153,
+    "question": "Which body maintains records and control of new and existing companies?",
+    "options": [
+      "The internal auditor",
+      "The financial manager",
+      "Companies and Intellectual Properties Commission (CIPC)",
+      "IFRS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2025 P1, Q3.1.3 — The memo identifies CIPC.",
+    "topic": "governance",
+    "section": "nov-2025"
+  },
+  {
+    "id": 154,
+    "question": "Which trend supports Shorts Ltd's pricing policy?",
+    "options": [
+      "Mark-up rose 50% to 65% while sales fell.",
+      "Sales remained R48m.",
+      "Net profit margin fell 26.4% to 22%.",
+      "Mark-up fell 65% to 50% while sales rose R48m to R77m."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2025 P1, Q3.2.1 — The memo accepts mark-up, sales and profit margin trends.",
+    "topic": "interpretation",
+    "section": "nov-2025"
+  },
+  {
+    "id": 155,
+    "question": "Which trends support an improved credit policy at Shorts Ltd?",
+    "options": [
+      "Debtor days fell 42 to 31; creditor days rose 71 to 90.",
+      "Debtor days rose 31 to 42; creditor days fell.",
+      "Both debtor and creditor days were unchanged.",
+      "Only the current ratio changed."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2025 P1, Q3.2.2 — The two periods and directions match the memo.",
+    "topic": "interpretation",
+    "section": "nov-2025"
+  },
+  {
+    "id": 156,
+    "question": "After the repurchase, Lewis held 713 300 of 1 383 250 shares. What was his percentage?",
+    "options": [
+      "60%",
+      "51.6%",
+      "40%",
+      "48.4%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2025 P1, Q3.2.3 — 713 300 / 1 383 250 x 100 is about 51.6%.",
+    "topic": "shareholding",
+    "section": "nov-2025"
+  },
+  {
+    "id": 157,
+    "question": "Why did the internal auditor question the CFO influencing a share repurchase?",
+    "options": [
+      "The repurchase required no company cash.",
+      "The CFO had no potential conflict.",
+      "The CFO gained a majority and could benefit personally.",
+      "It automatically improved board independence."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2025 P1, Q3.2.3 — The memo warns of personal gain and weakened board independence.",
+    "topic": "governance",
+    "section": "nov-2025"
+  },
+  {
+    "id": 158,
+    "question": "400 000 shares were repurchased at R3.00 each versus a market price of R2.56. How much extra did the company pay?",
+    "options": [
+      "R44 000",
+      "R1 024 000",
+      "R224 000",
+      "R176 000"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2025 P1, Q3.2.3 — 400 000 x (R3.00 - R2.56) = R176 000.",
+    "topic": "shareholding",
+    "section": "nov-2025"
+  },
+  {
+    "id": 159,
+    "question": "Which return comparison matches the memo?",
+    "options": [
+      "Shorts ROSHE fell 14.7% to 6%; Lynn rose 14.5% to 16.1%.",
+      "Both companies rose above 20%.",
+      "Shorts rose 6% to 14.7%; Lynn fell.",
+      "Both returns stayed unchanged."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2025 P1, Q3.3.1 — The two ROSHE trends are in the memo.",
+    "topic": "interpretation",
+    "section": "nov-2025"
+  },
+  {
+    "id": 160,
+    "question": "Why did the memo favour Lynn Ltd's dividend policy?",
+    "options": [
+      "Neither company declared dividends.",
+      "Lynn paid out 53.9% and retained 46.1% of earnings.",
+      "Shorts retained all earnings at a 124.6% pay-out.",
+      "Lynn paid 124.6% of earnings."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2025 P1, Q3.3.1 — Lynn retained earnings for possible expansion; Shorts paid out 124.6%.",
+    "topic": "shareholding",
+    "section": "nov-2025"
+  },
+  {
+    "id": 161,
+    "question": "Which statement matches the two companies' 2025 NAV and market price?",
+    "options": [
+      "Both market prices equal NAV.",
+      "Both market prices are below NAV.",
+      "Shorts: NAV 270c > price 256c; Lynn: price 976c > NAV 958c.",
+      "Shorts: price 270c > NAV 256c; Lynn: NAV 976c > price 958c."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2025 P1, Q3.3.2 — Memo calls Shorts undervalued by 14c and Lynn above NAV by 18c.",
+    "topic": "shareholding",
+    "section": "nov-2025"
+  },
+  {
+    "id": 162,
+    "question": "Why did Lynn Ltd's increased borrowing appear beneficial?",
+    "options": [
+      "ROTCE fell below the loan rate.",
+      "The debt/equity ratio alone guarantees profit.",
+      "Borrowing removed all liabilities.",
+      "ROTCE rose to 21.8%, above 12.5% loan interest."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2025 P1, Q3.4 — The memo identifies positive gearing from ROTCE exceeding loan cost.",
+    "topic": "shareholding",
+    "section": "nov-2025"
+  },
+  {
+    "id": 163,
+    "question": "What type of audit report did Lynn Ltd receive, according to the memo?",
+    "options": [
+      "Qualified report",
+      "Unqualified report",
+      "Disclaimer of opinion",
+      "No audit report"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2025 P1, Q3.5 — The memo calls it a qualified report and notes possible reputation damage.",
+    "topic": "governance",
+    "section": "nov-2025"
+  },
+  {
+    "id": 164,
+    "question": "What is a reasonable shareholder response to Lynn Ltd's qualified audit report?",
+    "options": [
+      "Assume every transaction was fraudulent.",
+      "Demand clarification and stronger controls.",
+      "Ignore the findings and increase director bonuses automatically.",
+      "Treat it as proof of an unqualified opinion."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2025 P1, Q3.5 — The memo accepts investigation, clarification and governance action.",
+    "topic": "governance",
+    "section": "nov-2025"
+  },
+  {
+    "id": 165,
+    "question": "Why might environmental donations benefit Shiloh Ltd?",
+    "options": [
+      "They eliminate all taxes.",
+      "They replace the need for accounting records.",
+      "They support community relations and the company's image.",
+      "They guarantee unlimited dividends."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2025 P1, Q4.1 — The memo accepts governance, community and reputation benefits.",
+    "topic": "governance",
+    "section": "nov-2025"
+  },
+  {
+    "id": 166,
+    "question": "Why should employees report unethical conduct?",
+    "options": [
+      "It guarantees every allegation is true.",
+      "It removes the need for an audit.",
+      "It eliminates all business risks.",
+      "It helps uncover problems early and protects a fair workplace."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2025 P1, Q4.2 — The memo lists early detection, accountability and employee safety.",
+    "topic": "governance",
+    "section": "nov-2025"
+  },
+  {
+    "id": 167,
+    "question": "Which action could help prevent future misconduct at Tekko Ltd?",
+    "options": [
+      "Protect whistle-blowers and conduct regular audits.",
+      "Discourage employees from reporting.",
+      "Stop reviewing financial controls.",
+      "Allow managers to punish whistle-blowers."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nov 2025 P1, Q4.2 — Both actions are accepted in the memo.",
+    "topic": "governance",
+    "section": "nov-2025"
+  },
+  {
+    "id": 168,
+    "question": "When is a company insolvent?",
+    "options": [
+      "Its share price rises.",
+      "Its liabilities exceed its assets.",
+      "Its assets exceed its liabilities.",
+      "It declares an interim dividend."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nov 2025 P1, Q4.3 — The memo accepts liabilities greater than assets and equivalent explanations.",
+    "topic": "governance",
+    "section": "nov-2025"
+  },
+  {
+    "id": 169,
+    "question": "What is the direct balance-sheet effect of a cash rights issue with a favourable bank balance?",
+    "options": [
+      "Equity falls; assets stay unchanged.",
+      "Liabilities and equity both fall.",
+      "Assets and equity rise; liabilities remain unchanged.",
+      "Assets fall; liabilities rise."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nov 2025 P1, Q4.4 — The three effects are separately listed in the memo.",
+    "topic": "governance",
+    "section": "nov-2025"
+  },
+  {
+    "id": 170,
+    "question": "Why might existing shareholders subscribe to Piranna Ltd's rights issue?",
+    "options": [
+      "A guaranteed risk-free return.",
+      "A guarantee that liabilities disappear.",
+      "A promise that share price cannot fall.",
+      "Discounted shares and protection of their existing investment."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nov 2025 P1, Q4.5 — Both motives are accepted by the memo.",
+    "topic": "governance",
+    "section": "nov-2025"
+  }
+]
