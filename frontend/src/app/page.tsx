@@ -66,10 +66,14 @@ export default function HomePage() {
             <p className="text-2xl font-bold text-blue-600 tabular-nums">{qs.length}</p>
             <p className="text-xs text-gray-500 mt-1">Questions</p>
           </div>
-          <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 text-center">
+          <Link
+            href="/results"
+            aria-label={`Quiz history: ${history.length} quizzes taken — view all results`}
+            className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 text-center hover:border-blue-300 hover:bg-blue-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+          >
             <p className="text-2xl font-bold text-green-600 tabular-nums">{history.length}</p>
             <p className="text-xs text-gray-500 mt-1">Quizzes Taken</p>
-          </div>
+          </Link>
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 text-center">
             <p className="text-2xl font-bold text-purple-600 tabular-nums">
               {bestScore !== null ? `${bestScore}%` : "—"}

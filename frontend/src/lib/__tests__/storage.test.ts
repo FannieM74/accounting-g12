@@ -38,13 +38,63 @@ describe("bookmarks", () => {
 });
 
 describe("quiz history", () => {
-  it("saves records newest-first and caps at 50", () => {
-    for (let i = 0; i < 55; i++) {
+  it("saves records newest-first and caps at 200", () => {
+    for (let i = 0; i < 210; i++) {
       storage.saveQuizRecord({ date: new Date(2026, 0, 1 + i).toISOString(), score: i, total: 100 });
     }
     const h = storage.getQuizHistory();
-    expect(h).toHaveLength(50);
-    expect(h[0].score).toBe(54);
+    expect(h).toHaveLength(200);
+    expect(h[0].score).toBe(209);
+  });
+
+  it("persists v2 fields (duration, section, daily, question ids)", () => {
+    storage.saveQuizRecord({
+      date: "2026-09-26T10:00:00.000Z",
+      score: 8,
+      total: 10,
+      topic: "governance",
+      section: "king-code",
+      daily: true,
+      durationMs: 95000,
+      questionIds: [1, 2, 3],
+      missedIds: [3],
+    });
+    const [r] = storage.getQuizHistory();
+    expect(r.topic).toBe("governance");
+    expect(r.section).toBe("king-code");
+    expect(r.daily).toBe(true);
+    expect(r.durationMs).toBe(95000);
+    expect(r.questionIds).toEqual([1, 2, 3]);
+    expect(r.missedIds).toEqual([3]);
+  });
+
+  it("migrates legacy v1 records without dropping them", () => {
+    // simulate a pre-upgrade history entry
+    localStorage.setItem(
+      "acct12-history",
+      JSON.stringify([{ date: "2026-01-01T08:00:00.000Z", score: 5, total: 10, topic: "cash-flow" }])
+    );
+    const h = storage.getQuizHistory();
+    expect(h).toHaveLength(1);
+    expect(h[0].score).toBe(5);
+    expect(h[0].topic).toBe("cash-flow");
+    // new save keeps the migrated entry
+    storage.saveQuizRecord({ date: "2026-09-26T09:00:00.000Z", score: 9, total: 10 });
+    const h2 = storage.getQuizHistory();
+    expect(h2).toHaveLength(2);
+    expect(h2[1].score).toBe(5);
+  });
+
+  it("clearQuizHistory empties the history", () => {
+    storage.saveQuizRecord({ date: "2026-09-26T09:00:00.000Z", score: 7, total: 10 });
+    expect(storage.getQuizHistory()).toHaveLength(1);
+    storage.clearQuizHistory();
+    expect(storage.getQuizHistory()).toEqual([]);
+  });
+
+  it("survives corrupt JSON in storage", () => {
+    localStorage.setItem("acct12-history", "{not json");
+    expect(storage.getQuizHistory()).toEqual([]);
   });
 });
 

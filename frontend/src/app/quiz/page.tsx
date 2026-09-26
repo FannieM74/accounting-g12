@@ -21,6 +21,7 @@ function QuizContent() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [phase, setPhase] = useState<"quiz" | "review">("quiz");
+  const [startTime, setStartTime] = useState<number>(0);
   const daily = searchParams.get("daily") === "true";
 
   const mounted = seed !== 0;
@@ -28,6 +29,7 @@ function QuizContent() {
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setSeed(daily ? dateSeed() : Date.now());
+    setStartTime(Date.now());
   }, [daily]);
 
   const questions = useMemo(
@@ -50,6 +52,11 @@ function QuizContent() {
       score,
       total: questions.length,
       topic: topic || undefined,
+      section: section || undefined,
+      daily: daily || undefined,
+      durationMs: startTime ? Date.now() - startTime : undefined,
+      questionIds: questions.map((q) => q.id),
+      missedIds: missed.length > 0 ? missed : undefined,
     });
     setPhase("review");
   };

@@ -57,21 +57,49 @@ export function isBookmarked(id: number): boolean {
 }
 
 // -- Quiz History --
+const HISTORY_CAP = 200;
+
+/** v1 entries only had {date, score, total, topic?} — fill in the v2 shape. */
+function normalizeRecord(r: Partial<QuizRecord>): QuizRecord {
+  return {
+    date: r.date ?? new Date(0).toISOString(),
+    score: typeof r.score === "number" ? r.score : 0,
+    total: typeof r.total === "number" ? r.total : 0,
+    topic: r.topic,
+    section: r.section,
+    daily: r.daily,
+    durationMs: r.durationMs,
+    questionIds: r.questionIds,
+    missedIds: r.missedIds,
+  };
+}
 
 export function saveQuizRecord(record: QuizRecord): void {
-  const history = getQuizHistory();
-  history.unshift(record);
-  localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(0, 50)));
+  try {
+    const history = getQuizHistory();
+    history.unshift(record);
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(0, HISTORY_CAP)));
+  } catch {
+    // quota exceeded or storage unavailable — history is non-critical
+  }
 }
 
 export function getQuizHistory(): QuizRecord[] {
   if (typeof window === "undefined") return [];
   ensureStorageVersion();
   try {
-    return JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]");
+    const raw = JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]");
+    if (!Array.isArray(raw)) return [];
+    return raw.map(normalizeRecord);
   } catch {
     return [];
   }
+}
+
+export function clearQuizHistory(): void {
+  try {
+    localStorage.setItem(HISTORY_KEY, "[]");
+  } catch {}
 }
 
 // -- Missed Questions --
