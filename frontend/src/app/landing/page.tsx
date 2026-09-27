@@ -31,7 +31,10 @@ export default function LandingPage() {
               Accounting P1 Practice
               <span className="bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent"> · Focused · Fast · Proven</span>
             </h1>
-            <p className="mt-3 text-lg text-gray-600 max-w-xl">170 exam-style multiple-choice questions from Nov 2022–2025. Study curated notes, take targeted quizzes, and track dated results to improve faster.</p>
+            <p className="mt-3 text-lg text-gray-600 max-w-xl">
+              170 exam-style MCQs from November 2022–2025. Study curated notes,
+              take targeted quizzes, and track your progress.
+            </p>
 
           </div>
 
@@ -79,7 +82,7 @@ export default function LandingPage() {
 
             <blockquote className="mt-6 p-4 bg-gradient-to-r from-indigo-50 to-blue-50 border-l-4 border-blue-300 rounded-lg">
               <p className="text-sm text-gray-700">"This app helped me focus my revision by topic and improved my Paper 1 score quickly."</p>
-              <footer className="mt-2 text-xs text-gray-500"> Grade 12 learner</footer>
+              <footer className="mt-2 text-xs text-gray-500"> Grade 12 learner</footer>
             </blockquote>
           </div>
 
