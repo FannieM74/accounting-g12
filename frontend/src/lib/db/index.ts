@@ -2,7 +2,7 @@ import { drizzle } from "drizzle-orm/libsql";
 import { createClient } from "@libsql/client";
 import * as schema from "./schema";
 import { mkdirSync } from "fs";
-import { resolve } from "path";
+import { dirname, resolve } from "path";
 
 /**
  * Database handle — lazily initialized (nothing opens until the first query,
@@ -18,15 +18,18 @@ type LibsqlClient = ReturnType<typeof createClient>;
 type DrizzleDb = ReturnType<typeof drizzle<typeof schema>>;
 
 function makeClient(): LibsqlClient {
-  if (!process.env.DATABASE_URL) {
+  const url = process.env.DATABASE_URL || LOCAL_URL;
+  // ensure the parent directory exists for any local-file database
+  if (url.startsWith("file:")) {
+    const abs = resolve(process.cwd(), url.slice("file:".length).replace(/^\/\//, ""));
     try {
-      mkdirSync(resolve(process.cwd(), ".data"), { recursive: true });
+      mkdirSync(dirname(abs), { recursive: true });
     } catch {
       // read-only environment — queries will surface the error themselves
     }
   }
   return createClient({
-    url: process.env.DATABASE_URL || LOCAL_URL,
+    url,
     authToken: process.env.DATABASE_AUTH_TOKEN,
   });
 }
