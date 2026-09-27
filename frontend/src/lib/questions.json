@@ -11,7 +11,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2022 P1, Q1.1 — 9 000 - 7 750 - 1 185 = 65.",
     "topic": "stock-valuation",
-    "section": "nov-2022"
+    "section": "stock-calculations"
   },
   {
     "id": 2,
@@ -25,7 +25,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2022 P1, Q1.1 — R6 579 000 / 9 000 = R731.",
     "topic": "stock-valuation",
-    "section": "nov-2022"
+    "section": "methods"
   },
   {
     "id": 3,
@@ -39,7 +39,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2022 P1, Q1.1 — 65 x R731 = R47 515.",
     "topic": "stock-valuation",
-    "section": "nov-2022"
+    "section": "methods"
   },
   {
     "id": 4,
@@ -53,7 +53,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2022 P1, Q1.2.1 — R170 000 - R25 500 = R144 500 carrying amount; sale at R140 000 creates a R4 500 loss.",
     "topic": "fixed-assets",
-    "section": "nov-2022"
+    "section": "asset-disposal"
   },
   {
     "id": 5,
@@ -67,7 +67,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2022 P1, Q1.2.2 — R328 200 + R25 500 + R4 200.",
     "topic": "fixed-assets",
-    "section": "nov-2022"
+    "section": "asset-disposal"
   },
   {
     "id": 6,
@@ -81,7 +81,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2022 P1, Q1.3.1 — Sales less cost of sales = R3 690 000.",
     "topic": "income-statement",
-    "section": "nov-2022"
+    "section": "gross-net-profit"
   },
   {
     "id": 7,
@@ -95,7 +95,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2022 P1, Q1.3.1 — R183 600 - R24 300.",
     "topic": "income-statement",
-    "section": "nov-2022"
+    "section": "year-end-adjustments"
   },
   {
     "id": 8,
@@ -109,7 +109,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2022 P1, Q1.3.1 — The marking guide shows the decrease in provision as income.",
     "topic": "income-statement",
-    "section": "nov-2022"
+    "section": "year-end-adjustments"
   },
   {
     "id": 9,
@@ -123,7 +123,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2022 P1, Q1.3.1 — R72 500 - R13 500 = R59 000.",
     "topic": "income-statement",
-    "section": "nov-2022"
+    "section": "year-end-adjustments"
   },
   {
     "id": 10,
@@ -137,7 +137,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2022 P1, Q1.3.1 — R3 890 000 - R3 315 000.",
     "topic": "income-statement",
-    "section": "nov-2022"
+    "section": "gross-net-profit"
   },
   {
     "id": 11,
@@ -151,7 +151,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2022 P1, Q1.3.1 — R509 000 - R152 700.",
     "topic": "income-statement",
-    "section": "nov-2022"
+    "section": "gross-net-profit"
   },
   {
     "id": 12,
@@ -165,7 +165,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2022 P1, Q1.3.2 — Subtract ordinary share capital from equity.",
     "topic": "financial-position",
-    "section": "nov-2022"
+    "section": "equity-section"
   },
   {
     "id": 13,
@@ -179,7 +179,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2022 P1, Q1.3.2 — R1 159 000 - R133 925.",
     "topic": "financial-position",
-    "section": "nov-2022"
+    "section": "current-vs-noncurrent"
   },
   {
     "id": 14,
@@ -193,7 +193,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2022 P1, Q1.3.2 — R152 700 - R130 000.",
     "topic": "financial-position",
-    "section": "nov-2022"
+    "section": "current-vs-noncurrent"
   },
   {
     "id": 15,
@@ -207,7 +207,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2022 P1, Q2.1.1 — The original paper and memo identify solvency.",
     "topic": "governance",
-    "section": "nov-2022"
+    "section": "roles-duties"
   },
   {
     "id": 16,
@@ -221,7 +221,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2022 P1, Q2.1.2 — The memo selects profitability.",
     "topic": "governance",
-    "section": "nov-2022"
+    "section": "roles-duties"
   },
   {
     "id": 17,
@@ -235,7 +235,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2022 P1, Q2.1.3 — The memo selects gearing.",
     "topic": "governance",
-    "section": "nov-2022"
+    "section": "roles-duties"
   },
   {
     "id": 18,
@@ -249,7 +249,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2022 P1, Q2.2.1 — 120 000 x R1.40 = R168 000.",
     "topic": "shareholding",
-    "section": "nov-2022"
+    "section": "share-capital"
   },
   {
     "id": 19,
@@ -263,7 +263,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2022 P1, Q2.2.1 — 1 360 000 x R0.12 = R163 200.",
     "topic": "shareholding",
-    "section": "nov-2022"
+    "section": "share-capital"
   },
   {
     "id": 20,
@@ -277,7 +277,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2022 P1, Q2.2.1 — R516 000 + R908 400 - R168 000 - R873 600.",
     "topic": "shareholding",
-    "section": "nov-2022"
+    "section": "retained-income-note"
   },
   {
     "id": 21,
@@ -291,7 +291,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2022 P1, Q2.2.2 — R389 300 - R21 300 - R14 400.",
     "topic": "cash-flow",
-    "section": "nov-2022"
+    "section": "operations-investing-financing"
   },
   {
     "id": 22,
@@ -305,7 +305,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2022 P1, Q2.2.2 — 120 000 x R10.20 = R1 224 000.",
     "topic": "cash-flow",
-    "section": "nov-2022"
+    "section": "operations-investing-financing"
   },
   {
     "id": 23,
@@ -319,7 +319,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2022 P1, Q2.2.2 — R44 700 + R133 000 - R8 000.",
     "topic": "cash-flow",
-    "section": "nov-2022"
+    "section": "net-cash-movement"
   },
   {
     "id": 24,
@@ -333,7 +333,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2022 P1, Q2.2.3 — R2 886 000 / R12 350 800 is approximately 0.2:1.",
     "topic": "financial-indicators",
-    "section": "nov-2022"
+    "section": "core-ratios"
   },
   {
     "id": 25,
@@ -347,7 +347,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2022 P1, Q2.2.3 — R1 679 700 / R14 843 400 x 100 is 11.3%.",
     "topic": "financial-indicators",
-    "section": "nov-2022"
+    "section": "core-ratios"
   },
   {
     "id": 26,
@@ -361,7 +361,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2022 P1, Q2.2.3 — 48c + 12c = 60c.",
     "topic": "financial-indicators",
-    "section": "nov-2022"
+    "section": "dividend-per-share"
   },
   {
     "id": 27,
@@ -375,7 +375,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2022 P1, Q3.1.1 — The original matching item is C.",
     "topic": "governance",
-    "section": "nov-2022"
+    "section": "roles-duties"
   },
   {
     "id": 28,
@@ -389,7 +389,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2022 P1, Q3.1.2 — The original matching item is D.",
     "topic": "governance",
-    "section": "nov-2022"
+    "section": "roles-duties"
   },
   {
     "id": 29,
@@ -403,7 +403,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2022 P1, Q3.1.3 — The original matching item is A.",
     "topic": "governance",
-    "section": "nov-2022"
+    "section": "roles-duties"
   },
   {
     "id": 30,
@@ -417,7 +417,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2022 P1, Q3.2.1 — Both trends are accepted by the memo.",
     "topic": "interpretation",
-    "section": "nov-2022"
+    "section": "trends"
   },
   {
     "id": 31,
@@ -431,7 +431,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2022 P1, Q3.2.2 — A lower payout retains funds.",
     "topic": "shareholding",
-    "section": "nov-2022"
+    "section": "share-capital"
   },
   {
     "id": 32,
@@ -445,7 +445,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2022 P1, Q3.2.2 — 5 000 x R0.70 increase = R3 500.",
     "topic": "shareholding",
-    "section": "nov-2022"
+    "section": "share-capital"
   },
   {
     "id": 33,
@@ -459,7 +459,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2022 P1, Q3.2.3 — The return exceeded the loan rate and debt/equity remained low.",
     "topic": "financial-indicators",
-    "section": "nov-2022"
+    "section": "core-ratios"
   },
   {
     "id": 34,
@@ -473,7 +473,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2022 P1, Q3.2.4 — 375 000 / 1 325 000 x 100 = 28.3%.",
     "topic": "shareholding",
-    "section": "nov-2022"
+    "section": "share-capital"
   },
   {
     "id": 35,
@@ -487,7 +487,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2022 P1, Q3.2.4 — 28.3% + 26.4% = 54.7%, a majority.",
     "topic": "shareholding",
-    "section": "nov-2022"
+    "section": "share-capital"
   },
   {
     "id": 36,
@@ -501,7 +501,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2022 P1, Q3.2.4 — The memo accepts concerns about motives, control and governance.",
     "topic": "governance",
-    "section": "nov-2022"
+    "section": "roles-duties"
   },
   {
     "id": 37,
@@ -515,7 +515,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2022 P1, Q3.2.5 — The memo cites improved earnings per share.",
     "topic": "interpretation",
-    "section": "nov-2022"
+    "section": "trends"
   },
   {
     "id": 38,
@@ -529,7 +529,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2022 P1, Q3.2.5 — The memo identifies a 156c improvement.",
     "topic": "interpretation",
-    "section": "nov-2022"
+    "section": "trends"
   },
   {
     "id": 39,
@@ -543,7 +543,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2022 P1, Q3.2.5 — The memo cites demand for shares.",
     "topic": "interpretation",
-    "section": "nov-2022"
+    "section": "trends"
   },
   {
     "id": 40,
@@ -557,7 +557,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2022 P1, Q4.1 — The memo lists access to investors and capital.",
     "topic": "governance",
-    "section": "nov-2022"
+    "section": "roles-duties"
   },
   {
     "id": 41,
@@ -571,7 +571,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2022 P1, Q4.1 — Reliable information protects the market and its users.",
     "topic": "governance",
-    "section": "nov-2022"
+    "section": "roles-duties"
   },
   {
     "id": 42,
@@ -585,7 +585,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2022 P1, Q4.2 — The 2022 memo draws this distinction.",
     "topic": "governance",
-    "section": "nov-2022"
+    "section": "audit-reports"
   },
   {
     "id": 43,
@@ -599,7 +599,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2022 P1, Q4.3 — The memo raises appointment criteria and background checks.",
     "topic": "governance",
-    "section": "nov-2022"
+    "section": "king-code"
   },
   {
     "id": 44,
@@ -613,7 +613,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2022 P1, Q4.3 — The memo identifies governance and market confidence risks.",
     "topic": "governance",
-    "section": "nov-2022"
+    "section": "audit-reports"
   },
   {
     "id": 45,
@@ -627,7 +627,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2023 P1, Q1.1 — 700 x R2 100 + 309 x R2 020 = R2 094 180.",
     "topic": "stock-valuation",
-    "section": "nov-2023"
+    "section": "methods"
   },
   {
     "id": 46,
@@ -641,7 +641,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2023 P1, Q1.2 — (R21 017 200 + R336 000) / 2.2 = R9 706 000.",
     "topic": "income-statement",
-    "section": "nov-2023"
+    "section": "gross-net-profit"
   },
   {
     "id": 47,
@@ -655,7 +655,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2023 P1, Q1.2 — Subtract cost of sales.",
     "topic": "income-statement",
-    "section": "nov-2023"
+    "section": "gross-net-profit"
   },
   {
     "id": 48,
@@ -669,7 +669,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2023 P1, Q1.2 — R2 125 380 - R2 094 180.",
     "topic": "income-statement",
-    "section": "nov-2023"
+    "section": "gross-net-profit"
   },
   {
     "id": 49,
@@ -683,7 +683,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2023 P1, Q1.2 — Add accrued commission income.",
     "topic": "income-statement",
-    "section": "nov-2023"
+    "section": "year-end-adjustments"
   },
   {
     "id": 50,
@@ -697,7 +697,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2023 P1, Q1.2 — R303 000 - R24 150.",
     "topic": "income-statement",
-    "section": "nov-2023"
+    "section": "year-end-adjustments"
   },
   {
     "id": 51,
@@ -711,7 +711,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2023 P1, Q1.2 — R643 500 - R115 500.",
     "topic": "income-statement",
-    "section": "nov-2023"
+    "section": "year-end-adjustments"
   },
   {
     "id": 52,
@@ -725,7 +725,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2023 P1, Q1.2 — Add the two adjustments.",
     "topic": "income-statement",
-    "section": "nov-2023"
+    "section": "year-end-adjustments"
   },
   {
     "id": 53,
@@ -739,7 +739,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2023 P1, Q1.2 — Subtract income tax.",
     "topic": "income-statement",
-    "section": "nov-2023"
+    "section": "gross-net-profit"
   },
   {
     "id": 54,
@@ -753,7 +753,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2023 P1, Q1.3 — R1 500 000 - R500 000.",
     "topic": "financial-position",
-    "section": "nov-2023"
+    "section": "current-vs-noncurrent"
   },
   {
     "id": 55,
@@ -767,7 +767,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2023 P1, Q1.3 — The memo's trade and other receivables calculation.",
     "topic": "financial-position",
-    "section": "nov-2023"
+    "section": "current-vs-noncurrent"
   },
   {
     "id": 56,
@@ -781,7 +781,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2023 P1, Q1.3 — Add the bank balance and short-term deposit.",
     "topic": "financial-position",
-    "section": "nov-2023"
+    "section": "current-vs-noncurrent"
   },
   {
     "id": 57,
@@ -795,7 +795,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2023 P1, Q1.3 — Equity less ordinary share capital.",
     "topic": "financial-position",
-    "section": "nov-2023"
+    "section": "equity-section"
   },
   {
     "id": 58,
@@ -809,7 +809,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2023 P1, Q1.3 — R1 152 000 - R1 049 000.",
     "topic": "financial-position",
-    "section": "nov-2023"
+    "section": "current-vs-noncurrent"
   },
   {
     "id": 59,
@@ -823,7 +823,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2023 P1, Q2.1 — 1 200 000 + 300 000 - 90 000.",
     "topic": "shareholding",
-    "section": "nov-2023"
+    "section": "share-capital"
   },
   {
     "id": 60,
@@ -837,7 +837,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2023 P1, Q2.1 — R7 200 000 + R2 700 000 - R594 000.",
     "topic": "shareholding",
-    "section": "nov-2023"
+    "section": "share-capital"
   },
   {
     "id": 61,
@@ -851,7 +851,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2023 P1, Q2.2 — R450 000 + R288 000.",
     "topic": "cash-flow",
-    "section": "nov-2023"
+    "section": "operations-investing-financing"
   },
   {
     "id": 62,
@@ -865,7 +865,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2023 P1, Q2.2 — R337 500 - R42 500 - R27 800.",
     "topic": "cash-flow",
-    "section": "nov-2023"
+    "section": "operations-investing-financing"
   },
   {
     "id": 63,
@@ -879,7 +879,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2023 P1, Q2.2 — 90 000 x R7.40 = R666 000.",
     "topic": "cash-flow",
-    "section": "nov-2023"
+    "section": "operations-investing-financing"
   },
   {
     "id": 64,
@@ -893,7 +893,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2023 P1, Q2.2 — R2 700 000 - R666 000 - R155 400.",
     "topic": "cash-flow",
-    "section": "nov-2023"
+    "section": "operations-investing-financing"
   },
   {
     "id": 65,
@@ -907,7 +907,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2023 P1, Q2.3 — R10 200 000 / 1 410 000 x 100 = 723.4c.",
     "topic": "financial-indicators",
-    "section": "nov-2023"
+    "section": "core-ratios"
   },
   {
     "id": 66,
@@ -921,7 +921,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2023 P1, Q2.3 — 50c / 66.2c x 100 = 75.5%; the memo accepts another route using totals, so this stem specifies per-share method.",
     "topic": "financial-indicators",
-    "section": "nov-2023"
+    "section": "dividend-per-share"
   },
   {
     "id": 67,
@@ -935,7 +935,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2023 P1, Q2.3 — R912 500 / R9 092 750 x 100 = 10%.",
     "topic": "financial-indicators",
-    "section": "nov-2023"
+    "section": "core-ratios"
   },
   {
     "id": 68,
@@ -949,7 +949,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2023 P1, Q3.1.1 — 2023 matching question 3.1.1 identifies a director.",
     "topic": "governance",
-    "section": "nov-2023"
+    "section": "king-code"
   },
   {
     "id": 69,
@@ -963,7 +963,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2023 P1, Q3.1.2 — The 2023 matching question 3.1.2 gives this meaning.",
     "topic": "governance",
-    "section": "nov-2023"
+    "section": "audit-reports"
   },
   {
     "id": 70,
@@ -977,7 +977,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2023 P1, Q3.1.3 — The 2023 matching question 3.1.3 identifies a shareholder.",
     "topic": "governance",
-    "section": "nov-2023"
+    "section": "roles-duties"
   },
   {
     "id": 71,
@@ -991,7 +991,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2023 P1, Q3.2 — The memo names Guardian.",
     "topic": "financial-indicators",
-    "section": "nov-2023"
+    "section": "core-ratios"
   },
   {
     "id": 72,
@@ -1005,7 +1005,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2023 P1, Q3.2 — Both indicators improved in the memo.",
     "topic": "financial-indicators",
-    "section": "nov-2023"
+    "section": "core-ratios"
   },
   {
     "id": 73,
@@ -1019,7 +1019,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2023 P1, Q3.3 — Both changes are cited in the memo.",
     "topic": "financial-indicators",
-    "section": "nov-2023"
+    "section": "core-ratios"
   },
   {
     "id": 74,
@@ -1033,7 +1033,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2023 P1, Q3.3 — The company earns more on capital employed than the loan costs.",
     "topic": "financial-indicators",
-    "section": "nov-2023"
+    "section": "core-ratios"
   },
   {
     "id": 75,
@@ -1047,7 +1047,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2023 P1, Q3.4 — The memo identifies a payout above earnings and depleted reserves.",
     "topic": "shareholding",
-    "section": "nov-2023"
+    "section": "share-capital"
   },
   {
     "id": 76,
@@ -1061,7 +1061,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2023 P1, Q3.4 — Returns fell, with ROSHE below a 9% alternative investment.",
     "topic": "interpretation",
-    "section": "nov-2023"
+    "section": "trends"
   },
   {
     "id": 77,
@@ -1075,7 +1075,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2023 P1, Q3.5 — The percentage fell by 15 points.",
     "topic": "shareholding",
-    "section": "nov-2023"
+    "section": "share-capital"
   },
   {
     "id": 78,
@@ -1089,7 +1089,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2023 P1, Q3.5 — Both cash sources are in the memo.",
     "topic": "cash-flow",
-    "section": "nov-2023"
+    "section": "cash-management"
   },
   {
     "id": 79,
@@ -1103,7 +1103,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2023 P1, Q3.5 — The memo raises affordability, ethics and liquidity concerns.",
     "topic": "governance",
-    "section": "nov-2023"
+    "section": "roles-duties"
   },
   {
     "id": 80,
@@ -1117,7 +1117,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2023 P1, Q3.6 — The memo expects accounting expertise and protection of investment.",
     "topic": "governance",
-    "section": "nov-2023"
+    "section": "roles-duties"
   },
   {
     "id": 81,
@@ -1131,7 +1131,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2023 P1, Q3.6 — The memo links market price above NAV to confidence.",
     "topic": "shareholding",
-    "section": "nov-2023"
+    "section": "listings"
   },
   {
     "id": 82,
@@ -1145,7 +1145,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2023 P1, Q3.6 — The memo notes a severe market price decline below NAV.",
     "topic": "shareholding",
-    "section": "nov-2023"
+    "section": "listings"
   },
   {
     "id": 83,
@@ -1159,7 +1159,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2023 P1, Q3.6 — The memo raises his record, conflict and risk.",
     "topic": "governance",
-    "section": "nov-2023"
+    "section": "roles-duties"
   },
   {
     "id": 84,
@@ -1173,7 +1173,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2023 P1, Q4.1 — The memo accepts internal control oversight.",
     "topic": "governance",
-    "section": "nov-2023"
+    "section": "roles-duties"
   },
   {
     "id": 85,
@@ -1187,7 +1187,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2023 P1, Q4.1 — The memo cites legal requirements and public investor protection.",
     "topic": "governance",
-    "section": "nov-2023"
+    "section": "roles-duties"
   },
   {
     "id": 86,
@@ -1201,7 +1201,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2023 P1, Q4.2 — The memo supports reporting and protection of informants.",
     "topic": "governance",
-    "section": "nov-2023"
+    "section": "roles-duties"
   },
   {
     "id": 87,
@@ -1215,7 +1215,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2023 P1, Q4.3 — The memo identifies intimidation and a loss of accountability.",
     "topic": "governance",
-    "section": "nov-2023"
+    "section": "king-code"
   },
   {
     "id": 88,
@@ -1229,7 +1229,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2023 P1, Q4.3 — The memo flags collusion and self-enrichment.",
     "topic": "governance",
-    "section": "nov-2023"
+    "section": "king-code"
   },
   {
     "id": 89,
@@ -1243,7 +1243,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2023 P1, Q4.3 — The memo flags nepotism and weak checks and balances.",
     "topic": "governance",
-    "section": "nov-2023"
+    "section": "king-code"
   },
   {
     "id": 90,
@@ -1257,7 +1257,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2024 P1, Q1.1.1 — R472 500 - R344 700 = R127 800.",
     "topic": "fixed-assets",
-    "section": "nov-2024"
+    "section": "asset-disposal"
   },
   {
     "id": 91,
@@ -1271,7 +1271,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2024 P1, Q1.1.2 — R1 250 000 - R240 000 + R320 000 = R1 330 000.",
     "topic": "fixed-assets",
-    "section": "nov-2024"
+    "section": "asset-disposal"
   },
   {
     "id": 92,
@@ -1285,7 +1285,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2024 P1, Q1.1.3 — R320 000 x 20% x 6/12 = R32 000.",
     "topic": "fixed-assets",
-    "section": "nov-2024"
+    "section": "depreciation-adjustments"
   },
   {
     "id": 93,
@@ -1299,7 +1299,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2024 P1, Q1.1.3 — Add all three amounts: R181 360.",
     "topic": "fixed-assets",
-    "section": "nov-2024"
+    "section": "asset-disposal"
   },
   {
     "id": 94,
@@ -1313,7 +1313,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2024 P1, Q1.1.4 — Carrying amount R149 760; proceeds exceed it by R3 900.",
     "topic": "fixed-assets",
-    "section": "nov-2024"
+    "section": "asset-disposal"
   },
   {
     "id": 95,
@@ -1327,7 +1327,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2024 P1, Q1.2 — R4 780 900 x 1.6 - R115 000 x 0.2 = R7 626 440.",
     "topic": "income-statement",
-    "section": "nov-2024"
+    "section": "year-end-adjustments"
   },
   {
     "id": 96,
@@ -1341,7 +1341,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2024 P1, Q1.2 — Subtract cost of sales from sales.",
     "topic": "income-statement",
-    "section": "nov-2024"
+    "section": "year-end-adjustments"
   },
   {
     "id": 97,
@@ -1355,7 +1355,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2024 P1, Q1.2 — The memo records a trading stock deficit under operating expenses.",
     "topic": "income-statement",
-    "section": "nov-2024"
+    "section": "gross-net-profit"
   },
   {
     "id": 98,
@@ -1369,7 +1369,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2024 P1, Q1.2 — The memo uses the amount consumed, not the unadjusted balance.",
     "topic": "income-statement",
-    "section": "nov-2024"
+    "section": "year-end-adjustments"
   },
   {
     "id": 99,
@@ -1383,7 +1383,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2024 P1, Q1.2 — R100 800 x 12/15 = R80 640.",
     "topic": "income-statement",
-    "section": "nov-2024"
+    "section": "year-end-adjustments"
   },
   {
     "id": 100,
@@ -1397,7 +1397,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2024 P1, Q1.2 — The memo deducts R21 390 received in advance from R158 100.",
     "topic": "income-statement",
-    "section": "nov-2024"
+    "section": "year-end-adjustments"
   },
   {
     "id": 101,
@@ -1411,7 +1411,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2024 P1, Q1.2 — R4 747 540 - R3 371 340 = R1 376 200.",
     "topic": "income-statement",
-    "section": "nov-2024"
+    "section": "gross-net-profit"
   },
   {
     "id": 102,
@@ -1425,7 +1425,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2024 P1, Q1.2 — R992 160 x 28/72 = R385 840.",
     "topic": "income-statement",
-    "section": "nov-2024"
+    "section": "gross-net-profit"
   },
   {
     "id": 103,
@@ -1439,7 +1439,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2024 P1, Q2.1 — R744 860 - R416 000 = R328 860.",
     "topic": "shareholding",
-    "section": "nov-2024"
+    "section": "share-capital"
   },
   {
     "id": 104,
@@ -1453,7 +1453,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2024 P1, Q2.1 — R573 720 + R1 862 150 - R64 600 - R744 860. Memo also lists an alternative route under 2.1; this stem fixes the profit figure.",
     "topic": "shareholding",
-    "section": "nov-2024"
+    "section": "retained-income-note"
   },
   {
     "id": 105,
@@ -1467,7 +1467,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2024 P1, Q2.2 — Add the three components; classify as an outflow.",
     "topic": "cash-flow",
-    "section": "nov-2024"
+    "section": "operations-investing-financing"
   },
   {
     "id": 106,
@@ -1481,7 +1481,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2024 P1, Q2.2 — R204 000 opening dividends due + R416 000 interim dividends.",
     "topic": "cash-flow",
-    "section": "nov-2024"
+    "section": "cash-management"
   },
   {
     "id": 107,
@@ -1495,7 +1495,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2024 P1, Q2.2 — R258 400 + R64 600; cash leaves the company.",
     "topic": "cash-flow",
-    "section": "nov-2024"
+    "section": "operations-investing-financing"
   },
   {
     "id": 108,
@@ -1509,7 +1509,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2024 P1, Q2.2 — -R106 680 + R296 460 = R189 780.",
     "topic": "cash-flow",
-    "section": "nov-2024"
+    "section": "net-cash-movement"
   },
   {
     "id": 109,
@@ -1523,7 +1523,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2024 P1, Q2.3 — R1 360 950 / R8 240 600 x 100; memo accepts 17% rounded.",
     "topic": "financial-indicators",
-    "section": "nov-2024"
+    "section": "core-ratios"
   },
   {
     "id": 110,
@@ -1537,7 +1537,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2024 P1, Q2.3 — Divide cost of sales by average stock of R183 500.",
     "topic": "financial-indicators",
-    "section": "nov-2024"
+    "section": "core-ratios"
   },
   {
     "id": 111,
@@ -1551,7 +1551,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2024 P1, Q2.3 — R416 000 / 1 600 000 = R0.26 = 26 cents.",
     "topic": "financial-indicators",
-    "section": "nov-2024"
+    "section": "dividend-per-share"
   },
   {
     "id": 112,
@@ -1565,7 +1565,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2024 P1, Q3.1 — Both trends appear in the memo as acceptable evidence.",
     "topic": "interpretation",
-    "section": "nov-2024"
+    "section": "risk-return"
   },
   {
     "id": 113,
@@ -1579,7 +1579,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2024 P1, Q3.2 — The reduction allows funds to be retained and helps cash flow.",
     "topic": "interpretation",
-    "section": "nov-2024"
+    "section": "trends"
   },
   {
     "id": 114,
@@ -1593,7 +1593,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2024 P1, Q3.3 — Both EPS and ROSHE improved; the return exceeds fixed deposit interest.",
     "topic": "interpretation",
-    "section": "nov-2024"
+    "section": "risk-return"
   },
   {
     "id": 115,
@@ -1607,7 +1607,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2024 P1, Q3.4 — The memo identifies share issues and a larger loan.",
     "topic": "shareholding",
-    "section": "nov-2024"
+    "section": "share-capital"
   },
   {
     "id": 116,
@@ -1621,7 +1621,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2024 P1, Q3.4 — The memo treats the lower debt/equity ratio as lower risk.",
     "topic": "shareholding",
-    "section": "nov-2024"
+    "section": "share-capital"
   },
   {
     "id": 117,
@@ -1635,7 +1635,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2024 P1, Q3.4 — The return on capital employed exceeds borrowing cost.",
     "topic": "shareholding",
-    "section": "nov-2024"
+    "section": "share-capital"
   },
   {
     "id": 118,
@@ -1649,7 +1649,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2024 P1, Q3.5 — 1 620 000 / 50 x 10 = 324 000.",
     "topic": "shareholding",
-    "section": "nov-2024"
+    "section": "share-capital"
   },
   {
     "id": 119,
@@ -1663,7 +1663,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2024 P1, Q3.5 — 1 944 000 / 3 600 000 x 100 = 54%.",
     "topic": "shareholding",
-    "section": "nov-2024"
+    "section": "share-capital"
   },
   {
     "id": 120,
@@ -1677,7 +1677,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2024 P1, Q3.5 — 324 000 x R4.95 = R1 603 800.",
     "topic": "shareholding",
-    "section": "nov-2024"
+    "section": "share-capital"
   },
   {
     "id": 121,
@@ -1691,7 +1691,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2024 P1, Q3.5 — The memo warns of overpayment and potential self-enrichment.",
     "topic": "governance",
-    "section": "nov-2024"
+    "section": "king-code"
   },
   {
     "id": 122,
@@ -1705,7 +1705,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2024 P1, Q3.6 — Both characteristics are accepted by the memo.",
     "topic": "governance",
-    "section": "nov-2024"
+    "section": "king-code"
   },
   {
     "id": 123,
@@ -1719,7 +1719,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2024 P1, Q3.6 — The current ratio is one memo-supported sign of stronger management.",
     "topic": "interpretation",
-    "section": "nov-2024"
+    "section": "trends"
   },
   {
     "id": 124,
@@ -1733,7 +1733,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2024 P1, Q4.1 — The opinion protects shareholders and other users.",
     "topic": "governance",
-    "section": "nov-2024"
+    "section": "audit-reports"
   },
   {
     "id": 125,
@@ -1747,7 +1747,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2024 P1, Q4.2 — The 2024 memo explicitly identifies an unqualified report.",
     "topic": "governance",
-    "section": "nov-2024"
+    "section": "audit-reports"
   },
   {
     "id": 126,
@@ -1761,7 +1761,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2024 P1, Q4.3 — Physical existence and source documents are accepted audit checks.",
     "topic": "governance",
-    "section": "nov-2024"
+    "section": "roles-duties"
   },
   {
     "id": 127,
@@ -1775,7 +1775,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2024 P1, Q4.4 — The memo says shareholders can feel more confident and may invest further.",
     "topic": "governance",
-    "section": "nov-2024"
+    "section": "audit-reports"
   },
   {
     "id": 128,
@@ -1789,7 +1789,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2024 P1, Q4.5 — The memo lists deregistration, disciplinary action, legal and reputation consequences.",
     "topic": "governance",
-    "section": "nov-2024"
+    "section": "king-code"
   },
   {
     "id": 129,
@@ -1803,7 +1803,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2025 P1, Q1.1 — Average unit cost R332; R332 x 820 = R272 240.",
     "topic": "stock-valuation",
-    "section": "nov-2025"
+    "section": "stock-calculations"
   },
   {
     "id": 130,
@@ -1817,7 +1817,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2025 P1, Q1.2 — 2 150 000 + 750 000 - 150 000 = 2 750 000.",
     "topic": "shareholding",
-    "section": "nov-2025"
+    "section": "share-capital"
   },
   {
     "id": 131,
@@ -1831,7 +1831,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2025 P1, Q1.2 — 150 000 x R6.50 = R975 000; the memo rejects R1 710 000 here.",
     "topic": "shareholding",
-    "section": "nov-2025"
+    "section": "share-capital"
   },
   {
     "id": 132,
@@ -1845,7 +1845,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2025 P1, Q1.2 — Add the issue proceeds and deduct the share-capital reduction.",
     "topic": "shareholding",
-    "section": "nov-2025"
+    "section": "share-capital"
   },
   {
     "id": 133,
@@ -1859,7 +1859,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2025 P1, Q1.3 — R4 598 000 - R13 260 = R4 584 740.",
     "topic": "financial-position",
-    "section": "nov-2025"
+    "section": "current-vs-noncurrent"
   },
   {
     "id": 134,
@@ -1873,7 +1873,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2025 P1, Q1.3 — R320 000 / 0.4 = R800 000; memo reports R480 000 separately as the longer-term portion.",
     "topic": "financial-position",
-    "section": "nov-2025"
+    "section": "current-vs-noncurrent"
   },
   {
     "id": 135,
@@ -1887,7 +1887,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2025 P1, Q1.3 — Equity less ordinary share capital = R5 272 500.",
     "topic": "financial-position",
-    "section": "nov-2025"
+    "section": "equity-section"
   },
   {
     "id": 136,
@@ -1901,7 +1901,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2025 P1, Q1.3 — R3 200 000 + R290 000 - R540 000 = R2 950 000.",
     "topic": "financial-position",
-    "section": "nov-2025"
+    "section": "current-vs-noncurrent"
   },
   {
     "id": 137,
@@ -1915,7 +1915,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2025 P1, Q1.3 — R5 798 000 / 1.3 = R4 460 000.",
     "topic": "financial-position",
-    "section": "nov-2025"
+    "section": "current-vs-noncurrent"
   },
   {
     "id": 138,
@@ -1929,7 +1929,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2025 P1, Q1.3 — 2 750 000 x R0.90 = R2 475 000.",
     "topic": "financial-position",
-    "section": "nov-2025"
+    "section": "current-vs-noncurrent"
   },
   {
     "id": 139,
@@ -1943,7 +1943,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2025 P1, Q2.1 — An increase in receivables absorbs cash.",
     "topic": "cash-flow",
-    "section": "nov-2025"
+    "section": "operations-investing-financing"
   },
   {
     "id": 140,
@@ -1957,7 +1957,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2025 P1, Q2.1 — An increase in payables preserves cash.",
     "topic": "cash-flow",
-    "section": "nov-2025"
+    "section": "operations-investing-financing"
   },
   {
     "id": 141,
@@ -1971,7 +1971,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2025 P1, Q2.2 — Subtract the adjustments and classify as an outflow.",
     "topic": "cash-flow",
-    "section": "nov-2025"
+    "section": "operations-investing-financing"
   },
   {
     "id": 142,
@@ -1985,7 +1985,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2025 P1, Q2.2 — R2 900 000 - R2 520 000 = R380 000 outflow.",
     "topic": "cash-flow",
-    "section": "nov-2025"
+    "section": "operations-investing-financing"
   },
   {
     "id": 143,
@@ -1999,7 +1999,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2025 P1, Q2.2 — The memo calculates R16 000 - R2 750 = R13 250.",
     "topic": "cash-flow",
-    "section": "nov-2025"
+    "section": "operations-investing-financing"
   },
   {
     "id": 144,
@@ -2013,7 +2013,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2025 P1, Q2.2 — 50 000 x R20 = R1 000 000 inflow.",
     "topic": "cash-flow",
-    "section": "nov-2025"
+    "section": "operations-investing-financing"
   },
   {
     "id": 145,
@@ -2027,7 +2027,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2025 P1, Q2.2 — 2 000 x R15.40 = R30 800 outflow.",
     "topic": "cash-flow",
-    "section": "nov-2025"
+    "section": "operations-investing-financing"
   },
   {
     "id": 146,
@@ -2041,7 +2041,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2025 P1, Q2.2 — R415 000 - R1 172 000 = -R757 000.",
     "topic": "cash-flow",
-    "section": "nov-2025"
+    "section": "operations-investing-financing"
   },
   {
     "id": 147,
@@ -2055,7 +2055,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2025 P1, Q2.3 — R7 140 120 / 498 000 x 100 = 1 433.8 cents.",
     "topic": "financial-indicators",
-    "section": "nov-2025"
+    "section": "core-ratios"
   },
   {
     "id": 148,
@@ -2069,7 +2069,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2025 P1, Q2.3 — R3 185 000 / R2 384 380 is approximately 1.34:1; memo accepts 1.3:1.",
     "topic": "financial-indicators",
-    "section": "nov-2025"
+    "section": "core-ratios"
   },
   {
     "id": 149,
@@ -2083,7 +2083,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2025 P1, Q2.3 — R219 480 / R518 400 x 100 = 42.3%.",
     "topic": "financial-indicators",
-    "section": "nov-2025"
+    "section": "dividend-per-share"
   },
   {
     "id": 150,
@@ -2097,7 +2097,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2025 P1, Q2.4 — The memo highlights this R1 172 000 deterioration.",
     "topic": "cash-flow",
-    "section": "nov-2025"
+    "section": "cash-management"
   },
   {
     "id": 151,
@@ -2111,7 +2111,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2025 P1, Q3.1.1 — The memo identifies IFRS.",
     "topic": "governance",
-    "section": "nov-2025"
+    "section": "roles-duties"
   },
   {
     "id": 152,
@@ -2125,7 +2125,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2025 P1, Q3.1.2 — The memo identifies a director.",
     "topic": "governance",
-    "section": "nov-2025"
+    "section": "king-code"
   },
   {
     "id": 153,
@@ -2139,7 +2139,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2025 P1, Q3.1.3 — The memo identifies CIPC.",
     "topic": "governance",
-    "section": "nov-2025"
+    "section": "roles-duties"
   },
   {
     "id": 154,
@@ -2153,7 +2153,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2025 P1, Q3.2.1 — The memo accepts mark-up, sales and profit margin trends.",
     "topic": "interpretation",
-    "section": "nov-2025"
+    "section": "trends"
   },
   {
     "id": 155,
@@ -2167,7 +2167,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2025 P1, Q3.2.2 — The two periods and directions match the memo.",
     "topic": "interpretation",
-    "section": "nov-2025"
+    "section": "trends"
   },
   {
     "id": 156,
@@ -2181,7 +2181,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2025 P1, Q3.2.3 — 713 300 / 1 383 250 x 100 is about 51.6%.",
     "topic": "shareholding",
-    "section": "nov-2025"
+    "section": "share-capital"
   },
   {
     "id": 157,
@@ -2195,7 +2195,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2025 P1, Q3.2.3 — The memo warns of personal gain and weakened board independence.",
     "topic": "governance",
-    "section": "nov-2025"
+    "section": "king-code"
   },
   {
     "id": 158,
@@ -2209,7 +2209,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2025 P1, Q3.2.3 — 400 000 x (R3.00 - R2.56) = R176 000.",
     "topic": "shareholding",
-    "section": "nov-2025"
+    "section": "listings"
   },
   {
     "id": 159,
@@ -2223,7 +2223,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2025 P1, Q3.3.1 — The two ROSHE trends are in the memo.",
     "topic": "interpretation",
-    "section": "nov-2025"
+    "section": "risk-return"
   },
   {
     "id": 160,
@@ -2237,7 +2237,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2025 P1, Q3.3.1 — Lynn retained earnings for possible expansion; Shorts paid out 124.6%.",
     "topic": "shareholding",
-    "section": "nov-2025"
+    "section": "share-capital"
   },
   {
     "id": 161,
@@ -2251,7 +2251,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2025 P1, Q3.3.2 — Memo calls Shorts undervalued by 14c and Lynn above NAV by 18c.",
     "topic": "shareholding",
-    "section": "nov-2025"
+    "section": "listings"
   },
   {
     "id": 162,
@@ -2265,7 +2265,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2025 P1, Q3.4 — The memo identifies positive gearing from ROTCE exceeding loan cost.",
     "topic": "shareholding",
-    "section": "nov-2025"
+    "section": "share-capital"
   },
   {
     "id": 163,
@@ -2279,7 +2279,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2025 P1, Q3.5 — The memo calls it a qualified report and notes possible reputation damage.",
     "topic": "governance",
-    "section": "nov-2025"
+    "section": "audit-reports"
   },
   {
     "id": 164,
@@ -2293,7 +2293,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2025 P1, Q3.5 — The memo accepts investigation, clarification and governance action.",
     "topic": "governance",
-    "section": "nov-2025"
+    "section": "audit-reports"
   },
   {
     "id": 165,
@@ -2307,7 +2307,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2025 P1, Q4.1 — The memo accepts governance, community and reputation benefits.",
     "topic": "governance",
-    "section": "nov-2025"
+    "section": "roles-duties"
   },
   {
     "id": 166,
@@ -2321,7 +2321,7 @@
     "correctAnswer": 3,
     "explanation": "Nov 2025 P1, Q4.2 — The memo lists early detection, accountability and employee safety.",
     "topic": "governance",
-    "section": "nov-2025"
+    "section": "roles-duties"
   },
   {
     "id": 167,
@@ -2335,7 +2335,7 @@
     "correctAnswer": 0,
     "explanation": "Nov 2025 P1, Q4.2 — Both actions are accepted in the memo.",
     "topic": "governance",
-    "section": "nov-2025"
+    "section": "roles-duties"
   },
   {
     "id": 168,
@@ -2349,7 +2349,7 @@
     "correctAnswer": 1,
     "explanation": "Nov 2025 P1, Q4.3 — The memo accepts liabilities greater than assets and equivalent explanations.",
     "topic": "governance",
-    "section": "nov-2025"
+    "section": "roles-duties"
   },
   {
     "id": 169,
@@ -2363,7 +2363,7 @@
     "correctAnswer": 2,
     "explanation": "Nov 2025 P1, Q4.4 — The three effects are separately listed in the memo.",
     "topic": "governance",
-    "section": "nov-2025"
+    "section": "roles-duties"
   },
   {
     "id": 170,
@@ -2377,6 +2377,6 @@
     "correctAnswer": 3,
     "explanation": "Nov 2025 P1, Q4.5 — Both motives are accepted by the memo.",
     "topic": "governance",
-    "section": "nov-2025"
+    "section": "roles-duties"
   }
 ]

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getQuizHistory, clearQuizHistory } from "@/lib/storage";
 import { TOPIC_LABELS } from "@/lib/topics";
 import type { QuizRecord } from "@/lib/types";
+import useResultSync from "@/lib/useResultSync";
 
 const pctOf = (r: QuizRecord) => (r.total > 0 ? Math.round((r.score / r.total) * 100) : 0);
 const toneOf = (pct: number) =>
@@ -78,6 +79,9 @@ function ResultsContent() {
   const [history, setHistory] = useState<QuizRecord[]>([]);
   const [loaded, setLoaded] = useState(false);
 
+  // signed in: merge server-stored results into the view and push local ones up
+  useResultSync();
+
   useEffect(() => {
     /* eslint-disable react-hooks/set-state-in-effect */
     setHistory(getQuizHistory());
@@ -85,10 +89,18 @@ function ResultsContent() {
     /* eslint-enable react-hooks/set-state-in-effect */
   }, []);
 
+  // refresh the visible list after sync has had a chance to merge
+  useEffect(() => {
+    const t = setTimeout(() => setHistory(getQuizHistory()), 2500);
+    return () => clearTimeout(t);
+  }, []);
+
   const handleClear = () => {
     if (window.confirm("Delete all quiz history? This cannot be undone.")) {
       clearQuizHistory();
       setHistory([]);
+      // also clear the account's server-stored results if signed in (fire-and-forget)
+      fetch("/api/results", { method: "DELETE" }).catch(() => {});
     }
   };
 

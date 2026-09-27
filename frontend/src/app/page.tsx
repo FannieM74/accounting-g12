@@ -9,6 +9,7 @@ import { getDarkMode, setDarkMode } from "@/lib/dark";
 import type { QuizRecord } from "@/lib/types";
 import { TOPIC_LABELS } from "@/lib/topics";
 import TopicBadge from "@/components/TopicBadge";
+import AuthWidget from "@/components/AuthWidget";
 
 const qs = allQuestions as Question[];
 
@@ -53,6 +54,9 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-2xl mx-auto px-4 py-8">
+        <div className="flex justify-end mb-1">
+          <AuthWidget />
+        </div>
         <header className="text-center mb-8 relative">
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 text-balance">Accounting P1 Quiz</h1>
           <p className="text-gray-500 mt-1">Grade 12 Accounting · Paper 1 · Nov 2022–2025</p>
