@@ -31,8 +31,8 @@ export default function LandingPage() {
               Accounting P1 Practice
               <span className="bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent"> · Focused · Fast · Proven</span>
             </h1>
-            <p className="mt-3 text-lg text-gray-600 max-w-xl">170 exam-style MCQs from Nov 2022
-170 exam-style MCQs from Nov 2022	6	62025. Study curated notes, take targeted quizzes, and track dated results to improve faster.
+            <p className="mt-3 text-lg text-gray-600 max-w-xl">170 exam-style multiple-choice questions from Nov 2022–2025. Study curated notes, take targeted quizzes, and track dated results to improve faster.</p>
+
           </div>
 
           <div className="hidden md:block">
