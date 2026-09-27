@@ -91,20 +91,23 @@ export async function POST(req: NextRequest) {
       const err = validate(r);
       if (err) return NextResponse.json({ error: err }, { status: 400 });
     }
-    await db.insert(quizResults).values(
-      incoming.map((r) => ({
-        userId: user.id,
-        date: r.date,
-        score: r.score,
-        total: r.total,
-        topic: r.topic ?? null,
-        section: r.section ?? null,
-        daily: r.daily ?? null,
-        durationMs: r.durationMs ?? null,
-        questionIds: r.questionIds ? JSON.stringify(r.questionIds) : null,
-        missedIds: r.missedIds ? JSON.stringify(r.missedIds) : null,
-      }))
-    );
+    await db
+      .insert(quizResults)
+      .values(
+        incoming.map((r) => ({
+          userId: user.id,
+          date: r.date,
+          score: r.score,
+          total: r.total,
+          topic: r.topic ?? null,
+          section: r.section ?? null,
+          daily: r.daily ?? null,
+          durationMs: r.durationMs ?? null,
+          questionIds: r.questionIds ? JSON.stringify(r.questionIds) : null,
+          missedIds: r.missedIds ? JSON.stringify(r.missedIds) : null,
+        }))
+      )
+      .onConflictDoNothing({ target: [quizResults.userId, quizResults.date] });
     return NextResponse.json({ ok: true, saved: incoming.length });
   } catch (e) {
     console.error("results POST failed:", e);

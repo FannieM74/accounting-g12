@@ -29,7 +29,21 @@ export default function AuthWidget() {
   }, []);
 
   useEffect(() => {
-    refresh();
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch("/api/auth/me", { cache: "no-store" });
+        const data = await res.json().catch(() => ({}));
+        if (!cancelled) setMe(data.user || null);
+      } catch {
+        if (!cancelled) setMe(null);
+      } finally {
+        if (!cancelled) setLoaded(true);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
   }, [refresh]);
 
   async function signOut() {

@@ -170,6 +170,12 @@ export async function ensureSchema(): Promise<void> {
   await client.execute(`CREATE INDEX IF NOT EXISTS sessions_user_idx ON sessions (user_id)`);
   await client.execute(`CREATE INDEX IF NOT EXISTS quiz_results_user_idx ON quiz_results (user_id)`);
   await client.execute(`CREATE INDEX IF NOT EXISTS quiz_results_date_idx ON quiz_results (date)`);
+  // one attempt per user per exact timestamp — makes result sync idempotent
+  await client.execute(`CREATE UNIQUE INDEX IF NOT EXISTS quiz_results_user_date_uq ON quiz_results (user_id, date)`);
+  // drop duplicates that may predate the unique index (keep the earliest row)
+  await client.execute(`DELETE FROM quiz_results WHERE id NOT IN (
+    SELECT MIN(id) FROM quiz_results GROUP BY user_id, date
+  )`);
 }
 
 // -- constant-time string compare helper (used for origin checks) --
