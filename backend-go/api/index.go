@@ -4,7 +4,7 @@ package api
 import (
 	"net/http"
 
-	"github.com/FannieM74/accounting-g12/backend-go/internal/server"
+	"github.com/FannieM74/accounting-g12/backend-go/pkg/server"
 )
 
 var handler http.Handler
