@@ -3,6 +3,7 @@
   "rewrites": [
     { "source": "/api/(.*)", "destination": "https://acctg12-api.vercel.app/api/$1" },
     { "source": "/ui/static/(.*)", "destination": "https://acctg12-api.vercel.app/ui/static/$1" },
+    { "source": "/ui", "destination": "https://acctg12-api.vercel.app/ui/" },
     { "source": "/ui/(.*)", "destination": "https://acctg12-api.vercel.app/ui/$1" },
     { "source": "/((?!api/|ui/).*)", "destination": "/$1" }
   ]
