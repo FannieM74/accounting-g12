@@ -101,6 +101,13 @@ var funcMap = template.FuncMap{
 		}
 		return p * 60 / 100
 	},
+	"optionLetter": func(i int) string {
+		if i >= 0 && i < 26 {
+			return string(rune('A' + i))
+		}
+		return "?"
+	},
+	"sub": func(a, b int) int { return a - b },
 }
 
 func parseTemplates() (map[string]*template.Template, bool) {

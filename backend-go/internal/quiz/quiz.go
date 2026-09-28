@@ -127,6 +127,7 @@ func DecodeToken(tok SignedToken, key []byte) (*QuizState, error) {
 type Question struct {
 	ID            int64    `json:"id"`
 	Question      string   `json:"question"`
+	Context       string   `json:"context,omitempty"` // source-paper data needed to answer
 	Options       []string `json:"options"`
 	CorrectAnswer int      `json:"correctAnswer"`
 	Explanation   string   `json:"explanation"`

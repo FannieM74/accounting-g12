@@ -103,7 +103,15 @@ table.results tr.latest td{background:rgba(99,102,241,.06)}
 .chart{width:100%;height:auto;margin:10px 0 4px}
 .quote-card blockquote{margin:0 0 8px;font-size:15px;line-height:1.55;font-style:italic}
 .land-foot{text-align:center;font-size:12px;margin:8px 0 20px}
+/* old Next.js-style quiz interactions, kept explicit so htmx fragments work */
+.quiz-option input:checked + .quiz-option-body{border-color:#3b82f6;background:#eff6ff;color:#1e40af}
+.quiz-option input:checked + .quiz-option-body .quiz-option-letter{border-color:#3b82f6;background:#3b82f6;color:white}
 </style>
+<script>
+  window.tailwind = window.tailwind || {};
+  tailwind.config = { darkMode: 'class', corePlugins: { preflight: false } };
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
 <script src="/ui/static/htmx.min.js" defer></script>
 <script>
   // Auth errors arrive as 401/400/403 with an error fragment for #form-error.

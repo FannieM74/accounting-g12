@@ -981,7 +981,8 @@
   },
   {
     "id": 71,
-    "question": "Which company improved its working capital indicators?",
+    "question": "Based on the indicators below, which company was managing working capital well?",
+    "context": "Nov 2023 P1 Q3.2 (Liquidity): The memo identifies Guardian Ltd because its current ratio increased from 1,5:1 to 1,7:1; acid-test ratio increased from 1,0:1 to 1,2:1; debtors collection period improved from 22 days to 19 days; and creditors payment period increased from 48 days to 50 days.",
     "options": [
       "Neither had any creditors",
       "Guardian Ltd",
@@ -989,7 +990,7 @@
       "Both unchanged"
     ],
     "correctAnswer": 1,
-    "explanation": "Nov 2023 P1, Q3.2 — The memo names Guardian.",
+    "explanation": "Nov 2023 P1, Q3.2 — Guardian Ltd improved its liquidity / working-capital indicators: current ratio, acid-test ratio, debtors collection period and creditors payment period all moved in a favourable direction.",
     "topic": "financial-indicators",
     "section": "core-ratios"
   },

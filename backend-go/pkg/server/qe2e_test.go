@@ -123,6 +123,13 @@ func TestQuizFlowE2E(t *testing.T) {
 		if r.StatusCode != 200 {
 			t.Fatalf("run q%d: %d", i, r.StatusCode)
 		}
+		if i == 0 {
+			for _, marker := range []string{"bg-gradient-to-br", "rounded-xl", "quiz-option", "quiz-option-letter", "Question "} {
+				if !strings.Contains(b, marker) {
+					t.Fatalf("run page missing restored UI marker %q", marker)
+				}
+			}
+		}
 		m := regexp.MustCompile(`name="choice" value="(\d+)"`).FindStringSubmatch(b)
 		if m == nil {
 			t.Fatalf("q%d: no radio", i)
@@ -159,11 +166,10 @@ func TestQuizFlowE2E(t *testing.T) {
 	// 5. score
 	r, _ = c.Get(base + loc)
 	b = readAll(r)
-	if r.StatusCode != 200 || !strings.Contains(b, "score-big") {
-		t.Fatalf("score: %d has-score=%v", r.StatusCode, strings.Contains(b, "score-big"))
+	if r.StatusCode != 200 || !strings.Contains(b, "Review Answers") || !strings.Contains(b, "rounded-2xl") {
+		t.Fatalf("score: %d has-review=%v has-card=%v", r.StatusCode, strings.Contains(b, "Review Answers"), strings.Contains(b, "rounded-2xl"))
 	}
-	hasReview := strings.Contains(b, "review ok") || strings.Contains(b, "review miss")
-	t.Logf("score: %d review=%v pct-shown=%v", r.StatusCode, hasReview, strings.Contains(b, "%</span>"))
+	t.Logf("score: %d review=%v pct-shown=%v", r.StatusCode, strings.Contains(b, "Review Answers"), strings.Contains(b, "%</p>"))
 
 	// InsertResult dedupes on (user_id, date) with second-precision dates;
 	// quiz 2 must finish in a later second or its row is silently dropped.

@@ -49,8 +49,8 @@ func (h *Handler) renderQuizRun(w http.ResponseWriter, r *http.Request, state *q
 		opts = append(opts, q.Options[i])
 	}
 	view := quizQuestionView{
-		Number: state.Idx + 1, Total: len(state.IDs), ID: id,
-		Text: q.Question, Options: opts, Topic: q.Topic,
+		Number: state.Idx + 1, Total: len(state.IDs), Answered: len(state.Answers), ID: id,
+		Text: q.Question, Context: q.Context, Options: opts, Topic: q.Topic,
 		Token: string(tok), Chosen: -1,
 	}
 	if shown, ok := state.Answers[int(id)]; ok {
@@ -100,14 +100,16 @@ func gradedTopic(g quiz.GradeResult) string { return "" }
 // quizQuestionView feeds the quiz-question template (quiz package's
 // questionView is unexported, so the UI mirrors the fields it needs).
 type quizQuestionView = struct {
-	Number  int
-	Total   int
-	ID      int64
-	Text    string
-	Options []string
-	Topic   string
-	Token   string
-	Chosen  int
+	Number   int
+	Total    int
+	Answered int
+	ID       int64
+	Text     string
+	Context  string
+	Options  []string
+	Topic    string
+	Token    string
+	Chosen   int
 }
 
 type quizReviewRow struct {
