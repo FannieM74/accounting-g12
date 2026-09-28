@@ -104,10 +104,32 @@ func (h *Handler) Register(mux *http.ServeMux) {
 	mux.HandleFunc("DELETE /ui/results/{id}/{$}", h.submit(h.resultDeleteByID))
 	mux.HandleFunc("GET /ui/results/{id}/row/{$}", h.fragment(h.resultsRow))
 
-	// /ui (no trailing slash) and unknown /ui/* paths get the themed 404.
-	mux.HandleFunc("/ui", func(w http.ResponseWriter, r *http.Request) {
-		http.Redirect(w, r, "/ui/", http.StatusPermanentRedirect)
-	})
+	// Vercel/Next normalize trailing slashes before proxying, so register
+	// slash-less aliases for every /ui route (a redirect would drop POST
+	// bodies and htmx requests). Method-specific aliases are registered as
+	// separate handlers so POST/DELETE still route correctly.
+	for _, alias := range []struct {
+		path string
+		h    http.Handler
+	}{
+		{"/ui", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			http.Redirect(w, r, "/ui/", http.StatusPermanentRedirect)
+		})},
+		{"/ui/login", h.any(h.page(h.loginPage), h.submit(h.loginSubmit))},
+		{"/ui/signup", h.any(h.page(h.signupPage), h.submit(h.signupSubmit))},
+		{"/ui/results", h.any(h.page(h.resultsPage), h.submit(func(w http.ResponseWriter, r *http.Request, u *db.User) {
+			if r.Method != http.MethodDelete {
+				h.render(w, http.StatusMethodNotAllowed, "404", pageData{Title: "Not found"})
+				return
+			}
+			h.resultsDelete(w, r, u)
+		}))},
+		{"/ui/logout", h.any(h.submit(h.logoutSubmit), h.submit(h.logoutSubmit))},
+		{"/ui/results/{id}", h.any(h.submit(h.resultDeleteByID), h.submit(h.resultDeleteByID))},
+		{"/ui/results/{id}/row", h.fragment(h.resultsRow)},
+	} {
+		mux.Handle(alias.path, alias.h)
+	}
 	mux.HandleFunc("/ui/", func(w http.ResponseWriter, r *http.Request) {
 		h.render(w, http.StatusNotFound, "404", pageData{Title: "Not found"})
 	})
@@ -176,6 +198,18 @@ func (h *Handler) fragment(fn func(http.ResponseWriter, *http.Request, *db.User)
 		u, _ := middleware.SessionUser(r, h.store, config.SessionCookieName)
 		fn(w, r, u)
 	}
+}
+
+// any dispatches GET/HEAD to get and other methods to post — used by the
+// slash-less alias routes where a single pattern serves all methods.
+func (h *Handler) any(get, post http.HandlerFunc) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		if r.Method == http.MethodGet || r.Method == http.MethodHead {
+			get(w, r)
+			return
+		}
+		post(w, r)
+	})
 }
 
 // currentUser hydrates display fields into pageData.

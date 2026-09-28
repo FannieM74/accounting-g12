@@ -5,6 +5,7 @@ import type { NextRequest } from "next/server";
 const PUBLIC_PATH_PREFIXES = [
   "/_next",
   "/api",
+  "/ui",
   "/favicon.ico",
   "/robots.txt",
   "/sitemap.xml",
@@ -39,5 +40,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next|landing|login|signup|favicon.ico|robots.txt|sitemap.xml).*)"],
+  matcher: ["/((?!api|ui|_next|landing|login|signup|favicon.ico|robots.txt|sitemap.xml).*)"],
 };
