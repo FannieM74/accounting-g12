@@ -1,0 +1,26 @@
+{{define "content"}}
+<section class="hero">
+  <h1>Start a quiz</h1>
+  <p class="muted">Pick a topic or practise everything. Questions come from the real Nov 2022–2025 DBE Paper 1 exams.</p>
+</section>
+
+<section class="card" style="max-width:480px">
+  <form method="post" action="/ui/quiz/start">
+    <label for="topic">Topic</label>
+    <select id="topic" name="topic" class="select">
+      <option value="">All topics (170 questions)</option>
+      {{$topics := .Topics}}
+      {{range $t := $topics}}
+        <option value="{{$t.Key}}">{{$t.Key}} ({{$t.Count}})</option>
+      {{end}}
+    </select>
+    <label for="count">Number of questions</label>
+    <select id="count" name="count" class="select">
+      <option value="10">10 — quick round</option>
+      <option value="20">20 — standard</option>
+      <option value="30">30 — long</option>
+    </select>
+    <button class="btn full" type="submit">Start quiz</button>
+  </form>
+</section>
+{{end}}

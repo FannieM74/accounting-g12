@@ -1,0 +1,30 @@
+{{define "content"}}
+<div id="quiz-box">
+{{template "quiz-question" .QuizQuestion}}
+</div>
+{{end}}
+
+{{define "quiz-question"}}
+<section class="hero" style="padding-bottom:0">
+  <h1 style="font-size:22px">Question {{.Number}} of {{.Total}}</h1>
+  <div class="progress"><div class="progress-fill" style="width:{{progressPct .Number .Total}}%"></div></div>
+</section>
+
+<section class="card quiz-card">
+  <p class="muted" style="font-size:12.5px;text-transform:uppercase;letter-spacing:.05em">{{.Topic}}</p>
+  <p class="quiz-text">{{.Text}}</p>
+  <form method="post" action="/ui/quiz/answer" hx-post="/ui/quiz/answer" hx-target="#quiz-box" hx-swap="innerHTML">
+    <input type="hidden" name="qs" value="{{.Token}}">
+    {{$chosen := .Chosen}}
+    {{range $i, $opt := .Options}}
+      <label class="option{{if eq $chosen $i}} selected{{end}}">
+        <input type="radio" name="choice" value="{{$i}}" {{if eq $chosen $i}}checked{{end}} required>
+        <span>{{$opt}}</span>
+      </label>
+    {{end}}
+    <button class="btn full" type="submit">
+      {{if eq .Number .Total}}Finish &amp; see score{{else}}Next question →{{end}}
+    </button>
+  </form>
+</section>
+{{end}}

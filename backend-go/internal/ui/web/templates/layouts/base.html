@@ -60,6 +60,24 @@ table.results tr.latest td{background:rgba(99,102,241,.06)}
 .recent li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);font-size:14px}
 .recent li:last-child{border-bottom:none}
 @media(max-width:640px){.hero.big h1{font-size:32px}.cta-row{flex-direction:column;align-items:center}}
+.select{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:10px;color:var(--text);padding:10px 12px;font-size:15px;outline:none}
+.select:focus{border-color:var(--accent)}
+.progress{height:6px;background:var(--border);border-radius:999px;margin-top:12px;overflow:hidden}
+.progress-fill{height:100%;background:var(--accent);border-radius:999px;transition:width .25s ease}
+.quiz-card{margin-top:20px}
+.quiz-text{font-size:16.5px;line-height:1.5;margin:10px 0 16px}
+.option{display:flex;align-items:flex-start;gap:10px;border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:10px;cursor:pointer;font-size:14.5px}
+.option:hover{border-color:var(--accent)}
+.option.selected{border-color:var(--accent);background:rgba(99,102,241,.08)}
+.option input{margin-top:3px}
+.score-big{font-size:30px;margin:12px 0 4px}
+.review{border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin-bottom:12px}
+.review.ok{border-left:3px solid var(--good)}
+.review.miss{border-left:3px solid var(--bad)}
+.review-q{font-size:14.5px;margin-bottom:6px}
+.review-a{font-size:13.5px;margin-bottom:6px}
+.review-e{font-size:13px}
+.bad-text{color:var(--bad)}.good-text{color:var(--good)}
 </style>
 <script src="/ui/static/htmx.min.js" defer></script>
 </head>
@@ -69,6 +87,7 @@ table.results tr.latest td{background:rgba(99,102,241,.06)}
   <div class="nav-links">
     {{if .Email}}
       <a href="/ui/">Home</a>
+      <a href="/ui/quiz">Quiz</a>
       <a href="/ui/results/">Results</a>
       <span class="nav-user">{{.Email}}{{if eq .Role "admin"}} · admin{{end}}
         <form method="post" action="/ui/logout/" style="display:inline">

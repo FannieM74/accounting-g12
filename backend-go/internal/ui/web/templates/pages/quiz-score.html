@@ -1,0 +1,25 @@
+{{define "content"}}
+<section class="hero big" style="padding-bottom:8px">
+  <h1>{{if ge .Pct 80}}Excellent!{{else if ge .Pct 50}}Good effort{{else}}Keep practising{{end}}</h1>
+  <p class="score-big"><span class="pct {{pctClass .Pct}}">{{.Score}}/{{.Total}}</span> · {{.Pct}}%</p>
+  {{if .Topic}}<p class="muted">Topic: {{.Topic}}</p>{{end}}
+  <div class="cta-row">
+    <a class="btn" href="/ui/quiz">New quiz</a>
+    <a class="btn ghost" href="/ui/results/">View all results</a>
+  </div>
+</section>
+
+<section class="card" style="margin-top:24px">
+  <h2>Review</h2>
+  {{range .Review}}
+    <div class="review{{if .Correct}} ok{{else}} miss{{end}}">
+      <p class="review-q">{{if .Correct}}✓{{else}}✗{{end}} {{.Question}}</p>
+      {{if not .Correct}}
+        <p class="review-a">Your answer: <span class="bad-text">{{if .Chosen}}{{.Chosen}}{{else}}skipped{{end}}</span><br>
+        Correct: <span class="good-text">{{.CorrectText}}</span></p>
+      {{end}}
+      {{if .Explanation}}<p class="review-e muted">{{.Explanation}}</p>{{end}}
+    </div>
+  {{end}}
+</section>
+{{end}}
