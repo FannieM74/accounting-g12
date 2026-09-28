@@ -22,7 +22,7 @@ import (
 //go:embed web/templates/layouts/*.html web/templates/pages/*.html web/templates/fragments/*.html
 var templateFS embed.FS
 
-//go:embed web/static/htmx.min.js
+//go:embed web/static
 var staticFS embed.FS
 
 // Handler serves every /ui/* route (method-aware path suffixes).
@@ -133,6 +133,17 @@ func (h *Handler) Register(mux *http.ServeMux) {
 	})
 
 	mux.HandleFunc("GET /ui/{$}", h.page(h.home))
+	mux.HandleFunc("GET /{$}", h.page(h.home)) // root: Go serves the landing now
+	mux.HandleFunc("GET /favicon.ico", func(w http.ResponseWriter, r *http.Request) {
+		b, err := staticFS.ReadFile("web/static/favicon.ico")
+		if err != nil {
+			http.NotFound(w, r)
+			return
+		}
+		w.Header().Set("Content-Type", "image/x-icon")
+		w.Header().Set("Cache-Control", "public, max-age=86400")
+		_, _ = w.Write(b)
+	})
 	mux.HandleFunc("GET /ui/login/{$}", h.page(h.loginPage))
 	mux.HandleFunc("GET /ui/signup/{$}", h.page(h.signupPage))
 	mux.HandleFunc("GET /ui/results/{$}", h.page(h.resultsPage))
