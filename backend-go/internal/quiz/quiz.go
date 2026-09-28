@@ -190,6 +190,15 @@ func (b *Bank) Topics() []TopicCount {
 	return out
 }
 
+// TopicCounts returns questions-per-topic for the whole bank.
+func (b *Bank) TopicCounts() map[string]int {
+	out := make(map[string]int, len(b.byTopic))
+	for k, ids := range b.byTopic {
+		out[k] = len(ids)
+	}
+	return out
+}
+
 // Pick chooses up to n question ids for a topic ("" = all), shuffled.
 func (b *Bank) Pick(topic string, n int, seed uint64) []int64 {
 	pool, ok := b.byTopic[topic]

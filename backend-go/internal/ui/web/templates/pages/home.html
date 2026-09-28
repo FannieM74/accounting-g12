@@ -30,13 +30,69 @@
     {{end}}
   </section>
 {{else}}
-  <section class="hero big">
-    <h1>Accounting Grade 12<br>Past-paper practice</h1>
-    <p>170 real multiple-choice questions from the November 2022–2025 DBE Paper 1 exams. Track every attempt and watch your averages climb.</p>
-    <div class="cta-row">
-      <a class="btn" href="/ui/signup/">Create account</a>
-      <a class="btn ghost" href="/ui/login/">Sign in</a>
-    </div>
-  </section>
+  <div class="land">
+    <section class="hero big">
+      <h1>Accounting Grade 12<br><span class="grad">Past-paper practice</span></h1>
+      <p>170 real multiple-choice questions from the November 2022–2025 DBE Paper 1 exams.
+      Study by topic, take targeted quizzes, and watch your averages climb.</p>
+      <div class="cta-row">
+        <a class="btn" href="/ui/signup/">Create account</a>
+        <a class="btn ghost" href="/ui/login/">Sign in</a>
+      </div>
+      <div class="chips">
+        <span class="chip"><strong>170</strong> MCQs</span>
+        <span class="chip"><strong>2022–2025</strong> Nov papers</span>
+        <span class="chip"><strong>Paper 1</strong> focused</span>
+        <span class="chip"><strong>Free</strong> with an account</span>
+      </div>
+    </section>
+
+    <section class="features" aria-label="What you get">
+      <div class="feature">
+        <h3>📚 Study topics</h3>
+        <p>Every question tagged to the DBE topic taxonomy — drill exactly what the exam tests.</p>
+      </div>
+      <div class="feature">
+        <h3>⏱️ Timed quizzes</h3>
+        <p>Pick a topic and length (10–50). One question at a time, instant review of every miss.</p>
+      </div>
+      <div class="feature">
+        <h3>📈 Track progress</h3>
+        <p>Dated attempt history, per-topic accuracy, weakest-topic callouts and improvement trends.</p>
+      </div>
+      <div class="feature">
+        <h3>👥 Cohort insight</h3>
+        <p>Teachers and admins see which topics the whole class struggles with most.</p>
+      </div>
+    </section>
+
+    <section class="land-grid">
+      <div class="card chart-card">
+        <h2>Your progress, visualised</h2>
+        <svg viewBox="0 0 320 150" class="chart" role="img" aria-label="Example progress chart">
+          <rect x="20"  y="86" width="34" height="50" rx="6" fill="var(--accent)" opacity="0.45"/>
+          <rect x="74"  y="64" width="34" height="72" rx="6" fill="var(--accent)" opacity="0.6"/>
+          <rect x="128" y="46" width="34" height="90" rx="6" fill="var(--accent)" opacity="0.75"/>
+          <rect x="182" y="30" width="34" height="106" rx="6" fill="var(--accent)" opacity="0.9"/>
+          <rect x="236" y="16" width="34" height="120" rx="6" fill="var(--accent)"/>
+          <text x="20" y="148" fill="var(--muted)" font-size="10">Quiz 1</text>
+          <text x="74" y="148" fill="var(--muted)" font-size="10">Quiz 2</text>
+          <text x="128" y="148" fill="var(--muted)" font-size="10">Quiz 3</text>
+          <text x="182" y="148" fill="var(--muted)" font-size="10">Quiz 4</text>
+          <text x="236" y="148" fill="var(--muted)" font-size="10">Quiz 5</text>
+        </svg>
+        <p class="muted" style="font-size:13px">Per-topic analytics show exactly where to revise next.</p>
+      </div>
+      <div class="card quote-card">
+        <blockquote>
+          “This app helped me focus my revision by topic and improved my Paper 1 score quickly.”
+        </blockquote>
+        <p class="muted" style="font-size:13px">— Grade 12 learner</p>
+        <p style="margin-top:18px"><a class="btn" href="/ui/signup/">Start practising →</a></p>
+      </div>
+    </section>
+
+    <footer class="land-foot muted">Made for Grade 12 Accounting · Paper 1 practice · Nov 2022–2025 DBE questions</footer>
+  </div>
 {{end}}
 {{end}}

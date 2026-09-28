@@ -1,0 +1,52 @@
+{{define "content"}}
+<section class="hero" style="padding-bottom:6px">
+  <h1>Your analytics</h1>
+  {{if gt .Attempts 0}}
+  <p class="muted">{{.Questions}} questions answered across {{.Attempts}} quizzes · {{.AvgPct}}% overall accuracy</p>
+  {{else}}
+  <p class="muted">Take a quiz to unlock your stats.</p>
+  {{end}}
+</section>
+
+{{if gt .Attempts 0}}
+<section class="card" style="margin-top:18px">
+  <h2>Topic breakdown</h2>
+  {{range .TopicStats}}
+  <div class="tstat">
+    <div class="tstat-head">
+      <span>{{.Topic}}</span>
+      <span class="pct {{pctClassInv .MissPct}}">{{.MissPct}}% missed</span>
+    </div>
+    <div class="progress"><div class="progress-fill {{pctClassInv .MissPct}}" style="width:{{.MissPct}}%"></div></div>
+    <p class="muted tstat-sub">{{.Misses}} of {{.Attempts}} questions missed</p>
+  </div>
+  {{end}}
+</section>
+
+{{if .Weakest}}
+<section class="card weakest-box" style="margin-top:18px;border-left:3px solid var(--accent)">
+  <h2>Weakest topic</h2>
+  <p><strong>{{.Weakest.Topic}}</strong> — you miss {{.Weakest.MissPct}}% of questions here ({{.Weakest.Misses}}/{{.Weakest.Attempts}}).
+  <a href="/ui/quiz?topic={{.Weakest.Topic}}">Drill this topic →</a></p>
+</section>
+{{end}}
+
+<section class="card" style="margin-top:18px">
+  <h2>Recent trend <span class="muted" style="font-weight:400;font-size:13px">(last {{len .RecentPcts}} quizzes)</span></h2>
+  <div class="trend">
+    {{$max := len .RecentPcts}}
+    {{$n := 1}}
+    {{range .RecentPcts}}
+    <div class="trend-col" title="{{.}}%">
+      <div class="trend-bar" style="height:{{maxBar .}}px"></div>
+      <span class="trend-pct">{{.}}</span>
+    </div>
+    {{end}}
+  </div>
+</section>
+{{else}}
+<section class="card" style="margin-top:18px">
+  <p><a class="btn" href="/ui/quiz">Start your first quiz</a></p>
+</section>
+{{end}}
+{{end}}

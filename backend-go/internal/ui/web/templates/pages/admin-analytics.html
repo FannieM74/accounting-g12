@@ -1,0 +1,56 @@
+{{define "content"}}
+<section class="hero" style="padding-bottom:6px">
+  <h1>Cohort analytics</h1>
+  {{if gt .Attempts 0}}
+  <p class="muted">{{.Users}} active learners · {{.Attempts}} attempts · {{.Questions}} questions answered</p>
+  {{else}}
+  <p class="muted">No attempts recorded yet.</p>
+  {{end}}
+</section>
+
+{{if gt .Attempts 0}}
+<section class="card" style="margin-top:18px">
+  <h2>Where learners struggle (all topics)</h2>
+  <p class="muted" style="font-size:13px">Ranked by share of questions missed.</p>
+  {{range .TopicStats}}
+  <div class="tstat">
+    <div class="tstat-head">
+      <span>{{.Topic}}</span>
+      <span class="pct {{pctClassInv .MissPct}}">{{.MissPct}}% missed</span>
+    </div>
+    <div class="progress"><div class="progress-fill {{pctClassInv .MissPct}}" style="width:{{.MissPct}}%"></div></div>
+    <p class="muted tstat-sub">{{.Misses}} of {{.Attempts}} questions missed</p>
+  </div>
+  {{end}}
+</section>
+
+{{if .Hardest}}
+<section class="card" style="margin-top:18px">
+  <h2>Hardest questions</h2>
+  <ol class="hard-list">
+    {{range .Hardest}}
+    <li>
+      <span class="hard-pct pct {{pctClassInv .MissPct}}">{{.MissPct}}%</span>
+      <span class="hard-text">{{.Text}}</span>
+      <span class="muted hard-sub">{{.Topic}} · {{.Misses}}/{{.Seen}} missed</span>
+    </li>
+    {{end}}
+  </ol>
+</section>
+{{end}}
+
+{{if .PerUser}}
+<section class="card" style="margin-top:18px">
+  <h2>Participation</h2>
+  <ul class="recent">
+    {{range .PerUser}}
+    <li>
+      <span>{{.Email}}</span>
+      <span>{{.Attempts}} quizzes · {{.AvgPct}}% avg</span>
+    </li>
+    {{end}}
+  </ul>
+</section>
+{{end}}
+{{end}}
+{{end}}

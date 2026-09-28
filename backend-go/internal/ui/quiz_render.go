@@ -21,7 +21,7 @@ func (h *Handler) renderQuizPicker(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	topics := h.quizPages.Bank.Topics()
-	data := pageData{Title: "New quiz", Year: time.Now().Year(), Topics: topics}
+	data := pageData{Title: "New quiz", Year: time.Now().Year(), Topics: topics, SelectedTopic: r.URL.Query().Get("topic")}
 	data.Email, data.Role = currentUser(u)
 	h.render(w, http.StatusOK, "quiz-picker", data)
 }

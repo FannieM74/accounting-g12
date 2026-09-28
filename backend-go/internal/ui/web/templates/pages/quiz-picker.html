@@ -10,8 +10,9 @@
     <select id="topic" name="topic" class="select">
       <option value="">All topics (170 questions)</option>
       {{$topics := .Topics}}
+      {{$sel := .SelectedTopic}}
       {{range $t := $topics}}
-        <option value="{{$t.Key}}">{{$t.Key}} ({{$t.Count}})</option>
+        <option value="{{$t.Key}}" {{if eq $t.Key $sel}}selected{{end}}>{{$t.Key}} ({{$t.Count}})</option>
       {{end}}
     </select>
     <label for="count">Number of questions</label>

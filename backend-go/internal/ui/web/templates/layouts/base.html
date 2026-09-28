@@ -78,6 +78,31 @@ table.results tr.latest td{background:rgba(99,102,241,.06)}
 .review-a{font-size:13.5px;margin-bottom:6px}
 .review-e{font-size:13px}
 .bad-text{color:var(--bad)}.good-text{color:var(--good)}
+.tstat{margin:14px 0}
+.tstat-head{display:flex;justify-content:space-between;font-size:14px;margin-bottom:6px}
+.tstat-sub{font-size:12.5px;margin:6px 0 0}
+.trend{display:flex;align-items:flex-end;gap:6px;height:90px;padding-top:8px}
+.trend-col{display:flex;flex-direction:column;align-items:center;gap:4px}
+.trend-bar{width:22px;background:var(--accent);border-radius:4px 4px 0 0;min-height:2px}
+.trend-pct{font-size:11px;color:var(--muted)}
+.hard-list{margin:10px 0 0;padding-left:20px}
+.hard-list li{margin-bottom:12px}
+.hard-pct{font-weight:600;margin-right:6px}
+.hard-text{font-size:14px}
+.hard-sub{display:block;font-size:12.5px;margin-top:2px}
+/* landing (guest home) */
+.grad{background:linear-gradient(90deg,var(--accent),#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{font-size:12.5px;padding:5px 12px;border:1px solid var(--border);border-radius:999px;background:var(--card)}
+.chip strong{margin-right:4px}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:26px 0}
+.feature{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px}
+.feature h3{font-size:14.5px;margin:0 0 6px}
+.feature p{font-size:13px;color:var(--muted);margin:0;line-height:1.5}
+.land-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-bottom:26px}
+.chart{width:100%;height:auto;margin:10px 0 4px}
+.quote-card blockquote{margin:0 0 8px;font-size:15px;line-height:1.55;font-style:italic}
+.land-foot{text-align:center;font-size:12px;margin:8px 0 20px}
 </style>
 <script src="/ui/static/htmx.min.js" defer></script>
 </head>
@@ -88,6 +113,8 @@ table.results tr.latest td{background:rgba(99,102,241,.06)}
     {{if .Email}}
       <a href="/ui/">Home</a>
       <a href="/ui/quiz">Quiz</a>
+      <a href="/ui/analytics">Analytics</a>
+      {{if eq .Role "admin"}}<a href="/ui/admin/analytics">Cohort</a>{{end}}
       <a href="/ui/results/">Results</a>
       <span class="nav-user">{{.Email}}{{if eq .Role "admin"}} · admin{{end}}
         <form method="post" action="/ui/logout/" style="display:inline">

@@ -11,6 +11,7 @@ import (
 	"net/url"
 	"sync"
 
+	"github.com/FannieM74/accounting-g12/backend-go/internal/analytics"
 	"github.com/FannieM74/accounting-g12/backend-go/internal/auth"
 	"github.com/FannieM74/accounting-g12/backend-go/internal/config"
 	"github.com/FannieM74/accounting-g12/backend-go/internal/db"
@@ -39,6 +40,7 @@ type Handler struct {
 var templateSets = []string{
 	"login", "signup", "home", "results", "404",
 	"quiz-picker", "quiz-run", "quiz-score",
+	"analytics", "admin-analytics",
 }
 
 // New parses templates once and returns the UI handler. Templates are
@@ -81,6 +83,23 @@ var funcMap = template.FuncMap{
 			return 0
 		}
 		return n * 100 / total
+	},
+	// pctClassInv colors MISS percentages: high miss = bad.
+	"pctClassInv": func(p int) string {
+		switch {
+		case p >= 50:
+			return "bad"
+		case p >= 25:
+			return "mid"
+		default:
+			return "good"
+		}
+	},
+	"maxBar": func(p int) int {
+		if p < 2 {
+			return 2
+		}
+		return p * 60 / 100
 	},
 }
 
@@ -131,6 +150,8 @@ func (h *Handler) Register(mux *http.ServeMux) {
 	mux.HandleFunc("POST /ui/quiz/answer", h.authSubmit(h.quizPages.Answer))
 	mux.HandleFunc("GET /ui/quiz/finish", h.authPage(h.quizPages.Finish))
 	mux.HandleFunc("GET /ui/quiz/score", h.authPage(h.quizPages.Score))
+	mux.HandleFunc("GET /ui/analytics", h.analyticsPage)
+	mux.HandleFunc("GET /ui/admin/analytics", h.adminAnalyticsPage)
 
 	// Vercel/Next normalize trailing slashes before proxying, so register
 	// slash-less aliases for every /ui route (a redirect would drop POST
@@ -156,11 +177,14 @@ func (h *Handler) Register(mux *http.ServeMux) {
 		{"/ui/quiz", h.any(h.authPage(h.quizPages.Picker), h.authSubmit(h.quizPages.Start))},
 		{"/ui/quiz/run", h.authPage(h.quizPages.Run)},
 		{"/ui/quiz/score", h.authPage(h.quizPages.Score)},
+		{"/ui/analytics", http.HandlerFunc(h.analyticsPage)},
+		{"/ui/admin/analytics", http.HandlerFunc(h.adminAnalyticsPage)},
 		{"/ui/results/{id}", h.any(h.submit(h.resultDeleteByID), h.submit(h.resultDeleteByID))},
 		{"/ui/results/{id}/row", h.fragment(h.resultsRow)},
 	} {
 		mux.Handle(alias.path, alias.h)
 	}
+
 	mux.HandleFunc("/ui/", func(w http.ResponseWriter, r *http.Request) {
 		h.render(w, http.StatusNotFound, "404", pageData{Title: "Not found"})
 	})
@@ -190,6 +214,18 @@ type pageData struct {
 	Pct          int
 	Topic        string
 	Review       []quizReviewRow
+
+	// analytics pages
+	Attempts   int
+	Questions  int
+	Users      int
+	TopicStats []analytics.TopicStat
+	Weakest    *analytics.TopicStat
+	RecentPcts []int
+	Hardest    []analytics.HardestQuestion
+	PerUser    []analytics.UserAttemptStat
+
+	SelectedTopic string // quiz picker preselect (?topic=)
 }
 
 // render executes a named page set inside the base layout.
