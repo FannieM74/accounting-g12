@@ -105,6 +105,18 @@ table.results tr.latest td{background:rgba(99,102,241,.06)}
 .land-foot{text-align:center;font-size:12px;margin:8px 0 20px}
 </style>
 <script src="/ui/static/htmx.min.js" defer></script>
+<script>
+  // Auth errors arrive as 401/400/403 with an error fragment for #form-error.
+  // htmx ignores 4xx/5xx responses by default, which made failed logins look
+  // like a dead form. Canonical htmx 2 fix: authorize swapping error bodies.
+  document.addEventListener('htmx:beforeSwap', function (evt) {
+    var s = evt.detail.xhr ? evt.detail.xhr.status : 0;
+    if (s >= 400) {
+      evt.detail.shouldSwap = true;
+      evt.detail.isError = false;
+    }
+  });
+</script>
 </head>
 <body>
 <nav>

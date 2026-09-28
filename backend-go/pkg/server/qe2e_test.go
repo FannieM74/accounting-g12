@@ -58,6 +58,28 @@ func TestQuizFlowE2E(t *testing.T) {
 	r.Body.Close()
 	t.Logf("login: %d -> %s set-cookie=%q", r.StatusCode, r.Header.Get("Location"), r.Header.Get("Set-Cookie"))
 
+	// 1b-htmx. failed htmx login must return the error fragment (with the
+	// 401 status); the browser-side beforeSwap shim authorizes the swap.
+	// Uses a cookie-less client: a logged-in session would hit the
+	// already-authenticated redirect branch instead.
+	nx, _ := cookiejar.New(nil)
+	nc := &http.Client{Jar: nx, CheckRedirect: func(req *http.Request, via []*http.Request) error {
+		return http.ErrUseLastResponse
+	}}
+	reqX, _ := http.NewRequest("POST", base+"/ui/login", strings.NewReader(url.Values{"email": {"e2e@test.dev"}, "password": {"definitely-wrong"}}.Encode()))
+	reqX.Header.Set("Content-Type", "application/x-www-form-urlencoded")
+	reqX.Header.Set("Origin", base)
+	reqX.Header.Set("HX-Request", "true")
+	rx, err := nc.Do(reqX)
+	if err != nil {
+		t.Fatal(err)
+	}
+	xb := readAll(rx)
+	if rx.StatusCode != http.StatusUnauthorized || !strings.Contains(xb, "Invalid email or password") {
+		t.Fatalf("htmx bad login: %d body=%.120s", rx.StatusCode, xb)
+	}
+	t.Logf("htmx bad login: %d fragment ok", rx.StatusCode)
+
 	// 1c. probe session via JSON /api/auth/me and /ui/
 	r, _ = c.Get(base + "/api/auth/me")
 	me := readAll(r)
