@@ -38,6 +38,9 @@ func WriteError(w http.ResponseWriter, status int, msg string) {
 // hardening, parity with the Node build: origin host must end with host).
 // allowedOrigin (e.g. the frontend's domain) is also accepted - required
 // when the API is proxied behind the frontend's own domain on Vercel.
+// Vercel project/deployment aliases (*.vercel.app) are accepted too: they
+// rotate per deployment so no allowlist can track them, and CSRF safety is
+// unaffected (the SameSite=Lax session cookie is never sent cross-site).
 func SameOrigin(r *http.Request, allowedOrigin string) bool {
 	origin := r.Header.Get("Origin")
 	if origin == "" {
@@ -51,6 +54,10 @@ func SameOrigin(r *http.Request, allowedOrigin string) bool {
 		return true
 	}
 	if allowedOrigin != "" && strings.HasSuffix(o, strings.ToLower(allowedOrigin)) {
+		return true
+	}
+	// Vercel-hosted page talking to Vercel-hosted API: trust *.vercel.app.
+	if strings.HasSuffix(o, ".vercel.app") && strings.HasSuffix(h, ".vercel.app") {
 		return true
 	}
 	return false
