@@ -1,0 +1,48 @@
+{{define "content"}}
+{{if .Email}}
+<section class="hero">
+  <h1>My results</h1>
+  <p class="muted">Every quiz you've completed, newest first.</p>
+</section>
+
+<div class="table-meta">
+  <span>{{len .Results}} result{{if ne (len .Results) 1}}s{{end}}</span>
+  <button class="btn danger" hx-delete="/ui/results/" hx-confirm="Delete ALL results? This cannot be undone." hx-target="#results-area" hx-swap="innerHTML">Clear all</button>
+</div>
+
+<div id="results-area">
+{{template "results-table" .Results}}
+</div>
+{{else}}
+<section class="hero big">
+  <h1>Sign in required</h1>
+  <p>Log in to see your quiz history.</p>
+  <div class="cta-row"><a class="btn" href="/ui/login/?next=/ui/results/">Sign in</a></div>
+</section>
+{{end}}
+{{end}}
+
+{{define "results-table"}}
+{{if .}}
+<div class="card" style="padding:8px 16px">
+<table class="results">
+  <thead><tr><th>Date</th><th>Topic</th><th>Score</th><th>%</th><th></th></tr></thead>
+  <tbody>
+  {{range .}}
+    <tr{{if .Latest}} class="latest"{{end}}>
+      <td>{{.Date}}{{if .Daily}}<span class="badge">daily</span>{{end}}</td>
+      <td>{{if .Topic}}{{.Topic}}{{else}}<span class="muted">—</span>{{end}}</td>
+      <td>{{.Score}}/{{.Total}}</td>
+      <td><span class="pct {{pctClass .Pct}}">{{.Pct}}%</span></td>
+      <td class="row-actions">
+        <button class="del" hx-delete="/ui/results/{{.ID}}/" hx-confirm="Delete this result?" hx-target="#results-area" hx-swap="innerHTML">✕</button>
+      </td>
+    </tr>
+  {{end}}
+  </tbody>
+</table>
+</div>
+{{else}}
+<div class="empty">No results yet — take a quiz on the main app and it will appear here.</div>
+{{end}}
+{{end}}

@@ -1,0 +1,42 @@
+{{define "content"}}
+{{if .Email}}
+  <section class="hero">
+    <h1>Welcome back</h1>
+    <p class="muted">Signed in as {{.Email}}.</p>
+  </section>
+
+  <section class="stats" aria-label="Study statistics">
+    <div class="stat"><div class="n">{{.RecentCount}}</div><div class="l">Quizzes taken</div></div>
+    <div class="stat"><div class="n">{{.TotalQ}}</div><div class="l">Questions answered</div></div>
+    <div class="stat"><div class="n">{{.AvgPct}}%</div><div class="l">Average score</div></div>
+    <div class="stat"><div class="n">{{.BestPct}}%</div><div class="l">Best score</div></div>
+  </section>
+
+  <section class="card">
+    <h2>Recent quizzes</h2>
+    {{if .Results}}
+      <ul class="recent">
+        {{$max := 3}}
+        {{range $i, $r := .Results}}{{if lt $i $max}}
+          <li>
+            <span>{{$r.Date}}{{if $r.Topic}} · {{$r.Topic}}{{end}}</span>
+            <span class="pct {{pctClass $r.Pct}}">{{$r.Score}}/{{$r.Total}} · {{$r.Pct}}%</span>
+          </li>
+        {{end}}{{end}}
+      </ul>
+      <p style="margin-top:14px"><a href="/ui/results/">View all results →</a></p>
+    {{else}}
+      <p class="muted">No quizzes yet. Take one on the main app — your results will appear here.</p>
+    {{end}}
+  </section>
+{{else}}
+  <section class="hero big">
+    <h1>Accounting Grade 12<br>Past-paper practice</h1>
+    <p>170 real multiple-choice questions from the November 2022–2025 DBE Paper 1 exams. Track every attempt and watch your averages climb.</p>
+    <div class="cta-row">
+      <a class="btn" href="/ui/signup/">Create account</a>
+      <a class="btn ghost" href="/ui/login/">Sign in</a>
+    </div>
+  </section>
+{{end}}
+{{end}}

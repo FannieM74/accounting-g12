@@ -13,6 +13,7 @@ import (
 	"github.com/FannieM74/accounting-g12/backend-go/internal/db"
 	"github.com/FannieM74/accounting-g12/backend-go/internal/handlers"
 	"github.com/FannieM74/accounting-g12/backend-go/internal/middleware"
+	"github.com/FannieM74/accounting-g12/backend-go/internal/ui"
 )
 
 // New builds the full HTTP handler (routes, middleware, store).
@@ -60,6 +61,9 @@ func New() http.Handler {
 	mux.Handle("/api/auth/me", handlers.Me(store, cfg))
 	mux.Handle("/api/results", signAuth(handlers.Results(store, cfg)))
 	mux.Handle("/api/admin/users", adminAuth(handlers.AdminUsers(store, cfg)))
+
+	// HTMX front-end (server-rendered pages + fragment swaps).
+	ui.New(store, cfg, rl).Register(mux)
 
 	return mux
 }

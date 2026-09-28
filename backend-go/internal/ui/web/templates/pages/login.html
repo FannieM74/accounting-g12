@@ -1,0 +1,16 @@
+{{define "content"}}
+<section class="auth-card">
+  <h1>Sign in</h1>
+  <p class="sub">Welcome back — pick up where you left off.</p>
+  <form hx-post="/ui/login/" hx-target="#form-error" hx-swap="innerHTML" method="post" action="/ui/login/">
+    <input type="hidden" name="next" value="{{.Redirect}}">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" autocomplete="email" required>
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" autocomplete="current-password" required>
+    <div id="form-error" class="form-error">{{if .Error}}{{template "error.html" .}}{{end}}</div>
+    <button class="btn full" type="submit">Sign in</button>
+  </form>
+  <p class="alt">New here? <a href="/ui/signup/">Create an account</a></p>
+</section>
+{{end}}

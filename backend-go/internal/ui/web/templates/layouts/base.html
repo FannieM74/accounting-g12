@@ -1,0 +1,89 @@
+{{define "base.html"}}<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{.Title}} · Accounting G12</title>
+<style>
+:root{--bg:#0a0a0a;--card:#111113;--border:#26262b;--text:#f4f4f5;--muted:#9d9da7;--accent:#6366f1;--accent-h:#818cf8;--good:#34d399;--mid:#fbbf24;--bad:#f87171;--danger:#ef4444}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+a{color:var(--accent-h);text-decoration:none}a:hover{text-decoration:underline}
+nav{display:flex;align-items:center;justify-content:space-between;max-width:960px;margin:0 auto;padding:18px 24px;width:100%;border-bottom:1px solid var(--border)}
+.brand{font-weight:700;color:var(--text);font-size:16px}.brand:hover{text-decoration:none}.brand span{color:var(--accent-h)}
+.nav-links{display:flex;gap:18px;align-items:center;font-size:14px}
+.nav-links a{color:var(--muted)}.nav-links a:hover{color:var(--text);text-decoration:none}
+.nav-user{display:flex;gap:12px;align-items:center;font-size:13px;color:var(--muted)}
+main{flex:1;width:100%;max-width:960px;margin:0 auto;padding:36px 24px}
+footer{border-top:1px solid var(--border);color:var(--muted);font-size:12.5px;text-align:center;padding:18px}
+h1{font-size:28px;letter-spacing:-.02em;margin-bottom:8px}
+h2{font-size:18px;letter-spacing:-.01em;margin-bottom:12px}
+.muted{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px}
+.auth-card{max-width:400px;margin:48px auto 0;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:32px}
+.auth-card h1{font-size:22px;margin-bottom:4px}
+.auth-card .sub{color:var(--muted);font-size:14px;margin-bottom:20px}
+label{display:block;font-size:13px;color:var(--muted);margin:14px 0 6px}
+input[type=email],input[type=password],input[type=text]{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:10px;color:var(--text);padding:10px 12px;font-size:15px;outline:none}
+input:focus{border-color:var(--accent)}
+.btn{display:inline-block;background:var(--accent);color:#fff;border:none;border-radius:10px;padding:11px 20px;font-size:14.5px;font-weight:600;cursor:pointer;text-align:center}
+.btn:hover{background:var(--accent-h);text-decoration:none}
+.btn.ghost{background:transparent;border:1px solid var(--border);color:var(--text)}
+.btn.ghost:hover{border-color:var(--muted)}
+.btn.full{width:100%;margin-top:20px}
+.btn.danger{background:transparent;border:1px solid var(--border);color:var(--bad);font-size:13px;padding:6px 12px}
+.btn.danger:hover{border-color:var(--danger)}
+.form-error{margin-top:14px;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.35);color:#fca5a5;border-radius:10px;padding:10px 14px;font-size:13.5px}
+.form-error:empty{display:none}
+.alt{margin-top:18px;font-size:13.5px;color:var(--muted);text-align:center}
+.hero{padding:36px 0 8px}
+.hero.big{text-align:center;padding:72px 0 24px}
+.hero.big h1{font-size:44px;line-height:1.12}
+.hero.big p{color:var(--muted);max-width:520px;margin:16px auto 0;font-size:16px}
+.cta-row{display:flex;gap:14px;justify-content:center;margin-top:28px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin:24px 0}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px}
+.stat .n{font-size:26px;font-weight:700;letter-spacing:-.02em}
+.stat .l{color:var(--muted);font-size:12.5px;margin-top:2px}
+.table-meta{display:flex;justify-content:space-between;align-items:center;margin:18px 0 10px;color:var(--muted);font-size:13.5px}
+table.results{width:100%;border-collapse:collapse;font-size:14px}
+table.results th{text-align:left;color:var(--muted);font-weight:500;font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;padding:8px 10px;border-bottom:1px solid var(--border)}
+table.results td{padding:11px 10px;border-bottom:1px solid var(--border)}
+table.results tr.latest td{background:rgba(99,102,241,.06)}
+.badge{display:inline-block;background:rgba(99,102,241,.15);color:var(--accent-h);border-radius:999px;font-size:11px;padding:1px 8px;margin-left:6px;vertical-align:1px}
+.pct.good{color:var(--good);font-weight:600}.pct.mid{color:var(--mid);font-weight:600}.pct.bad{color:var(--bad);font-weight:600}
+.del{background:transparent;border:1px solid transparent;color:var(--muted);cursor:pointer;border-radius:8px;font-size:13px;padding:4px 8px}
+.del:hover{color:var(--bad);border-color:var(--border)}
+.row-actions{text-align:right}
+.empty{border:1px dashed var(--border);border-radius:14px;padding:36px;text-align:center;color:var(--muted);margin-top:18px}
+.recent{list-style:none}
+.recent li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);font-size:14px}
+.recent li:last-child{border-bottom:none}
+@media(max-width:640px){.hero.big h1{font-size:32px}.cta-row{flex-direction:column;align-items:center}}
+</style>
+<script src="/ui/static/htmx.min.js" defer></script>
+</head>
+<body>
+<nav>
+  <a class="brand" href="/ui/">Accounting<span> G12</span></a>
+  <div class="nav-links">
+    {{if .Email}}
+      <a href="/ui/">Home</a>
+      <a href="/ui/results/">Results</a>
+      <span class="nav-user">{{.Email}}{{if eq .Role "admin"}} · admin{{end}}
+        <form method="post" action="/ui/logout/" style="display:inline">
+          <button class="del" type="submit">Sign out</button>
+        </form>
+      </span>
+    {{else}}
+      <a href="/ui/login/">Sign in</a>
+      <a href="/ui/signup/">Create account</a>
+    {{end}}
+  </div>
+</nav>
+<main>
+{{template "content" .}}
+</main>
+<footer>© {{.Year}} Accounting G12 · Grade 12 past-paper practice</footer>
+</body>
+</html>{{end}}
