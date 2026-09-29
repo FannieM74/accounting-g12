@@ -163,13 +163,25 @@ func TestQuizFlowE2E(t *testing.T) {
 	}
 	t.Logf("final loc: %s", loc)
 
-	// 5. score
+	// 5. score: review must show all options per question with the correct
+	// one (green) and the learner's wrong pick (red) marked — old Next.js UI.
 	r, _ = c.Get(base + loc)
 	b = readAll(r)
 	if r.StatusCode != 200 || !strings.Contains(b, "Review Answers") || !strings.Contains(b, "rounded-2xl") {
 		t.Fatalf("score: %d has-review=%v has-card=%v", r.StatusCode, strings.Contains(b, "Review Answers"), strings.Contains(b, "rounded-2xl"))
 	}
-	t.Logf("score: %d review=%v pct-shown=%v", r.StatusCode, strings.Contains(b, "Review Answers"), strings.Contains(b, "%</p>"))
+	if n := strings.Count(b, "border-green-500"); n < 5 {
+		t.Fatalf("score review: only %d green correct options, want >=5 (one per question)", n)
+	}
+	// quiz 1 answered the FIRST option every time — with permuted options
+	// that's a mix of right and wrong, so both markers must be present.
+	if !strings.Contains(b, "Your answer") {
+		t.Fatalf("score review: missing 'Your answer' marker on wrong pick")
+	}
+	if n := strings.Count(b, "border-slate-200 bg-slate-50"); n < 5 {
+		t.Fatalf("score review: only %d gray neutral options, want >=5 (all 4 options shown per question)", n)
+	}
+	t.Logf("score: %d review green=%d pct-shown=%v", r.StatusCode, strings.Count(b, "border-green-500"), strings.Contains(b, "%</p>"))
 
 	// InsertResult dedupes on (user_id, date) with second-precision dates;
 	// quiz 2 must finish in a later second or its row is silently dropped.
@@ -261,7 +273,28 @@ func TestQuizFlowE2E(t *testing.T) {
 	}
 	freq, _ := c.Get(base + loc2.String())
 	fb := readAll(freq)
-	t.Logf("topic finish: %d final=%q score-page=%v", freq.StatusCode, freq.Header.Get("Location"), strings.Contains(fb, "score-big"))
+	if finLoc := freq.Header.Get("Location"); finLoc != "" {
+		// finish 303-redirects to the score page; follow it.
+		sreq2, _ := http.NewRequest("GET", base+finLoc, nil)
+		sr3, err := c.Do(sreq2)
+		if err != nil {
+			t.Fatal(err)
+		}
+		freq = sr3
+		fb = readAll(freq)
+	}
+	// all-wrong quiz: every review card must still show the green correct
+	// option, and no card may show a green ✓ header (all incorrect).
+	if n := strings.Count(fb, "border-green-500"); n < 5 {
+		t.Fatalf("topic score review: only %d green correct options, want >=5", n)
+	}
+	if strings.Contains(fb, "✓ Correct") {
+		t.Fatalf("topic score review: unexpected '✓ Correct' on an all-wrong quiz")
+	}
+	if n := strings.Count(fb, "✗ Incorrect"); n < 5 {
+		t.Fatalf("topic score review: only %d '✗ Incorrect' boxes, want >=5", n)
+	}
+	t.Logf("topic finish: %d final=%q green=%d incorrect=%d", freq.StatusCode, freq.Header.Get("Location"), strings.Count(fb, "border-green-500"), strings.Count(fb, "✗ Incorrect"))
 	ares, _ := c.Get(base + "/api/results")
 	ab := readAll(ares)
 	t.Logf("results after topic quiz: %s", ab)

@@ -81,7 +81,12 @@ func (h *Handler) renderQuizScore(w http.ResponseWriter, r *http.Request, graded
 	rows := make([]quizReviewRow, 0, len(graded.Rows))
 	for _, row := range graded.Rows {
 		rows = append(rows, quizReviewRow{
-			Question: row.Question.Question, Chosen: row.Chosen,
+			Question: row.Question.Question,
+			ID:       row.Question.ID,
+			Topic:    row.Question.Topic,
+			Context:  row.Question.Context,
+			Chosen:   row.Chosen, ChosenIdx: row.ChosenIdx,
+			CorrectIdx: row.CorrectIdx, Options: row.Options,
 			CorrectText: row.CorrectText, Correct: row.Correct,
 			Explanation: row.Question.Explanation,
 		})
@@ -114,7 +119,13 @@ type quizQuestionView = struct {
 
 type quizReviewRow struct {
 	Question    string
+	ID          int64
+	Topic       string
+	Context     string
 	Chosen      string
+	ChosenIdx   int
+	CorrectIdx  int
+	Options     []string
 	CorrectText string
 	Correct     bool
 	Explanation string

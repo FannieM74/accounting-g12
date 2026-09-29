@@ -107,7 +107,51 @@ var funcMap = template.FuncMap{
 		}
 		return "?"
 	},
-	"sub": func(a, b int) int { return a - b },
+	"sub":        func(a, b int) int { return a - b },
+	"topicLabel": topicLabel,
+	"topicBadge": topicBadge,
+}
+
+// topicLabel maps a topic key to the human label the old Next.js app used.
+var topicLabels = map[string]string{
+	"":                     "All Topics",
+	"stock-valuation":      "Stock Valuation",
+	"fixed-assets":         "Fixed Assets",
+	"income-statement":     "Income Statement",
+	"financial-position":   "Financial Position",
+	"cash-flow":            "Cash Flow",
+	"financial-indicators": "Financial Indicators",
+	"interpretation":       "Interpretation",
+	"shareholding":         "Shares & Dividends",
+	"governance":           "Governance & Audit",
+}
+
+// topicBadgeClasses mirrors TOPIC_COLORS from the old Next.js topics.ts.
+var topicBadgeClasses = map[string]string{
+	"stock-valuation":      "bg-purple-100 text-purple-800",
+	"fixed-assets":         "bg-orange-100 text-orange-800",
+	"income-statement":     "bg-green-100 text-green-800",
+	"financial-position":   "bg-teal-100 text-teal-800",
+	"cash-flow":            "bg-blue-100 text-blue-800",
+	"financial-indicators": "bg-pink-100 text-pink-800",
+	"interpretation":       "bg-indigo-100 text-indigo-800",
+	"shareholding":         "bg-yellow-100 text-yellow-800",
+	"governance":           "bg-red-100 text-red-800",
+}
+
+func topicLabel(key string) string {
+	if l, ok := topicLabels[key]; ok {
+		return l
+	}
+	return key
+}
+
+func topicBadge(key string) template.HTMLAttr {
+	classes := "bg-gray-100 text-gray-800"
+	if c, ok := topicBadgeClasses[key]; ok {
+		classes = c
+	}
+	return template.HTMLAttr("class=\"" + classes + " inline-block px-2.5 py-0.5 rounded-full text-xs font-medium\"")
 }
 
 func parseTemplates() (map[string]*template.Template, bool) {

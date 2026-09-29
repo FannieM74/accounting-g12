@@ -233,7 +233,10 @@ type GradeResult struct {
 // GradeRow is the per-question review shown on the score screen.
 type GradeRow struct {
 	Question    *Question
-	Chosen      string // displayed option text, "" if skipped
+	Chosen      string   // displayed option text, "" if skipped
+	ChosenIdx   int      // display position the learner picked, -1 = skipped
+	CorrectIdx  int      // display position of the correct option
+	Options     []string // options in the permuted order the learner saw
 	CorrectText string
 	Correct     bool
 }
@@ -247,10 +250,24 @@ func (b *Bank) Grade(s *QuizState) GradeResult {
 			continue
 		}
 		perm := permOf(id, uint64(s.StartedAt), len(q.Options))
-		row := GradeRow{Question: q, CorrectText: q.Options[q.CorrectAnswer]}
+		opts := make([]string, len(perm))
+		correctIdx := -1
+		for display, orig := range perm {
+			opts[display] = q.Options[orig]
+			if orig == q.CorrectAnswer {
+				correctIdx = display
+			}
+		}
+		row := GradeRow{
+			Question: q, Options: opts,
+			ChosenIdx: -1, CorrectIdx: correctIdx,
+			CorrectText: q.Options[q.CorrectAnswer],
+		}
 		if shown, ok := s.Answers[int(id)]; ok && shown >= 0 && shown < len(perm) {
-			row.Chosen = q.Options[perm[shown]]
+			row.Chosen = opts[shown]
+			row.ChosenIdx = shown
 			if perm[shown] == q.CorrectAnswer {
+				row.Correct = true
 				res.Score++
 			} else {
 				res.MissedIDs = append(res.MissedIDs, id)

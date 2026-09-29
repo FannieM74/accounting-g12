@@ -2,36 +2,76 @@
 <section class="-mx-6 -my-9 min-h-[calc(100vh-190px)] bg-gradient-to-br from-slate-50 to-blue-50 text-slate-900">
   <div class="mx-auto max-w-2xl px-4 py-8">
     <div class="mb-8 rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm">
-      <p class="mb-4 text-6xl">{{if ge .Pct 80}}🎉{{else if ge .Pct 50}}👍{{else}}💪{{end}}</p>
-      <h1 class="mb-2 text-balance text-3xl font-bold {{if ge .Pct 80}}text-green-600{{else if ge .Pct 50}}text-blue-600{{else}}text-yellow-600{{end}}">
-        {{if ge .Pct 80}}Excellent!{{else if ge .Pct 50}}Good effort!{{else}}Keep practising!{{end}}
+      <p class="mb-4 text-6xl">{{if ge .Pct 80}}🎉{{else if ge .Pct 60}}👍{{else}}💪{{end}}</p>
+      <h1 class="mb-2 text-balance text-3xl font-bold {{if ge .Pct 80}}text-green-600{{else if ge .Pct 60}}text-blue-600{{else}}text-yellow-600{{end}}">
+        {{if ge .Pct 80}}Excellent!{{else if ge .Pct 60}}Good effort!{{else}}Keep practising!{{end}}
       </h1>
-      {{if .Topic}}<p class="mb-2 text-sm text-slate-400">{{.Topic}} · {{.Total}} questions</p>{{else}}<p class="mb-2 text-sm text-slate-400">{{.Total}} questions</p>{{end}}
+      {{if .Topic}}<p class="mb-2 text-sm text-slate-400">{{topicLabel .Topic}} · {{.Total}} questions</p>{{else}}<p class="mb-2 text-sm text-slate-400">{{.Total}} questions</p>{{end}}
       <div class="my-4 flex items-center justify-center gap-1">
         <span class="tabular-nums text-5xl font-bold text-slate-900">{{.Score}}</span>
         <span class="text-2xl text-slate-400">/</span>
-        <span class="tabular-nums text-3xl text-slate-500">{{.Total}}</span>
+        <span class="tabular-nums text-3xl font-medium text-slate-500">{{.Total}}</span>
       </div>
       <div class="mx-auto mb-2 h-3 max-w-xs overflow-hidden rounded-full bg-slate-200">
-        <div class="h-full rounded-full {{if ge .Pct 80}}bg-green-500{{else if ge .Pct 50}}bg-blue-500{{else}}bg-yellow-500{{end}}" style="width:{{.Pct}}%"></div>
+        <div class="h-full rounded-full {{if ge .Pct 80}}bg-green-500{{else if ge .Pct 60}}bg-blue-500{{else}}bg-yellow-500{{end}}" style="width:{{.Pct}}%"></div>
       </div>
       <p class="mb-6 text-2xl font-bold text-slate-800">{{.Pct}}%</p>
       <div class="flex justify-center gap-3">
-        <a href="/ui/quiz" class="rounded-lg bg-blue-600 px-6 py-2.5 font-medium text-white transition-colors hover:bg-blue-700">New Quiz</a>
-        <a href="/ui/results/" class="rounded-lg border border-slate-200 px-6 py-2.5 font-medium text-slate-700 transition-colors hover:bg-slate-50">History</a>
+        <a href="/ui/quiz" class="rounded-lg bg-blue-600 px-6 py-2.5 font-medium text-white transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">New Quiz</a>
+        <a href="/ui/results/" class="rounded-lg border border-slate-200 px-6 py-2.5 font-medium text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">History</a>
       </div>
     </div>
 
     <h2 class="mb-4 text-balance text-base font-semibold text-slate-900 sm:text-lg">Review Answers</h2>
     <div class="space-y-6">
       {{range .Review}}
+      {{$correct := .CorrectIdx}}{{$chosen := .ChosenIdx}}
       <article class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <p class="mb-3 text-base font-semibold leading-relaxed text-slate-900">{{if .Correct}}✓{{else}}✗{{end}} {{.Question}}</p>
-        {{if not .Correct}}
-        <p class="mb-3 rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-800">Your answer: {{if .Chosen}}{{.Chosen}}{{else}}skipped{{end}}<br>Correct: {{.CorrectText}}</p>
+        <div class="mb-3 flex items-start justify-between gap-4">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="text-xs font-medium uppercase tracking-wider text-slate-400">Question {{.ID}}</span>
+            <span {{topicBadge .Topic}}>{{topicLabel .Topic}}</span>
+          </div>
+          <span class="text-sm font-semibold {{if .Correct}}text-green-600{{else}}text-red-500{{end}}">{{if .Correct}}✓{{else}}✗{{end}}</span>
+        </div>
+
+        {{if .Context}}
+        <div class="mb-5 rounded-lg border border-blue-200 bg-blue-50 p-4 text-sm leading-relaxed text-blue-900">
+          <p class="mb-1 text-xs font-bold uppercase tracking-wider text-blue-700">Source information from the paper</p>
+          <p>{{.Context}}</p>
+        </div>
         {{end}}
+
+        <h3 class="mb-6 text-balance text-base font-semibold leading-relaxed text-slate-900 sm:text-lg">{{.Question}}</h3>
+
+        <div class="space-y-3">
+          {{range $i, $opt := .Options}}
+          {{if eq $i $correct}}
+          <div class="flex w-full items-start rounded-lg border-2 border-green-500 bg-green-50 p-4 text-left text-sm font-medium text-green-800" aria-disabled="true">
+            <span class="mr-3 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-green-500 bg-green-500 text-xs font-bold text-white">{{optionLetter $i}}</span>
+            <span class="break-words">{{$opt}}</span>
+            <span class="ml-auto pl-3 text-xs font-semibold uppercase tracking-wide text-green-700">Correct</span>
+          </div>
+          {{else if eq $i $chosen}}
+          <div class="flex w-full items-start rounded-lg border-2 border-red-500 bg-red-50 p-4 text-left text-sm font-medium text-red-800" aria-disabled="true">
+            <span class="mr-3 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-red-500 bg-red-500 text-xs font-bold text-white">{{optionLetter $i}}</span>
+            <span class="break-words">{{$opt}}</span>
+            <span class="ml-auto pl-3 text-xs font-semibold uppercase tracking-wide text-red-700">Your answer</span>
+          </div>
+          {{else}}
+          <div class="flex w-full items-start rounded-lg border-2 border-slate-200 bg-slate-50 p-4 text-left text-sm font-medium text-slate-500" aria-disabled="true">
+            <span class="mr-3 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-slate-300 text-xs font-bold text-slate-500">{{optionLetter $i}}</span>
+            <span class="break-words">{{$opt}}</span>
+          </div>
+          {{end}}
+          {{end}}
+          {{if lt $chosen 0}}
+          <p class="text-sm italic text-slate-400">Not answered</p>
+          {{end}}
+        </div>
+
         {{if .Explanation}}
-        <div class="rounded-lg border border-blue-200 bg-blue-50 p-4">
+        <div class="mt-6 rounded-lg border border-blue-200 bg-blue-50 p-4">
           <p class="mb-1 text-sm font-medium text-blue-900">{{if .Correct}}✓ Correct{{else}}✗ Incorrect{{end}}</p>
           <p class="text-sm leading-relaxed text-blue-800">{{.Explanation}}</p>
         </div>
