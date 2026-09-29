@@ -40,7 +40,7 @@ type Handler struct {
 var templateSets = []string{
 	"login", "signup", "home", "results", "404",
 	"quiz-picker", "quiz-run", "quiz-score",
-	"analytics", "admin-analytics",
+	"analytics", "admin-analytics", "admin-student",
 }
 
 // New parses templates once and returns the UI handler. Templates are
@@ -214,6 +214,7 @@ func (h *Handler) Register(mux *http.ServeMux) {
 	mux.HandleFunc("GET /ui/quiz/score", h.authPage(h.quizPages.Score))
 	mux.HandleFunc("GET /ui/analytics", h.analyticsPage)
 	mux.HandleFunc("GET /ui/admin/analytics", h.adminAnalyticsPage)
+	mux.HandleFunc("GET /ui/admin/student/{id}", h.adminStudentPage)
 
 	// Vercel/Next normalize trailing slashes before proxying, so register
 	// slash-less aliases for every /ui route (a redirect would drop POST
@@ -241,6 +242,7 @@ func (h *Handler) Register(mux *http.ServeMux) {
 		{"/ui/quiz/score", h.authPage(h.quizPages.Score)},
 		{"/ui/analytics", http.HandlerFunc(h.analyticsPage)},
 		{"/ui/admin/analytics", http.HandlerFunc(h.adminAnalyticsPage)},
+		{"/ui/admin/student/{id}", http.HandlerFunc(h.adminStudentPage)},
 		{"/ui/results/{id}", h.any(h.submit(h.resultDeleteByID), h.submit(h.resultDeleteByID))},
 		{"/ui/results/{id}/row", h.fragment(h.resultsRow)},
 	} {
@@ -286,6 +288,9 @@ type pageData struct {
 	RecentPcts []int
 	Hardest    []analytics.HardestQuestion
 	PerUser    []analytics.UserAttemptStat
+	Students   []analytics.StudentSummary
+	Student    *analytics.StudentSummary
+	AvgPct2    int
 
 	SelectedTopic string // quiz picker preselect (?topic=)
 }

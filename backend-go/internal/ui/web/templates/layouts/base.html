@@ -9,11 +9,22 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--text);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;min-height:100vh;display:flex;flex-direction:column}
 a{color:var(--accent-h);text-decoration:none}a:hover{text-decoration:underline}
-nav{display:flex;align-items:center;justify-content:space-between;max-width:960px;margin:0 auto;padding:18px 24px;width:100%;border-bottom:1px solid var(--border)}
+nav{display:flex;align-items:center;justify-content:space-between;max-width:960px;margin:0 auto;padding:18px 24px;width:100%;border-bottom:1px solid var(--border);position:relative}
 .brand{font-weight:700;color:var(--text);font-size:16px}.brand:hover{text-decoration:none}.brand span{color:var(--accent-h)}
 .nav-links{display:flex;gap:18px;align-items:center;font-size:14px}
 .nav-links a{color:var(--muted)}.nav-links a:hover{color:var(--text);text-decoration:none}
 .nav-user{display:flex;gap:12px;align-items:center;font-size:13px;color:var(--muted)}
+.burger{display:none;background:none;border:1px solid var(--border);border-radius:8px;color:var(--muted);cursor:pointer;padding:8px 10px;font-size:16px;line-height:1}
+.burger:hover{color:var(--text)}
+.burger .bar{display:block;width:18px;height:2px;background:currentColor;border-radius:1px;margin:3px 0}
+@media(max-width:720px){
+  .burger{display:block}
+  .nav-links{display:none;position:absolute;top:61px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--card);border-bottom:1px solid var(--border);padding:8px 16px 14px;z-index:50;box-shadow:0 12px 24px rgba(0,0,0,.35)}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:12px 4px;border-bottom:1px solid var(--border);font-size:15px}
+  .nav-links a:last-of-type{border-bottom:none}
+  .nav-user{flex-direction:column;align-items:flex-start;gap:6px;padding:12px 4px 4px;font-size:14px}
+}
 main{flex:1;width:100%;max-width:960px;margin:0 auto;padding:36px 24px}
 footer{border-top:1px solid var(--border);color:var(--muted);font-size:12.5px;text-align:center;padding:18px}
 h1{font-size:28px;letter-spacing:-.02em;margin-bottom:8px}
@@ -59,6 +70,17 @@ table.results tr.latest td{background:rgba(99,102,241,.06)}
 .recent{list-style:none}
 .recent li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);font-size:14px}
 .recent li:last-child{border-bottom:none}
+.student-list{list-style:none}
+.student-list li{border-bottom:1px solid var(--border)}
+.student-list li:last-child{border-bottom:none}
+.student-row{display:flex;flex-direction:column;gap:3px;padding:13px 2px;color:var(--text)}
+.student-row:hover{background:rgba(99,102,241,.06);text-decoration:none}
+.student-name{font-weight:600;font-size:14.5px}
+.student-meta{font-size:13px;color:var(--muted)}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:12px}
+.stat-cell{display:flex;flex-direction:column;gap:2px;padding:12px;border:1px solid var(--border);border-radius:10px}
+.stat-num{font-size:22px;font-weight:700}
+.student-detail-name{font-size:24px;word-break:break-all}
 @media(max-width:640px){.hero.big h1{font-size:32px}.cta-row{flex-direction:column;align-items:center}}
 .select{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:10px;color:var(--text);padding:10px 12px;font-size:15px;outline:none}
 .select:focus{border-color:var(--accent)}
@@ -129,7 +151,10 @@ table.results tr.latest td{background:rgba(99,102,241,.06)}
 <body>
 <nav>
   <a class="brand" href="/ui/">Accounting<span> G12</span></a>
-  <div class="nav-links">
+  <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links" onclick="var n=document.getElementById('nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">
+    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+  </button>
+  <div class="nav-links" id="nav-links">
     {{if .Email}}
       <a href="/ui/">Home</a>
       <a href="/ui/quiz">Quiz</a>

@@ -1,0 +1,91 @@
+{{define "content"}}
+<section class="hero" style="padding-bottom:6px">
+  <p class="muted" style="margin-bottom:6px"><a href="/ui/admin/analytics">← All students</a></p>
+  <h1 class="student-detail-name">{{.Student.Email}}</h1>
+  <p class="muted">
+    {{if eq .Student.Role "admin"}}Admin{{else}}Student{{end}} · joined {{.Student.Joined}}
+    {{if gt .Attempts 0}} · {{.Attempts}} quiz{{if ne .Attempts 1}}zes{{end}} · {{.Questions}} questions · {{.AvgPct}}% accuracy{{end}}
+  </p>
+</section>
+
+{{if gt .Attempts 0}}
+<section class="card" style="margin-top:18px">
+  <h2>Overview</h2>
+  <div class="stat-grid">
+    <div class="stat-cell"><span class="stat-num">{{.Attempts}}</span><span class="muted">quizzes</span></div>
+    <div class="stat-cell"><span class="stat-num">{{.Questions}}</span><span class="muted">questions</span></div>
+    <div class="stat-cell"><span class="stat-num">{{.CorrectQ}}</span><span class="muted">correct</span></div>
+    <div class="stat-cell"><span class="stat-num">{{.AvgPct}}%</span><span class="muted">accuracy</span></div>
+    <div class="stat-cell"><span class="stat-num">{{.BestPct}}%</span><span class="muted">best quiz</span></div>
+    <div class="stat-cell"><span class="stat-num">{{len .Results}}</span><span class="muted">results</span></div>
+  </div>
+</section>
+
+{{if .TopicStats}}
+<section class="card" style="margin-top:18px">
+  <h2>Topic breakdown</h2>
+  {{range .TopicStats}}
+  <div class="tstat">
+    <div class="tstat-head">
+      <span>{{topicLabel .Topic}}</span>
+      <span class="pct {{pctClassInv .MissPct}}">{{.MissPct}}% missed</span>
+    </div>
+    <div class="progress"><div class="progress-fill {{pctClassInv .MissPct}}" style="width:{{.MissPct}}%"></div></div>
+    <p class="muted tstat-sub">{{.Misses}} of {{.Attempts}} questions missed</p>
+  </div>
+  {{end}}
+</section>
+{{end}}
+
+{{if .Weakest}}
+<section class="card weakest-box" style="margin-top:18px;border-left:3px solid var(--accent)">
+  <h2>Weakest topic</h2>
+  <p><strong>{{topicLabel .Weakest.Topic}}</strong> — misses {{.Weakest.MissPct}}% of questions here ({{.Weakest.Misses}}/{{.Weakest.Attempts}}).
+  <a href="/ui/quiz?topic={{.Weakest.Topic}}">Set a drill for this topic →</a></p>
+</section>
+{{end}}
+
+<section class="card" style="margin-top:18px">
+  <h2>Recent trend <span class="muted" style="font-weight:400;font-size:13px">(last {{len .RecentPcts}} quizzes)</span></h2>
+  <div class="trend">
+    {{range .RecentPcts}}
+    <div class="trend-col" title="{{.}}%">
+      <div class="trend-bar" style="height:{{maxBar .}}px"></div>
+      <span class="trend-pct">{{.}}</span>
+    </div>
+    {{end}}
+  </div>
+</section>
+
+<section class="card" style="margin-top:18px">
+  <h2>All results <span class="muted" style="font-weight:400;font-size:13px">(newest first)</span></h2>
+  {{template "student-results-table" .Results}}
+</section>
+{{else}}
+<section class="card" style="margin-top:18px">
+  <p class="muted">This student hasn't taken any quizzes yet.</p>
+</section>
+{{end}}
+{{end}}
+
+{{define "student-results-table"}}
+{{if .}}
+<div style="padding:8px 0;overflow-x:auto">
+<table class="results">
+  <thead><tr><th>Date</th><th>Topic</th><th>Score</th><th>%</th></tr></thead>
+  <tbody>
+  {{range .}}
+    <tr{{if .Latest}} class="latest"{{end}}>
+      <td>{{.Date}}{{if .Daily}}<span class="badge">daily</span>{{end}}</td>
+      <td>{{if .Topic}}{{topicLabel .Topic}}{{else}}<span class="muted">—</span>{{end}}</td>
+      <td>{{.Score}}/{{.Total}}</td>
+      <td><span class="pct {{pctClass .Pct}}">{{.Pct}}%</span></td>
+    </tr>
+  {{end}}
+  </tbody>
+</table>
+</div>
+{{else}}
+<div class="empty">No results yet.</div>
+{{end}}
+{{end}}

@@ -314,7 +314,27 @@ func TestQuizFlowE2E(t *testing.T) {
 	if ca2.StatusCode != 200 || !strings.Contains(b2, "hard-list") {
 		t.Fatalf("admin analytics: %d has-hardest=%v", ca2.StatusCode, strings.Contains(b2, "hard-list"))
 	}
-	t.Logf("admin analytics: %d users-shown=%v", ca2.StatusCode, strings.Contains(b2, "active learners"))
+	if !strings.Contains(b2, "student-list") || !strings.Contains(b2, "student-row") || !strings.Contains(b2, "/ui/admin/student/") {
+		t.Fatalf("admin analytics: student summaries missing (student-list=%v student-row=%v)",
+			strings.Contains(b2, "student-list"), strings.Contains(b2, "student-row"))
+	}
+	// burger menu must be in the nav on every page
+	if !strings.Contains(b2, "burger") || !strings.Contains(b2, `id="nav-links"`) {
+		t.Fatalf("admin analytics: burger menu missing")
+	}
+	t.Logf("admin analytics: %d users-shown=%v students=%d", ca2.StatusCode, strings.Contains(b2, "active learners"), strings.Count(b2, "/ui/admin/student/"))
+
+	// drill into one student detail page (first link)
+	detail := regexp.MustCompile(`/ui/admin/student/[a-f0-9]+`).FindString(b2)
+	if detail == "" {
+		t.Fatalf("admin analytics: no student detail link found")
+	}
+	sd, _ := c.Get(base + detail)
+	sdb := readAll(sd)
+	if sd.StatusCode != 200 || !strings.Contains(sdb, "Topic breakdown") || !strings.Contains(sdb, "burger") {
+		t.Fatalf("admin student detail: %d has-topics=%v", sd.StatusCode, strings.Contains(sdb, "Topic breakdown"))
+	}
+	t.Logf("admin student detail (%s): %d has-results=%v", detail, sd.StatusCode, strings.Contains(sdb, "All results"))
 
 	// a second (non-admin) account must be rejected from the cohort page
 	jar2, _ := cookiejar.New(nil)
