@@ -15,7 +15,7 @@
             {{$topics := .Topics}}
             {{$sel := .SelectedTopic}}
             {{range $t := $topics}}
-              <option value="{{$t.Key}}" {{if eq $t.Key $sel}}selected{{end}}>{{$t.Key}} ({{$t.Count}})</option>
+              <option value="{{$t.Key}}" {{if eq $t.Key $sel}}selected{{end}}>{{topicLabel $t.Key}} ({{$t.Count}})</option>
             {{end}}
           </select>
         </div>
@@ -39,7 +39,7 @@
         {{$topics := .Topics}}
         {{range $t := $topics}}
         <a href="/ui/quiz?topic={{$t.Key}}" class="rounded-lg border border-slate-200 p-3 text-center text-sm text-slate-700 transition-colors hover:border-blue-300 hover:bg-blue-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
-          <span class="block font-semibold text-blue-700">{{$t.Key}}</span>
+          <span {{topicBadge $t.Key}}>{{topicLabel $t.Key}}</span>
           <span class="mt-1 block text-xs text-slate-400">{{$t.Count}} questions</span>
         </a>
         {{end}}
